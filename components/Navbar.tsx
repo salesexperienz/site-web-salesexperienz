@@ -1,17 +1,24 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { DISCOVERY_URL } from '@/lib/constants'
 
 const navLinks = [
-  { label: 'Pourquoi automatiser', href: '#why' },
-  { label: 'Services',             href: '#services' },
-  { label: 'Comment ça marche',   href: '#how' },
-  { label: 'À propos',            href: '#about' },
+  { label: 'Pourquoi automatiser', anchor: '#why' },
+  { label: 'Services',             anchor: '#services' },
+  { label: 'Comment ça marche',   anchor: '#how' },
+  { label: 'À propos',            anchor: '#about' },
 ]
 
 export default function Navbar() {
   const [scrolled, setScrolled]     = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const pathname = usePathname()
+
+  // Sur la homepage, les liens sont des ancres directes
+  // Sur les autres pages, on redirige vers la homepage + ancre
+  const isHome = pathname === '/'
+  const getHref = (anchor: string) => isHome ? anchor : `/${anchor}`
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -32,12 +39,12 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between px-5 h-[64px]">
 
-          {/* Logo */}
-          <a href="#" className="flex-shrink-0">
+          {/* Logo — toujours vers la homepage */}
+          <a href="/" className="flex-shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={scrolled ? '/logo-blanc.png' : '/logo-noir.png'}
-              alt="SalesExperienz"
+              alt="Sales Experienz"
               className="h-16 w-auto"
             />
           </a>
@@ -46,8 +53,8 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
-                key={link.href}
-                href={link.href}
+                key={link.anchor}
+                href={getHref(link.anchor)}
                 className={`font-body text-[14px] px-3.5 py-1.5 rounded-full transition-all duration-200 hover:bg-black/[0.06] ${
                   scrolled
                     ? 'text-white/80 hover:text-white hover:bg-white/[0.08]'
@@ -86,7 +93,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu — sous la pill */}
+      {/* Mobile menu */}
       <div
         className={`w-full max-w-[1100px] mt-2 overflow-hidden transition-all duration-300 rounded-2xl ${
           mobileOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'
@@ -95,8 +102,8 @@ export default function Navbar() {
         <div className="flex flex-col px-5 py-4 gap-3">
           {navLinks.map((link) => (
             <a
-              key={link.href}
-              href={link.href}
+              key={link.anchor}
+              href={getHref(link.anchor)}
               onClick={() => setMobileOpen(false)}
               className="font-body text-[15px] text-white/70 hover:text-white transition-colors duration-200 py-1"
             >
