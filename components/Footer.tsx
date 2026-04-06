@@ -15,6 +15,9 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex items-center gap-6">
+            <a href="/services/deepsignal" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200">
+              Prospection automatisée
+            </a>
             <a href="https://blog.salesexperienz.fr/articles/" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200">
               Blog
             </a>

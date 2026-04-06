@@ -26,12 +26,13 @@ const services = [
     description:
       '4 modules interconnectés déclenchés par des signaux d\'intention réels : SEO, LinkedIn, Cold Email, Nurturing Brevo. Vous ne contactez que des prospects qui ont déjà levé la main.',
     points: [
-      '10 à 60 RDV qualifiés/mois',
+      '3 à 15 RDV qualifiés/mois',
       'Signaux LinkedIn, Email, SEO, Brevo',
       'Personnalisation industrielle par Claude AI',
       'Scalable sans recruter',
     ],
     featured: true,
+    link: '/services/deepsignal',
   },
   {
     icon: '▶',
@@ -111,6 +112,17 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
+
+                {/* CTA optionnel */}
+                {'link' in svc && svc.link && (
+                  <a
+                    href={svc.link}
+                    className="inline-flex items-center justify-center gap-2 w-full rounded-full border-2 border-se-orange text-se-orange font-body font-medium text-[14px] py-3 px-6 transition-all duration-200 hover:bg-se-orange hover:text-white"
+                  >
+                    Je veux en savoir plus
+                    <span aria-hidden="true">→</span>
+                  </a>
+                )}
 
               </div>
             </FadeUp>

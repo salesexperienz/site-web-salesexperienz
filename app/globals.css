@@ -37,3 +37,21 @@ h1, h2, h3 {
 ::-webkit-scrollbar-track { background: #0D1B3E; }
 ::-webkit-scrollbar-thumb { background: #1E2D5A; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #E8621A; }
+
+/* ── Effets dynamiques ───────────────────────────────────────────────── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(74,191,176,0.15), 0 32px 64px rgba(0,0,0,0.35); }
+  50%       { box-shadow: 0 0 0 1px rgba(74,191,176,0.20), 0 32px 64px rgba(0,0,0,0.35), 0 0 40px rgba(232,98,26,0.22); }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}

@@ -21,12 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //   changeFrequency: 'monthly',
     //   priority: 0.9,
     // },
-    // {
-    //   url: 'https://salesexperienz.fr/services/deepsignal',
-    //   lastModified: new Date(),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.9,
-    // },
+    {
+      url: 'https://salesexperienz.fr/services/deepsignal',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     // {
     //   url: 'https://salesexperienz.fr/services/impact-video',
     //   lastModified: new Date(),
