@@ -7,6 +7,61 @@
  *     et que les IA puissent les extraire — voir note dans FAQ_ITEMS.
  */
 
+// ─── FAQ page /agence-marketing-automatisation-sete ───────────────────────────
+
+export const FAQ_ITEMS_SETE = [
+  {
+    question: 'Vous êtes à Sète — est-ce qu\'on peut se rencontrer en présentiel ?',
+    answer:
+      'Oui, pour les clients en Occitanie, les rencontres en présentiel sont possibles sur Sète et alentours. Pour le reste de la France, toutes les missions se déroulent 100% en visio — sans perte d\'efficacité. L\'expérience prouve que les meilleurs résultats viennent rarement de la proximité géographique.',
+  },
+  {
+    question: 'Comment se déroule concrètement la première mission ?',
+    answer:
+      'On commence par un appel découverte de 45 min — sans pitch, sans engagement. Je cartographie vos processus, je calcule le ROI potentiel, et je vous restitue la Carte des Opportunités : un plan chiffré, priorisé, que vous gardez quelle que soit la suite.',
+  },
+  {
+    question: 'Dois-je savoir coder ou maîtriser n8n pour travailler avec vous ?',
+    answer:
+      'Non. Une fois les workflows déployés, aucune compétence technique n\'est requise. Une formation de 1h30 est incluse dans chaque mission pour vous rendre autonome sur ce qui a été livré.',
+  },
+  {
+    question: 'En combien de temps mes premiers résultats sont-ils visibles ?',
+    answer:
+      'Les premiers Quick Wins — gains de temps, réduction des tâches manuelles — sont mesurables dès la première semaine de déploiement. Pour le SEO automatisé, comptez 3 mois d\'indexation et 6 mois de trafic organique mesurable.',
+  },
+  {
+    question: 'Suis-je propriétaire des workflows après la mission ?',
+    answer:
+      'Oui, à 100% dès le premier jour. Les workflows n8n, les données, les séquences — tout vous appartient. Aucun abonnement, aucun lock-in, aucune dépendance à SalesExperienz pour faire fonctionner ce qui a été livré.',
+  },
+  {
+    question: 'Que se passe-t-il si quelque chose tombe en panne après la mission ?',
+    answer:
+      'Un suivi est inclus pendant la mise en production et le mois suivant le déploiement. Pour les clients qui souhaitent une tranquillité d\'esprit durable, des formules de maintenance mensuelle sont disponibles. Je peux aussi former votre équipe à maintenir les workflows en autonomie.',
+  },
+  {
+    question: 'Quel budget faut-il prévoir pour démarrer ?',
+    answer:
+      'Je ne parle jamais budget avant d\'avoir compris votre situation. L\'appel découverte est là pour ça : on identifie ensemble les opportunités réelles, puis je construis une proposition adaptée à votre contexte — pas un tarif catalogue.',
+  },
+]
+
+export const faqJsonLdSete = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_ITEMS_SETE.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+}
+
+// ─── FAQ page / (homepage) ────────────────────────────────────────────────────
+
 export const FAQ_ITEMS = [
   {
     question: 'Dois-je savoir coder ou connaître n8n pour travailler avec vous ?',

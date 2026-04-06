@@ -9,6 +9,7 @@ import About         from '@/components/About'
 import FAQ           from '@/components/FAQ'
 import FinalCTA      from '@/components/FinalCTA'
 import Footer        from '@/components/Footer'
+import { faqJsonLd } from '@/lib/schema-faq'
 
 export default function Home() {
   return (
@@ -24,6 +25,12 @@ export default function Home() {
       <FAQ />
       <FinalCTA />
       <Footer />
+
+      {/* FAQPage Schema — GEO : cite par ChatGPT, Perplexity, Claude, Gemini */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </main>
   )
 }

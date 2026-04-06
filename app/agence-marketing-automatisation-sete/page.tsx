@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
-import Navbar   from '@/components/Navbar'
-import Footer   from '@/components/Footer'
-import FadeUp   from '@/components/FadeUp'
+import Navbar      from '@/components/Navbar'
+import Footer      from '@/components/Footer'
+import FadeUp      from '@/components/FadeUp'
+import AboutSete   from '@/components/AboutSete'
+import FaqSete     from '@/components/FaqSete'
 import { DISCOVERY_URL } from '@/lib/constants'
+import { faqJsonLdSete } from '@/lib/schema-faq'
 
 // ─── METADATA SEO LOCAL ────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -140,58 +143,138 @@ export default function PageGBP() {
           style={{ background: 'linear-gradient(90deg, transparent 0%, #E8621A 40%, #4ABFB0 60%, transparent 100%)' }} />
         <div className="absolute -top-20 -right-10 w-[700px] h-[700px] pointer-events-none"
           style={{ background: 'radial-gradient(circle, rgba(74,191,176,0.08) 0%, transparent 65%)' }} />
-        <div className="absolute bottom-0 -left-20 w-[600px] h-[600px] pointer-events-none"
-          style={{ background: 'radial-gradient(circle, rgba(232,98,26,0.06) 0%, transparent 65%)' }} />
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(232,98,26,0.05) 0%, transparent 65%)' }} />
 
-        <div className="relative z-10 max-w-container mx-auto px-6 lg:px-20 w-full pt-[160px] pb-20">
-          <div className="flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
+        <div className="relative z-10 max-w-container mx-auto px-6 lg:px-20 w-full pt-[120px]">
 
-            <p className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-teal">
-              Agence de marketing · Sète (Hérault, 34) · France entière en visio
-            </p>
+          {/* ── Grid 50/50 : image gauche / texte droite ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-            <h1 className="font-display font-extrabold text-[32px] md:text-[52px] leading-[1.15] text-se-navy">
-              Vous avez les outils.{' '}
-              <span className="text-se-orange">Il vous manque la stratégie</span>{' '}
-              pour les faire travailler ensemble.
-            </h1>
-
-            <p className="font-body text-[17px] leading-[1.7] text-se-navy/70 max-w-2xl">
-              Sales Experienz accompagne les dirigeants de{' '}
-              <strong className="text-se-navy font-semibold">PME et TPE</strong>{' '}
-              partout en France : on commence par un{' '}
-              <strong className="text-se-navy font-semibold">diagnostic stratégique</strong>,
-              puis on automatise ce qui bloque vraiment votre croissance — sur mesure, avec n8n et l&apos;IA.{' '}
-              <strong className="text-se-navy font-semibold">Basés à Sète (Hérault)</strong>,
-              100% en visio.
-            </p>
-
-            <div className="flex flex-wrap items-center justify-center gap-3 mt-2">
-              {[
-                '✓ Diagnostic avant toute action',
-                '✓ Automatisation 100% sur mesure',
-                '✓ Basé à Sète — France entière en visio',
-                '✓ Consultant depuis 2003',
-              ].map((badge) => (
-                <span key={badge}
-                  className="font-body text-[13px] font-medium text-se-navy/60 bg-gray-50 border border-gray-200 rounded-full px-4 py-1.5">
-                  {badge}
-                </span>
-              ))}
+            {/* Colonne gauche — Photo */}
+            <div className="flex items-center justify-center order-2 lg:order-1">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/Laurent 2.png"
+                alt="Laurent Guyonvarch, consultant en automatisation IA à Sète"
+                className="w-full max-w-[360px] lg:max-w-[420px] object-cover select-none"
+                style={{
+                  borderRadius: '20px',
+                  aspectRatio: '4/5',
+                  border: '2px solid #E8621A',
+                  outline: '2px solid #4ABFB0',
+                  outlineOffset: '4px',
+                }}
+              />
             </div>
 
-            <div className="flex flex-col items-center gap-3 mt-4">
-              <a href={DISCOVERY_URL} target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-se-orange text-white border-2 border-se-orange rounded-full px-10 py-[14px] text-[16px] font-medium font-body transition-all duration-200 hover:bg-se-orange-h hover:border-se-orange-h hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(232,98,26,0.5)] active:translate-y-0">
-                Réserver un appel découverte — 45 min
-              </a>
-              <span className="font-body text-[13px] text-se-navy/50">
-                Sans engagement · 100% en visio · Toute la France
-              </span>
-            </div>
+            {/* Colonne droite — Texte */}
+            <div className="flex flex-col gap-5 pb-10 order-1 lg:order-2">
+              <p className="uppercase text-se-teal font-display"
+                style={{ fontSize: '11px', fontWeight: 900, letterSpacing: '0.12em' }}>
+                AGENCE DE MARKETING · SÈTE (HÉRAULT, 34) · FRANCE ENTIÈRE EN VISIO
+              </p>
 
+              <h1 className="font-display font-bold leading-[1.2]"
+                style={{ fontSize: 'clamp(30px, 3.5vw, 48px)' }}>
+                <span className="text-se-navy block">Automatisez les tâches</span>
+                <span className="text-se-navy block">qui vous volent du temps.</span>
+                <span className="text-se-orange block mt-1">Accélérez votre croissance.</span>
+              </h1>
+
+              <p className="font-body text-[17px] leading-[1.7] text-se-navy/70">
+                Sales Experienz accompagne les dirigeants de{' '}
+                <strong className="text-se-navy font-semibold">PME et TPE</strong>{' '}
+                partout en France : on commence par un{' '}
+                <strong className="text-se-navy font-semibold">diagnostic stratégique</strong>,
+                puis on automatise ce qui bloque vraiment votre croissance — sur mesure, avec n8n et l&apos;IA.{' '}
+                <strong className="text-se-navy font-semibold">Basés à Sète (Hérault)</strong>,
+                100% en visio.
+              </p>
+
+              {/* Badges — grille 2×2 sous le texte */}
+              <div className="grid grid-cols-2 gap-2 mt-1">
+                {[
+                  '✓ Diagnostic avant toute action',
+                  '✓ Automatisation 100% sur mesure',
+                  '✓ Basé à Sète — France entière en visio',
+                  '✓ Consultant depuis 2003',
+                ].map((badge) => (
+                  <span key={badge}
+                    className="font-body text-[12px] font-medium text-se-navy text-center leading-tight"
+                    style={{
+                      background: 'rgba(245,245,245,0.95)',
+                      border: '0.5px solid rgba(0,0,0,0.08)',
+                      borderRadius: '100px',
+                      padding: '6px 10px',
+                    }}>
+                    {badge}
+                  </span>
+                ))}
+              </div>
+
+            </div>
+          </div>
+
+          {/* ── CTA centré en dessous de la grille ── */}
+          <div className="flex flex-col items-center gap-3 pt-12 pb-16">
+            <a href={DISCOVERY_URL} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-se-orange text-white border-2 border-se-orange rounded-full px-10 py-[14px] text-[16px] font-medium font-body transition-all duration-200 hover:bg-se-orange-h hover:border-se-orange-h hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(232,98,26,0.5)] active:translate-y-0">
+              Réserver un appel découverte — 45 min
+            </a>
+            <span className="font-body text-[13px] text-se-navy/50">
+              Sans engagement · 100% en visio · Toute la France
+            </span>
+          </div>
+
+        {/* ── Diaporama logos — bordure bas du hero ── */}
+        <div className="relative overflow-hidden py-6 border-t border-se-navy/[0.07]"
+          style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
+          <div className="flex gap-12 items-center"
+            style={{ animation: 'marquee 28s linear infinite', width: 'max-content' }}>
+            {[
+              { src: '/claude_logo.jpeg',        alt: 'Claude AI' },
+              { src: '/logo-n8n.png',            alt: 'n8n' },
+              { src: '/Chat GPT.png',            alt: 'ChatGPT' },
+              { src: '/Google_Gemini_logo.png',  alt: 'Gemini' },
+              { src: '/Perplexity.png',          alt: 'Perplexity' },
+              { src: '/Vercel.png',              alt: 'Vercel' },
+              { src: '/Next.js.png',             alt: 'Next.js' },
+              { src: '/Remotion.png',            alt: 'Remotion' },
+              { src: '/Wordpress.png',           alt: 'WordPress' },
+              { src: '/Brevo.png',               alt: 'Brevo' },
+              { src: '/Data for SEO.png',        alt: 'DataForSEO' },
+              { src: '/Unipile.png',             alt: 'Unipile' },
+              { src: '/Apify.png',               alt: 'Apify' },
+              { src: '/claude_logo.jpeg',        alt: 'Claude AI 2' },
+              { src: '/logo-n8n.png',            alt: 'n8n 2' },
+              { src: '/Chat GPT.png',            alt: 'ChatGPT 2' },
+              { src: '/Google_Gemini_logo.png',  alt: 'Gemini 2' },
+              { src: '/Perplexity.png',          alt: 'Perplexity 2' },
+              { src: '/Vercel.png',              alt: 'Vercel 2' },
+              { src: '/Next.js.png',             alt: 'Next.js 2' },
+              { src: '/Remotion.png',            alt: 'Remotion 2' },
+              { src: '/Wordpress.png',           alt: 'WordPress 2' },
+              { src: '/Brevo.png',               alt: 'Brevo 2' },
+              { src: '/Data for SEO.png',        alt: 'DataForSEO 2' },
+              { src: '/Unipile.png',             alt: 'Unipile 2' },
+              { src: '/Apify.png',               alt: 'Apify 2' },
+            ].map((logo) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={logo.alt} src={logo.src} alt={logo.alt}
+                style={{ height: '32px', width: 'auto', objectFit: 'contain', flexShrink: 0, opacity: 0.75 }} />
+            ))}
           </div>
         </div>
+
+        <style>{`
+          @keyframes marquee {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}</style>
+
+      </div>
       </section>
 
       {/* ── 2. CHIFFRES ────────────────────────────────────────────────────── */}
@@ -251,6 +334,7 @@ export default function PageGBP() {
           </FadeUp>
 
         </div>
+
       </section>
 
       {/* ── 4. PROCESS ─────────────────────────────────────────────────────── */}
@@ -419,10 +503,18 @@ export default function PageGBP() {
         </div>
       </section>
 
+      {/* ── 7. À PROPOS (local-first) ───────────────────────────────────────── */}
+      <AboutSete />
+
+      {/* ── 8. FAQ ──────────────────────────────────────────────────────────── */}
+      <FaqSete />
+
       <Footer />
 
       <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
+      <script type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLdSete) }} />
     </main>
   )
 }

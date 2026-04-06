@@ -99,6 +99,54 @@ export default function Hero() {
         </motion.div>
 
       </div>
+
+      {/* ── Diaporama logos — bordure bas du hero ── */}
+      <div className="relative overflow-hidden py-6 border-t border-se-navy/[0.07]"
+        style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
+        <div className="flex gap-12 items-center"
+          style={{ animation: 'marquee 28s linear infinite', width: 'max-content' }}>
+          {[
+            { src: '/claude_logo.jpeg',        alt: 'Claude AI' },
+            { src: '/logo-n8n.png',            alt: 'n8n' },
+            { src: '/Chat GPT.png',            alt: 'ChatGPT' },
+            { src: '/Google_Gemini_logo.png',  alt: 'Gemini' },
+            { src: '/Perplexity.png',          alt: 'Perplexity' },
+            { src: '/Vercel.png',              alt: 'Vercel' },
+            { src: '/Next.js.png',             alt: 'Next.js' },
+            { src: '/Remotion.png',            alt: 'Remotion' },
+            { src: '/Wordpress.png',           alt: 'WordPress' },
+            { src: '/Brevo.png',               alt: 'Brevo' },
+            { src: '/Data for SEO.png',        alt: 'DataForSEO' },
+            { src: '/Unipile.png',             alt: 'Unipile' },
+            { src: '/Apify.png',               alt: 'Apify' },
+            { src: '/claude_logo.jpeg',        alt: 'Claude AI 2' },
+            { src: '/logo-n8n.png',            alt: 'n8n 2' },
+            { src: '/Chat GPT.png',            alt: 'ChatGPT 2' },
+            { src: '/Google_Gemini_logo.png',  alt: 'Gemini 2' },
+            { src: '/Perplexity.png',          alt: 'Perplexity 2' },
+            { src: '/Vercel.png',              alt: 'Vercel 2' },
+            { src: '/Next.js.png',             alt: 'Next.js 2' },
+            { src: '/Remotion.png',            alt: 'Remotion 2' },
+            { src: '/Wordpress.png',           alt: 'WordPress 2' },
+            { src: '/Brevo.png',               alt: 'Brevo 2' },
+            { src: '/Data for SEO.png',        alt: 'DataForSEO 2' },
+            { src: '/Unipile.png',             alt: 'Unipile 2' },
+            { src: '/Apify.png',               alt: 'Apify 2' },
+          ].map((logo) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={logo.alt} src={logo.src} alt={logo.alt}
+              style={{ height: '32px', width: 'auto', objectFit: 'contain', flexShrink: 0, opacity: 0.75 }} />
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
+
     </section>
   )
 }

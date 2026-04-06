@@ -14,22 +14,12 @@ export default function About() {
 
           {/* ── Colonne gauche — Photo ── */}
           <FadeUp>
-            <div
-              className="w-full max-w-[300px] mx-auto rounded-2xl overflow-hidden pt-4 px-4 pb-0"
-              style={{
-                background: '#D1D5DB',
-                border: '1.5px solid rgba(74, 191, 176, 0.35)',
-                boxShadow: '0 8px 32px rgba(13,27,62,0.10)',
-              }}
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/portrait.png"
-                alt="Laurent Guyonvarch"
-                className="w-full block object-cover object-top rounded-t-xl"
-                style={{ maxHeight: '380px' }}
-              />
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/Modele-photo-Laurent.jpg"
+              alt="Laurent Guyonvarch"
+              className="w-full max-w-[340px] mx-auto block object-cover rounded-2xl"
+            />
           </FadeUp>
 
           {/* ── Colonne droite — Texte ── */}
