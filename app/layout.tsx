@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Urbanist, Plus_Jakarta_Sans, Caveat } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -147,7 +148,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
