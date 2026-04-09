@@ -309,11 +309,44 @@ export default function DeepSignalPage() {
 
               {/* Sous-titre */}
               <FadeUp delay={0.1}>
-                <p className="font-body text-[17px] leading-[1.75] text-white/70 mb-8">
+                <p className="font-body text-[17px] leading-[1.75] text-white/70 mb-6">
                   Deep Signal détecte en temps réel les prospects qui ont levé la main
                   et leur envoie automatiquement le bon message —{' '}
-                  <strong className="text-white font-medium">sans vous.</strong>
+                  <strong className="text-white font-medium">comme si c&apos;était vous.</strong>
                 </p>
+              </FadeUp>
+
+              {/* Points clés */}
+              <FadeUp delay={0.12}>
+                <ul className="flex flex-col gap-2.5 mb-5">
+                  {[
+                    { icon: '⚡', text: 'Détection automatique des signaux d\'achat' },
+                    { icon: '✓',  text: 'Séquences multicanal (email + LinkedIn)' },
+                    { icon: '⏱', text: 'Déployé en 15 jours, opérationnel J+1' },
+                    { icon: '🔒', text: 'Vos workflows vous appartiennent à 100%' },
+                  ].map((pt) => (
+                    <li key={pt.text} className="flex items-center gap-3">
+                      <span className="text-se-teal text-[15px] w-5 flex-shrink-0 text-center">{pt.icon}</span>
+                      <span className="font-body text-[15px] text-white/80">{pt.text}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Point mis en avant */}
+                <div className="rounded-xl px-5 py-4 mb-6"
+                  style={{ background: 'rgba(74,191,176,0.08)', border: '1px solid rgba(74,191,176,0.22)' }}>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[18px] flex-shrink-0 mt-0.5">✉️</span>
+                    <div>
+                      <p className="font-body text-[15px] font-medium text-white">
+                        Messages personnalisés à chaque contact envoyés automatiquement
+                      </p>
+                      <p className="font-body text-[13px] text-se-teal mt-1">
+                        Le bon argument, au bon prospect, au bon moment
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </FadeUp>
 
               {/* Stats — compteurs animés */}
@@ -365,15 +398,15 @@ export default function DeepSignalPage() {
                   </span>
                 </div>
 
-                {/* iFrame Brevo — clip description text, show only calendar */}
-                <div id="agenda" style={{ height: '420px', overflow: 'hidden' }}>
+                {/* iFrame Brevo */}
+                <div id="agenda">
                   <iframe
                     width="100%"
-                    height="1100"
+                    height="720"
                     src="https://meet.brevo.com/laurent-guyonvarch/borderless?l=rendez-vous-decouverte"
                     title="Réserver un rendez-vous découverte — SalesExperienz Deep Signal"
                     loading="lazy"
-                    style={{ display: 'block', background: '#fff', border: 'none', marginTop: '-560px' }}
+                    style={{ display: 'block', background: '#fff', border: 'none' }}
                   />
                 </div>
 
@@ -397,6 +430,54 @@ export default function DeepSignalPage() {
 
           </div>
         </div>
+
+      {/* ── Ruban logos ── */}
+      <div className="relative overflow-hidden py-6 border-t border-white/[0.07]"
+        style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
+        <div className="flex gap-12 items-center"
+          style={{ animation: 'marquee 28s linear infinite', width: 'max-content' }}>
+          {[
+            { src: '/claude_logo.jpeg',       alt: 'Claude AI' },
+            { src: '/logo-n8n.png',           alt: 'n8n' },
+            { src: '/Chat GPT.png',           alt: 'ChatGPT' },
+            { src: '/Google_Gemini_logo.png', alt: 'Gemini' },
+            { src: '/Perplexity.png',         alt: 'Perplexity' },
+            { src: '/Vercel.png',             alt: 'Vercel' },
+            { src: '/Next.js.png',            alt: 'Next.js' },
+            { src: '/Remotion.png',           alt: 'Remotion' },
+            { src: '/Wordpress.png',          alt: 'WordPress' },
+            { src: '/Brevo.png',              alt: 'Brevo' },
+            { src: '/Data for SEO.png',       alt: 'DataForSEO' },
+            { src: '/Unipile.png',            alt: 'Unipile' },
+            { src: '/Apify.png',              alt: 'Apify' },
+            { src: '/claude_logo.jpeg',       alt: 'Claude AI 2' },
+            { src: '/logo-n8n.png',           alt: 'n8n 2' },
+            { src: '/Chat GPT.png',           alt: 'ChatGPT 2' },
+            { src: '/Google_Gemini_logo.png', alt: 'Gemini 2' },
+            { src: '/Perplexity.png',         alt: 'Perplexity 2' },
+            { src: '/Vercel.png',             alt: 'Vercel 2' },
+            { src: '/Next.js.png',            alt: 'Next.js 2' },
+            { src: '/Remotion.png',           alt: 'Remotion 2' },
+            { src: '/Wordpress.png',          alt: 'WordPress 2' },
+            { src: '/Brevo.png',              alt: 'Brevo 2' },
+            { src: '/Data for SEO.png',       alt: 'DataForSEO 2' },
+            { src: '/Unipile.png',            alt: 'Unipile 2' },
+            { src: '/Apify.png',              alt: 'Apify 2' },
+          ].map((logo) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={logo.alt} src={logo.src} alt={logo.alt}
+              style={{ height: '32px', width: 'auto', objectFit: 'contain', flexShrink: 0, opacity: 0.75 }} />
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
+
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
@@ -498,6 +579,7 @@ export default function DeepSignalPage() {
           </FadeUp>
 
         </div>
+
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════

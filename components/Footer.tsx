@@ -14,14 +14,18 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6">
-            <a href="/services/deepsignal" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200">
+          <div className="flex flex-col gap-2">
+            <p className="font-body text-[14px] font-bold text-se-muted">Services</p>
+            <a href="/services/deepsignal" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
               Prospection automatisée
             </a>
-            <a href="https://blog.salesexperienz.fr/articles/" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200">
+            <a href="/services/seo-geo-machine" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
+              Stratégie site web SEO-GEO
+            </a>
+            <a href="https://blog.salesexperienz.fr/articles/" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200 mt-1">
               Blog
             </a>
-            <a href="#" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200">
+            <a href="#" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200">
               Contact
             </a>
           </div>

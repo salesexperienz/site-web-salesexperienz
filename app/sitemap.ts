@@ -22,7 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //   priority: 0.9,
     // },
     {
-      url: 'https://salesexperienz.fr/services/deepsignal',
+      url: 'https://www.salesexperienz.fr/services/deepsignal',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://www.salesexperienz.fr/services/seo-geo-machine',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
