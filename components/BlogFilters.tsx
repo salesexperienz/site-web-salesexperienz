@@ -15,10 +15,10 @@ export default function BlogFilters({ categories }: BlogFiltersProps) {
     <div className="flex flex-wrap gap-2 mb-12">
       <Link
         href="/blog"
-        className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+        className={`px-4 py-2 rounded-full text-[13px] font-semibold transition-all duration-200 ${
           !active
             ? 'bg-se-orange text-white shadow-sm'
-            : 'bg-white text-se-navy/60 border border-gray-200 hover:border-se-orange/40 hover:text-se-navy'
+            : 'bg-white text-se-navy border border-gray-300 hover:border-se-orange hover:text-se-orange'
         }`}
       >
         Tous les articles
@@ -27,10 +27,10 @@ export default function BlogFilters({ categories }: BlogFiltersProps) {
         <Link
           key={cat}
           href={`/blog?category=${encodeURIComponent(cat)}`}
-          className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+          className={`px-4 py-2 rounded-full text-[13px] font-semibold transition-all duration-200 ${
             active === cat
               ? 'bg-se-orange text-white shadow-sm'
-              : 'bg-white text-se-navy/60 border border-gray-200 hover:border-se-orange/40 hover:text-se-navy'
+              : 'bg-white text-se-navy border border-gray-300 hover:border-se-orange hover:text-se-orange'
           }`}
         >
           {cat}

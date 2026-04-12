@@ -159,16 +159,23 @@ const DEMO_POSTS: Post[] = [
   },
 ]
 
-// ─── Couleurs par catégorie ────────────────────────────────────────────────────
-const CATEGORY_COLORS: Record<string, string> = {
-  'Automatisation': 'bg-se-teal text-white',
-  'Prospection':    'bg-se-orange text-white',
-  'SEO & IA':       'bg-blue-600 text-white',
-  'IA':             'bg-violet-600 text-white',
-  'Stratégie':      'bg-se-navy text-white',
-}
+// ─── Couleurs pastels par catégorie (déterministe par nom) ───────────────────
+const CAT_PALETTE = [
+  'bg-teal-100 text-teal-700',
+  'bg-orange-100 text-orange-700',
+  'bg-blue-100 text-blue-700',
+  'bg-violet-100 text-violet-700',
+  'bg-pink-100 text-pink-700',
+  'bg-amber-100 text-amber-700',
+  'bg-emerald-100 text-emerald-700',
+  'bg-indigo-100 text-indigo-700',
+  'bg-rose-100 text-rose-700',
+  'bg-cyan-100 text-cyan-700',
+]
 function tagClass(cat: string) {
-  return CATEGORY_COLORS[cat] ?? 'bg-gray-700 text-white'
+  let h = 0
+  for (let i = 0; i < cat.length; i++) h = ((h * 31) + cat.charCodeAt(i)) >>> 0
+  return CAT_PALETTE[h % CAT_PALETTE.length]
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────

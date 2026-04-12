@@ -22,7 +22,7 @@ export default function Footer() {
             <a href="/services/seo-geo-machine" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
               Stratégie site web SEO-GEO
             </a>
-            <a href="https://blog.salesexperienz.fr/articles/" target="_blank" rel="noopener noreferrer" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200 mt-1">
+            <a href="/blog" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200 mt-1">
               Blog
             </a>
             <a href="#" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200">

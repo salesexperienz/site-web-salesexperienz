@@ -7,6 +7,7 @@ const navLinks = [
   { label: 'Pourquoi automatiser', anchor: '#why' },
   { label: 'Services',             anchor: '#leviers' },
   { label: 'Comment ça marche',   anchor: '#how' },
+  { label: 'Blog',                 href: '/blog' },
   { label: 'À propos',            anchor: '#about' },
 ]
 
@@ -17,8 +18,10 @@ export default function Navbar() {
 
   // Sur la homepage, les liens sont des ancres directes
   // Sur les autres pages, on redirige vers la homepage + ancre
+  // Les liens avec href fixe (ex: /blog) sont toujours directs
   const isHome = pathname === '/'
-  const getHref = (anchor: string) => isHome ? anchor : `/${anchor}`
+  const getLinkHref = (link: { anchor?: string; href?: string }) =>
+    link.href ?? (isHome ? link.anchor! : `/${link.anchor!}`)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50)
@@ -53,8 +56,8 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
-                key={link.anchor}
-                href={getHref(link.anchor)}
+                key={link.label}
+                href={getLinkHref(link)}
                 className={`font-body text-[14px] px-3.5 py-1.5 rounded-full transition-all duration-200 hover:bg-black/[0.06] ${
                   scrolled
                     ? 'text-white/80 hover:text-white hover:bg-white/[0.08]'
@@ -102,8 +105,8 @@ export default function Navbar() {
         <div className="flex flex-col px-5 py-4 gap-3">
           {navLinks.map((link) => (
             <a
-              key={link.anchor}
-              href={getHref(link.anchor)}
+              key={link.label}
+              href={getLinkHref(link)}
               onClick={() => setMobileOpen(false)}
               className="font-body text-[15px] text-white/70 hover:text-white transition-colors duration-200 py-1"
             >
