@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar          from '@/components/Navbar'
 import Footer          from '@/components/Footer'
+import SocialBlock     from '@/components/SocialBlock'
 import FadeUp          from '@/components/FadeUp'
 import AboutSete       from '@/components/AboutSete'
 import FaqSete         from '@/components/FaqSete'
@@ -524,6 +525,7 @@ export default function PageGBP() {
       {/* ── 8. FAQ ──────────────────────────────────────────────────────────── */}
       <FaqSete />
 
+      <SocialBlock />
       <Footer />
 
       <script type="application/ld+json"

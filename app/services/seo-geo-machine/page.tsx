@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import SocialBlock from '@/components/SocialBlock'
 import FadeUp from '@/components/FadeUp'
 import DeepSignalAccordion from '@/components/DeepSignalAccordion'
 import About from '@/components/About'
@@ -1533,6 +1534,7 @@ export default function SeoGeoMachinePage() {
         </div>
       </section>
 
+      <SocialBlock />
       <Footer />
 
       {/* JSON-LD Schemas */}

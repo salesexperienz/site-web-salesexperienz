@@ -15,6 +15,19 @@ export const postType = defineType({
     defineField({ name: 'publishedAt', title: 'Date de publication', type: 'datetime' }),
     defineField({ name: 'excerpt', title: 'Résumé', type: 'text', rows: 3 }),
     defineField({ name: 'body', title: 'Contenu', type: 'blockContent' }),
+    defineField({
+      name: 'badge',
+      title: 'Badge mis en avant',
+      type: 'string',
+      options: {
+        list: [
+          { title: '⭐ Le plus lu',      value: 'popular' },
+          { title: '🔁 Le plus partagé', value: 'shared'  },
+        ],
+        layout: 'radio',
+      },
+      description: 'Optionnel — affiche un badge sur la carte dans la page Blog.',
+    }),
     defineField({ name: 'seoTitle', title: 'Titre SEO', type: 'string' }),
     defineField({ name: 'seoDescription', title: 'Description SEO', type: 'text', rows: 2 }),
   ],

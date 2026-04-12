@@ -9,6 +9,7 @@ import About         from '@/components/About'
 import FAQ           from '@/components/FAQ'
 import FinalCTA      from '@/components/FinalCTA'
 import Footer        from '@/components/Footer'
+import SocialBlock   from '@/components/SocialBlock'
 import { faqJsonLd } from '@/lib/schema-faq'
 import { getSiteSettings } from '@/lib/sanity'
 
@@ -27,6 +28,7 @@ export default async function Home() {
       <About />
       <FAQ settings={settings} />
       <FinalCTA />
+      <SocialBlock />
       <Footer />
 
       {/* FAQPage Schema — GEO : cite par ChatGPT, Perplexity, Claude, Gemini */}

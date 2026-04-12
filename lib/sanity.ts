@@ -20,9 +20,10 @@ export async function getSiteSettings() {
 export async function getPosts() {
   return client.fetch(`
     *[_type == "post"] | order(publishedAt desc) {
-      _id, title, slug, excerpt, mainImage, publishedAt,
+      _id, title, slug, excerpt, mainImage, publishedAt, badge,
       "categories": categories[]->title,
-      "author": author->name
+      "author": author->name,
+      "readingTime": round(length(pt::text(body)) / 5 / 200)
     }
   `)
 }

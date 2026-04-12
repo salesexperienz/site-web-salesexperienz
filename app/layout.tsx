@@ -95,7 +95,7 @@ const schemaOrg = {
   ],
   sameAs: [
     'https://www.linkedin.com/in/laurentguyonvarch/',
-    'https://www.youtube.com/channel/UCxCTJ2Nbt36kJ0NpsGTeP1A',
+    'https://www.youtube.com/@salesexperienz',
   ],
   priceRange: '€€',
   image: 'https://www.salesexperienz.fr/portrait.png',
