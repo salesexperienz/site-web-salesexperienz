@@ -15,15 +15,18 @@ interface Post {
   mainImage?: any
   publishedAt?: string
   categories?: string[]
+  tags?: string[]
   author?: string
   readingTime?: number
   badge?: 'popular' | 'shared'
+  featured?: boolean
 }
 
 // ─── Articles de démo ─────────────────────────────────────────────────────────
 const DEMO_POSTS: Post[] = [
   {
     _id: 'demo-1',
+    featured: true,
     title: "Comment automatiser sa prospection B2B avec n8n en 2025",
     slug: { current: '#' },
     excerpt: "Découvrez comment construire un système de prospection entièrement automatisé : signaux LinkedIn, cold email et nurturing en flux continu, sans toucher à une ligne de code.",
@@ -366,11 +369,11 @@ export default async function BlogPage({
     ? posts.filter((p) => p.categories?.includes(category))
     : posts
 
-  // Featured = premier article, grille = 12 suivants
-  const [featured, ...allRest] = filtered
-  const gridPosts = allRest.slice(0, 12)
+  // Featured = article avec featured=true, sinon premier article
+  const featured = filtered.find(p => p.featured) ?? filtered[0]
+  const gridPosts = filtered.filter(p => p._id !== featured?._id).slice(0, 12)
   const totalCount = filtered.length
-  const shownCount = 1 + gridPosts.length
+  const shownCount = (featured ? 1 : 0) + gridPosts.length
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { createClient } from 'next-sanity'
-import imageUrlBuilder from '@sanity/image-url'
+import { createImageUrlBuilder } from '@sanity/image-url'
 
 export const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '0wgbhtrw',
@@ -8,7 +8,7 @@ export const client = createClient({
   useCdn: true,
 })
 
-const builder = imageUrlBuilder(client)
+const builder = createImageUrlBuilder(client)
 export const urlFor = (source: any) => builder.image(source)
 
 // Requête pour le contenu du site
@@ -19,8 +19,9 @@ export async function getSiteSettings() {
 // Requête pour tous les articles
 export async function getPosts() {
   return client.fetch(`
-    *[_type == "post"] | order(publishedAt desc) {
-      _id, title, slug, excerpt, mainImage, publishedAt, badge,
+    *[_type == "post"] | order(featured desc, publishedAt desc) {
+      _id, title, slug, excerpt, mainImage, publishedAt, badge, featured,
+      "tags": tags,
       "categories": categories[]->title,
       "author": author->name,
       "readingTime": round(length(pt::text(body)) / 5 / 200)
@@ -34,8 +35,10 @@ export async function getPost(slug: string) {
     *[_type == "post" && slug.current == $slug][0] {
       _id, title, slug, excerpt, mainImage, publishedAt, body,
       seoTitle, seoDescription,
+      "tags": tags,
       "categories": categories[]->title,
-      "author": author->name
+      "author": author->name,
+      "readingTime": round(length(pt::text(body)) / 5 / 200)
     }
   `, { slug })
 }

@@ -58,6 +58,17 @@ export const postType = defineType({
       },
     }),
     defineField({
+      name: 'tags',
+      title: 'Mots-clés / Tags',
+      type: 'array',
+      of: [defineArrayMember({ type: 'string' })],
+      options: {
+        layout: 'tags',
+        canvasApp: { purpose: 'Tags thématiques courts (1-2 mots). Exemples : n8n, LinkedIn, cold email, IA générative. Affichés visuellement en couleur dans le hero de l\'article.' },
+      },
+      description: 'Tags affichés dans le hero de l\'article. Ex : n8n, LinkedIn, IA, prospection',
+    }),
+    defineField({
       name: 'body',
       title: 'Contenu',
       type: 'blockContent',
@@ -78,6 +89,14 @@ export const postType = defineType({
         canvasApp: { exclude: true },
       },
       description: 'Optionnel — affiche un badge sur la carte dans la page Blog.',
+    }),
+    defineField({
+      name: 'featured',
+      title: 'Article à la une',
+      type: 'boolean',
+      description: 'Cochez pour afficher cet article en position "À la une" sur la page Blog. Un seul article à la fois recommandé.',
+      initialValue: false,
+      options: { canvasApp: { exclude: true } },
     }),
     defineField({
       name: 'seoTitle',

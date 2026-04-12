@@ -154,6 +154,27 @@ function tagClass(cat: string) {
   return CATEGORY_COLORS[cat] ?? 'bg-gray-700 text-white'
 }
 
+// ─── Couleurs tags (palette diversifiée, déterministe par nom) ────────────────
+const TAG_PALETTE = [
+  'bg-pink-500 text-white',
+  'bg-amber-500 text-white',
+  'bg-emerald-500 text-white',
+  'bg-sky-500 text-white',
+  'bg-purple-500 text-white',
+  'bg-rose-400 text-white',
+  'bg-indigo-500 text-white',
+  'bg-lime-600 text-white',
+  'bg-fuchsia-500 text-white',
+  'bg-cyan-600 text-white',
+  'bg-teal-600 text-white',
+  'bg-orange-500 text-white',
+]
+function tagColor(name: string): string {
+  let h = 0
+  for (let i = 0; i < name.length; i++) h = ((h * 31) + name.charCodeAt(i)) >>> 0
+  return TAG_PALETTE[h % TAG_PALETTE.length]
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default async function PostPage({ params }: Props) {
   const { slug } = await params
@@ -183,12 +204,17 @@ export default async function PostPage({ params }: Props) {
           <div className="flex flex-col lg:flex-row gap-10 items-start">
             {/* Texte */}
             <div className="flex-1 min-w-0">
-              {/* Tags */}
-              {post.categories && post.categories.length > 0 && (
+              {/* Catégories + Tags */}
+              {((post.categories && post.categories.length > 0) || (post.tags && post.tags.length > 0)) && (
                 <div className="flex flex-wrap gap-2 mb-5">
-                  {post.categories.map((cat: string) => (
-                    <span key={cat} className={`text-[11px] font-bold px-3 py-1 rounded-full ${tagClass(cat)}`}>
+                  {post.categories?.map((cat: string) => (
+                    <span key={`cat-${cat}`} className={`text-[11px] font-bold px-3 py-1 rounded-full ${tagClass(cat)}`}>
                       {cat}
+                    </span>
+                  ))}
+                  {post.tags?.map((tag: string) => (
+                    <span key={`tag-${tag}`} className={`text-[11px] font-semibold px-3 py-1 rounded-full ${tagColor(tag)}`}>
+                      {tag}
                     </span>
                   ))}
                 </div>
