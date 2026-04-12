@@ -10,19 +10,22 @@ import FAQ           from '@/components/FAQ'
 import FinalCTA      from '@/components/FinalCTA'
 import Footer        from '@/components/Footer'
 import { faqJsonLd } from '@/lib/schema-faq'
+import { getSiteSettings } from '@/lib/sanity'
 
-export default function Home() {
+export default async function Home() {
+  const settings = await getSiteSettings()
+
   return (
     <main>
       <Navbar />
-      <Hero />
+      <Hero settings={settings} />
       <WhyAutomate />
       <OpportunityMap />
       <WhatToAutomate />
       <HowItWorks />
-      <Services />
+      <Services settings={settings} />
       <About />
-      <FAQ />
+      <FAQ settings={settings} />
       <FinalCTA />
       <Footer />
 

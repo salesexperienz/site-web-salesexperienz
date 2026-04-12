@@ -2,7 +2,26 @@
 import FadeUp from './FadeUp'
 import { DISCOVERY_URL } from '@/lib/constants'
 
-const services = [
+interface ServiceItem {
+  icon?: string
+  badge?: string | null
+  title?: string
+  subtitle?: string
+  description?: string
+  points?: string[]
+  featured?: boolean
+  link?: string
+}
+
+interface ServicesProps {
+  settings?: {
+    servicesSectionTitle?: string
+    servicesSectionSubtitle?: string
+    services?: ServiceItem[]
+  }
+}
+
+const defaultServices = [
   {
     icon: '✦',
     badge: null,
@@ -52,7 +71,14 @@ const services = [
   },
 ]
 
-export default function Services() {
+export default function Services({ settings }: ServicesProps) {
+  const services = (settings?.services && settings.services.length > 0)
+    ? settings.services
+    : defaultServices
+
+  const sectionTitle    = settings?.servicesSectionTitle    || 'Nos écosystèmes les plus demandés'
+  const sectionSubtitle = settings?.servicesSectionSubtitle || 'Des systèmes prêts à déployer, construits et testés en production. Chacun est configuré selon votre contexte avant livraison.'
+
   return (
     <section id="services" className="py-[80px] lg:py-[120px]" style={{ background: 'rgb(234, 244, 236)' }}>
       <div className="max-w-container mx-auto px-6 lg:px-20">
@@ -63,12 +89,10 @@ export default function Services() {
             NOS OFFRES
           </p>
           <h2 className="font-display font-bold text-[28px] md:text-[42px] leading-[1.2] text-se-navy mb-4">
-            Nos écosystèmes les plus{' '}
-            <span className="text-se-orange">demandés</span>
+            {sectionTitle}
           </h2>
           <p className="font-body text-[17px] leading-[1.7] text-se-navy">
-            Des systèmes prêts à déployer, construits et testés en production.
-            Chacun est configuré selon votre contexte avant livraison.
+            {sectionSubtitle}
           </p>
         </FadeUp>
 
@@ -106,7 +130,7 @@ export default function Services() {
 
                 {/* Points */}
                 <ul className="flex flex-col gap-2 mb-7">
-                  {svc.points.map((pt) => (
+                  {(svc.points ?? []).map((pt) => (
                     <li key={pt} className="flex items-start gap-2">
                       <span className="text-se-teal text-[14px] mt-0.5 flex-shrink-0">✓</span>
                       <span className="font-body text-[14px] text-se-navy">{pt}</span>

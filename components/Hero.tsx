@@ -9,7 +9,28 @@ const fade = (delay: number) => ({
   transition: { duration: 0.7, delay, ease: [0.25, 0.1, 0.25, 1] },
 })
 
-export default function Hero() {
+interface HeroProps {
+  settings?: {
+    heroPreTitle?: string
+    heroTitleMain?: string
+    heroTitleAccent?: string
+    heroBadge?: string
+    heroSubtitle1?: string
+    heroSubtitle2?: string
+    heroCTA?: string
+    heroCTASub?: string
+  }
+}
+
+export default function Hero({ settings }: HeroProps) {
+  const preTitle   = settings?.heroPreTitle   || 'SALESEXPERIENZ · AUTOMATISATION IA'
+  const titleMain  = settings?.heroTitleMain  || 'Faites exploser votre croissance avec des'
+  const titleAccent= settings?.heroTitleAccent|| 'automatisations sur mesure'
+  const badge      = settings?.heroBadge      || 'AUTOMATISATION N8N ET IA'
+  const subtitle1  = settings?.heroSubtitle1  || 'La plupart des entreprises ont un goulot d\'étranglement qui plafonne leur chiffre d\'affaires. On commence par le trouver.'
+  const subtitle2  = settings?.heroSubtitle2  || 'Chaque heure passée sur des tâches répétitives est une heure que vous n\'avez pas consacrée à votre croissance.'
+  const ctaText    = settings?.heroCTA        || 'Je veux accélérer ma croissance'
+  const ctaSub     = settings?.heroCTASub     || 'Sans engagement — 45 minutes'
   return (
     <section className="relative bg-white overflow-hidden">
 
@@ -36,7 +57,7 @@ export default function Hero() {
               {...fade(0.1)}
               className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-teal"
             >
-              SALESEXPERIENZ · AUTOMATISATION IA
+              {preTitle}
             </motion.p>
 
             {/* H1 */}
@@ -44,8 +65,8 @@ export default function Hero() {
               {...fade(0.2)}
               className="font-display font-extrabold text-[28px] md:text-[44px] leading-[1.15] text-se-navy"
             >
-              Faites exploser votre croissance avec des{' '}
-              <span className="text-se-orange">automatisations <span className="underline decoration-2 underline-offset-4">sur mesure</span></span>
+              {titleMain}{' '}
+              <span className="text-se-orange"><span className="underline decoration-2 underline-offset-4">{titleAccent}</span></span>
             </motion.h1>
 
             {/* Badge tag */}
@@ -53,20 +74,17 @@ export default function Hero() {
               {...fade(0.3)}
               className="font-body text-[11px] font-semibold uppercase tracking-[0.25em] text-se-navy/50"
             >
-              AUTOMATISATION N8N ET IA
+              {badge}
             </motion.p>
 
             {/* Sous-titre 1 */}
             <motion.p {...fade(0.4)} className="font-body text-[17px] leading-[1.7] text-se-navy mt-1">
-              La plupart des entreprises{' '}
-              <strong className="font-extrabold text-se-navy">ont un goulot d&apos;étranglement qui plafonne leur chiffre d&apos;affaires</strong>.{' '}
-              On commence par le trouver.
+              {subtitle1}
             </motion.p>
 
             {/* Sous-titre 2 */}
             <motion.p {...fade(0.45)} className="font-body text-[15px] leading-[1.7] text-se-navy">
-              Chaque heure passée sur des tâches répétitives est une heure
-              que vous n&apos;avez pas consacrée à votre croissance.
+              {subtitle2}
             </motion.p>
 
           </div>
@@ -91,10 +109,10 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-se-orange text-white border-2 border-se-orange rounded-full px-10 py-[14px] text-[16px] font-medium font-body transition-all duration-200 hover:bg-se-orange-h hover:border-se-orange-h hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(232,98,26,0.5)] active:translate-y-0"
           >
-            Je veux accélérer ma croissance
+            {ctaText}
           </a>
           <span className="font-body text-[13px] text-se-navy/50">
-            Sans engagement — 45 minutes
+            {ctaSub}
           </span>
         </motion.div>
 

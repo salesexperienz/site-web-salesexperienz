@@ -3,7 +3,14 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import FadeUp from './FadeUp'
 
-const faqs = [
+interface FAQProps {
+  settings?: {
+    faqSectionTitle?: string
+    faq?: { question: string; answer: string }[]
+  }
+}
+
+const defaultFaqs = [
   {
     q: 'Dois-je savoir coder ou connaître n8n pour travailler avec vous ?',
     a: "Non. Une fois installé et configuré, aucune compétence technique n'est requise. Vous pilotez la stratégie, l'IA exécute. Une formation incluse vous rend autonome en 1h30.",
@@ -34,8 +41,14 @@ const faqs = [
   },
 ]
 
-export default function FAQ() {
+export default function FAQ({ settings }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number>(0)
+
+  const faqs = (settings?.faq && settings.faq.length > 0)
+    ? settings.faq.map(f => ({ q: f.question, a: f.answer }))
+    : defaultFaqs
+
+  const sectionTitle = settings?.faqSectionTitle || 'Tout ce que vous voulez savoir avant de réserver un appel'
 
   return (
     <section className="bg-se-navy-alt py-[80px] lg:py-[120px]">
@@ -47,8 +60,7 @@ export default function FAQ() {
             VOS QUESTIONS
           </p>
           <h2 className="font-display font-bold text-[28px] md:text-[42px] leading-[1.2] text-white">
-            Tout ce que vous voulez savoir avant de{' '}
-            <span className="text-se-orange">réserver un appel</span>
+            {sectionTitle}
           </h2>
         </FadeUp>
 
