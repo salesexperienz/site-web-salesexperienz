@@ -1,5 +1,6 @@
 'use client'
 import FadeUp from './FadeUp'
+import N8nBackground from './N8nBackground'
 
 const largeCards = [
   {
@@ -53,8 +54,9 @@ const smallCards = [
 
 export default function WhatToAutomate() {
   return (
-    <section className="bg-se-navy-alt py-[80px] lg:py-[120px]">
-      <div className="max-w-container mx-auto px-6 lg:px-20">
+    <section id="leviers" className="relative bg-se-navy-alt py-[80px] lg:py-[120px]">
+      <N8nBackground />
+      <div className="relative z-10 max-w-container mx-auto px-6 lg:px-20">
 
         {/* Header */}
         <FadeUp className="mb-14 max-w-2xl">
@@ -89,7 +91,7 @@ export default function WhatToAutomate() {
                   {card.title}
                 </h3>
                 {/* Text */}
-                <p className="font-body text-[15px] leading-[1.7] text-se-navy/60">
+                <p className="font-body text-[15px] leading-[1.7] text-se-navy">
                   {card.text}
                 </p>
               </div>
@@ -111,7 +113,7 @@ export default function WhatToAutomate() {
                   {card.title}
                 </h3>
                 {/* Text */}
-                <p className="font-body text-[14px] leading-[1.6] text-se-navy/60">
+                <p className="font-body text-[14px] leading-[1.6] text-se-navy">
                   {card.text}
                 </p>
               </div>

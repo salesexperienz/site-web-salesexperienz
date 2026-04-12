@@ -5,7 +5,7 @@ import { DISCOVERY_URL } from '@/lib/constants'
 
 const navLinks = [
   { label: 'Pourquoi automatiser', anchor: '#why' },
-  { label: 'Services',             anchor: '#services' },
+  { label: 'Services',             anchor: '#leviers' },
   { label: 'Comment ça marche',   anchor: '#how' },
   { label: 'À propos',            anchor: '#about' },
 ]

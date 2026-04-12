@@ -385,9 +385,21 @@ export default function SeoGeoMachinePage() {
           </div>
         </div>
 
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
+
+      </section>
+
       {/* ── Ruban logos ── */}
-      <div className="relative overflow-hidden py-6 border-t border-white/[0.07]"
-        style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
+      <div className="relative overflow-hidden py-6 bg-white border-t border-se-navy/[0.07]">
+        <div className="absolute left-0 top-0 bottom-0 w-[6%] z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(to right, white, transparent)' }} />
+        <div className="absolute right-0 top-0 bottom-0 w-[6%] z-10 pointer-events-none"
+          style={{ background: 'linear-gradient(to left, white, transparent)' }} />
         <div className="flex gap-12 items-center"
           style={{ animation: 'marquee 28s linear infinite', width: 'max-content' }}>
           {[
@@ -424,15 +436,6 @@ export default function SeoGeoMachinePage() {
           ))}
         </div>
       </div>
-
-      <style>{`
-        @keyframes marquee {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
-
-      </section>
 
       {/* ══════════════════════════════════════════════════════════════════════
           SECTION 2 — POUR QUI ?

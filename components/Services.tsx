@@ -6,25 +6,26 @@ const services = [
   {
     icon: '✦',
     badge: null,
-    title: 'Auto-Blog SEO',
-    subtitle: 'Votre machine éditoriale SEO, automatisée',
+    title: 'SEO GEO Machine',
+    subtitle: 'Votre site web et votre contenu SEO, automatisés',
     description:
-      '3 workflows n8n qui couvrent l\'intégralité du cycle éditorial : détection d\'opportunités keywords, architecture Pillar-Cluster et publication automatisée à ~2€ par article.',
+      'Un système en 3 blocs : fondation (site web SEO-ready Next.js ou WordPress), présence locale (Google My Business optimisé et aligné) et machine à contenu (articles SEO publiés en automatique). Propriété totale, sans agence.',
     points: [
-      'De 30 à 365 articles/mois',
-      'DataForSEO + Claude AI + GPT-4o',
-      'Optimisation GEO pour ChatGPT et Perplexity',
-      'Vous pilotez la stratégie, l\'IA produit',
+      'Site web Next.js ou WordPress SEO-ready',
+      'Google My Business optimisé et aligné',
+      '50 à 150 articles SEO/mois automatisés',
+      'Propriété totale dès J+1',
     ],
     featured: false,
+    link: '/services/seo-geo-machine',
   },
   {
     icon: '◎',
     badge: 'Populaire',
-    title: 'DeepSignal',
+    title: 'Deep Signal',
     subtitle: 'L\'écosystème de prospection automatisée',
     description:
-      '4 modules interconnectés déclenchés par des signaux d\'intention réels : SEO, LinkedIn, Cold Email, Nurturing Brevo. Vous ne contactez que des prospects qui ont déjà levé la main.',
+      'Deep Signal détecte en temps réel les prospects qui ont levé la main et leur envoie automatiquement le bon message — comme si c\'était vous. Seuls les prospects chauds sont contactés.',
     points: [
       '3 à 15 RDV qualifiés/mois',
       'Signaux LinkedIn, Email, SEO, Brevo',
@@ -65,7 +66,7 @@ export default function Services() {
             Nos écosystèmes les plus{' '}
             <span className="text-se-orange">demandés</span>
           </h2>
-          <p className="font-body text-[17px] leading-[1.7] text-se-navy/60">
+          <p className="font-body text-[17px] leading-[1.7] text-se-navy">
             Des systèmes prêts à déployer, construits et testés en production.
             Chacun est configuré selon votre contexte avant livraison.
           </p>
@@ -96,10 +97,10 @@ export default function Services() {
 
                 {/* Title & subtitle */}
                 <h3 className="font-display font-bold text-[22px] text-se-navy mb-1">{svc.title}</h3>
-                <p className="font-body text-[15px] text-se-navy/60 mb-4">{svc.subtitle}</p>
+                <p className="font-body text-[15px] text-se-navy mb-4">{svc.subtitle}</p>
 
                 {/* Description */}
-                <p className="font-body text-[15px] leading-[1.7] text-se-navy/60 mb-5 flex-1">
+                <p className="font-body text-[15px] leading-[1.7] text-se-navy mb-5 flex-1">
                   {svc.description}
                 </p>
 

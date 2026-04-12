@@ -3,11 +3,9 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const IMAGES = [
-  { src: '/workflow-emailing.png',        alt: 'Workflow Emailing' },
-  { src: '/workflow-keyword-seo.png',     alt: 'Workflow SEO' },
-  { src: '/workflow-linkedin.png',        alt: 'Workflow LinkedIn' },
-  { src: '/workflow-publication.png',     alt: 'Workflow Publication' },
-  { src: '/workflow-strategie-seo.png',   alt: 'Workflow Stratégie' },
+  { src: '/Workflow articles.png',  alt: 'Workflow Articles SEO' },
+  { src: '/Workflow Email.png',     alt: 'Workflow Email' },
+  { src: '/Workflow SEO-GEO.png',   alt: 'Workflow SEO GEO' },
 ]
 
 // Positions : [front, middle, back]
@@ -60,7 +58,7 @@ export default function WorkflowStack() {
             }}
             transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
             style={{ zIndex: POS[stackPos].z, position: 'absolute', inset: 0 }}
-            className="rounded-2xl overflow-hidden shadow-2xl border border-se-navy/10"
+            className="rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.28)] border-2 border-white/70"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
