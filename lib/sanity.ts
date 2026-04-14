@@ -29,6 +29,17 @@ export async function getPosts() {
   `)
 }
 
+// Requête légère pour le sitemap (slug + dates uniquement)
+export async function getPostsForSitemap() {
+  return client.fetch(`
+    *[_type == "post"] | order(publishedAt desc) {
+      "slug": slug.current,
+      publishedAt,
+      _updatedAt
+    }
+  `)
+}
+
 // Requête pour un article par slug
 export async function getPost(slug: string) {
   return client.fetch(`

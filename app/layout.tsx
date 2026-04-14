@@ -52,87 +52,153 @@ export const metadata: Metadata = {
   },
 }
 
-// ─── SCHEMA.ORG LOCAL BUSINESS ───────────────────────────────────────────────
+// ─── SCHEMA.ORG — @graph structuré ────────────────────────────────────────────
 // ⚠️  Le nom, l'adresse et le téléphone doivent être IDENTIQUES à la fiche GBP
+// ⚠️  Remplacer YOUR_GMB_CID par l'URL exacte de votre fiche Google Business
+const SITE_URL = 'https://www.salesexperienz.fr'
+
 const schemaOrg = {
   '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'MarketingAgency'],   // double type = signal fort
-  name: 'Sales Experienz',                          // espace obligatoire
-  description:
-    'Agence de marketing et automatisation IA basée à Sète (Hérault). Workflows n8n sur mesure, prospection B2B automatisée, SEO par IA, production vidéo. Intervention en visio sur toute la France.',
-  url: 'https://www.salesexperienz.fr',             // avec www — identique à GBP
-  telephone: '+33622951638',
-  email: 'contact@salesexperienz.fr',
-  founder: {
-    '@type': 'Person',
-    name: 'Laurent Guyonvarch',
-    jobTitle: 'Consultant en automatisation IA et stratégie commerciale',
-  },
-  foundingDate: '2019-09-01',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '15 Bd Chevalier de Clerville, Bâtiment M3',
-    addressLocality: 'Sète',
-    postalCode: '34200',
-    addressRegion: 'Hérault',
-    addressCountry: 'FR',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: '43.4028',
-    longitude: '3.6975',
-  },
-  areaServed: {
-    '@type': 'Country',
-    name: 'France',
-  },
-  openingHoursSpecification: [
+  '@graph': [
+
+    // ── 1. Organisation principale ──────────────────────────────────────────
     {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
-    },
-  ],
-  sameAs: [
-    'https://www.linkedin.com/in/laurentguyonvarch/',
-    'https://www.youtube.com/@salesexperienz',
-  ],
-  priceRange: '€€',
-  image: 'https://www.salesexperienz.fr/portrait.png',
-  hasMap: 'https://maps.google.com/?q=Sales+Experienz+Sète',
-  contactPoint: {
-    '@type': 'ContactPoint',
-    telephone: '+33622951638',
-    contactType: 'sales',
-    areaServed: 'FR',
-    availableLanguage: 'French',
-  },
-  makesOffer: [
-    {
-      '@type': 'Offer',
-      name: 'Automatisation de processus avec n8n',
+      '@type': ['Organization', 'LocalBusiness', 'MarketingAgency'],
+      '@id': `${SITE_URL}/#organization`,
+      name: 'Sales Experienz',
+      legalName: 'Sales Experienz',
       description:
-        'Conception et déploiement de workflows n8n sur mesure pour automatiser les processus métier des PME.',
+        'Agence de marketing et automatisation IA basée à Sète (Hérault). Workflows n8n sur mesure, prospection B2B automatisée, SEO par IA. Intervention en visio sur toute la France.',
+      url: SITE_URL,
+      telephone: '+33622951638',
+      email: 'contact@salesexperienz.fr',
+      foundingDate: '2019-09-01',
+      priceRange: '€€',
+      logo: {
+        '@type': 'ImageObject',
+        '@id': `${SITE_URL}/#logo`,
+        url: `${SITE_URL}/logo.png`,
+        width: 512,
+        height: 512,
+        caption: 'Sales Experienz',
+      },
+      image: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/portrait.png`,
+        width: 1200,
+        height: 630,
+      },
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '15 Bd Chevalier de Clerville, Bâtiment M3',
+        addressLocality: 'Sète',
+        postalCode: '34200',
+        addressRegion: 'Hérault',
+        addressCountry: 'FR',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '43.4028',
+        longitude: '3.6975',
+      },
+      areaServed: [
+        { '@type': 'Country', name: 'France' },
+        { '@type': 'City', name: 'Sète' },
+        { '@type': 'AdministrativeArea', name: 'Hérault' },
+      ],
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00',
+        },
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+33622951638',
+        contactType: 'customer service',
+        areaServed: 'FR',
+        availableLanguage: 'French',
+      },
+      founder: {
+        '@type': 'Person',
+        '@id': `${SITE_URL}/#founder`,
+        name: 'Laurent Guyonvarch',
+        jobTitle: 'Consultant en automatisation IA et stratégie commerciale',
+        url: `${SITE_URL}/a-propos`,
+        sameAs: 'https://www.linkedin.com/in/laurentguyonvarch/',
+      },
+      sameAs: [
+        'https://www.linkedin.com/in/laurentguyonvarch/',
+        'https://www.youtube.com/@salesexperienz',
+        'https://www.google.com/maps/place/Sales+Experienz/@43.4067773,3.680833,17z/data=!3m1!4b1!4m6!3m5!1s0x12b135e719168e6d:0xb48dccce5cc755ed!8m2!3d43.4067734!4d3.6834133!16s%2Fg%2F11fm9tp2l_',
+      ],
+      hasMap: 'https://maps.google.com/?q=Sales+Experienz+Sète',
+      makesOffer: [
+        {
+          '@type': 'Offer',
+          name: 'Automatisation de processus avec n8n',
+          description: 'Conception et déploiement de workflows n8n sur mesure pour automatiser les processus métier des PME.',
+          url: `${SITE_URL}/services/seo-geo-machine`,
+        },
+        {
+          '@type': 'Offer',
+          name: 'Prospection commerciale automatisée — DeepSignal',
+          description: 'Écosystème de prospection B2B automatisé : signaux LinkedIn, cold email, nurturing Brevo.',
+          url: `${SITE_URL}/services/deepsignal`,
+        },
+        {
+          '@type': 'Offer',
+          name: 'SEO GEO Machine — Création site web & contenu SEO automatisé',
+          description: 'Site Next.js haute performance + contenu SEO automatisé par IA. Propriété totale dès J+1.',
+          url: `${SITE_URL}/services/seo-geo-machine`,
+        },
+      ],
     },
+
+    // ── 2. WebSite — active la sitelinks searchbox ───────────────────────────
     {
-      '@type': 'Offer',
-      name: 'Prospection commerciale automatisée',
-      description:
-        'Écosystème de prospection B2B automatisé : signaux LinkedIn, cold email, nurturing Brevo.',
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: 'Sales Experienz',
+      description: 'Agence marketing & automatisation IA à Sète — workflows n8n, SEO par IA, prospection B2B automatisée.',
+      publisher: { '@id': `${SITE_URL}/#organization` },
+      inLanguage: 'fr-FR',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
+        },
+        'query-input': 'required name=search_term_string',
+      },
     },
+
+    // ── 3. WebPage — Homepage ────────────────────────────────────────────────
     {
-      '@type': 'Offer',
-      name: 'Création de contenu SEO automatisée',
-      description:
-        'Production d\'articles SEO automatisée via IA : DataForSEO, Claude AI, WordPress.',
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/#webpage`,
+      url: SITE_URL,
+      name: 'Agence Marketing & Automatisation IA — Sales Experienz | Sète (34)',
+      description: 'Sales Experienz, agence de marketing à Sète : automatisation n8n, prospection B2B automatisée, SEO par IA. Laurent Guyonvarch, consultant depuis 2003.',
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      about: { '@id': `${SITE_URL}/#organization` },
+      inLanguage: 'fr-FR',
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Accueil',
+            item: SITE_URL,
+          },
+        ],
+      },
     },
-    {
-      '@type': 'Offer',
-      name: 'Conseil en stratégie commerciale',
-      description:
-        'Audit des processus, Carte des Opportunités, structuration de l\'offre commerciale.',
-    },
+
   ],
 }
 

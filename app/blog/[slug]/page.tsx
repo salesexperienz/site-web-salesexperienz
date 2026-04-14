@@ -1,6 +1,7 @@
 import { getPost, getPosts, urlFor } from '@/lib/sanity'
 import { PortableText } from '@portabletext/react'
 import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ArticleSidebar from '@/components/ArticleSidebar'
@@ -8,12 +9,52 @@ import ArticleFooterBlocks from '@/components/ArticleFooterBlocks'
 import SocialBlock from '@/components/SocialBlock'
 import Link from 'next/link'
 
+const SITE_URL = 'https://www.salesexperienz.fr'
+
 export async function generateStaticParams() {
   const posts = await getPosts()
   return posts.map((post: any) => ({ slug: post.slug.current }))
 }
 
 type Props = { params: Promise<{ slug: string }> }
+
+// ─── Metadata dynamique par article ──────────────────────────────────────────
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const post = await getPost(slug)
+  if (!post) return {}
+
+  const title = post.seoTitle || post.title
+  const description = post.seoDescription || post.excerpt || ''
+  const canonicalUrl = `${SITE_URL}/blog/${slug}`
+  const ogImage = post.mainImage
+    ? urlFor(post.mainImage).width(1200).height(630).url()
+    : `${SITE_URL}/og-seo-geo-machine.jpg`
+
+  return {
+    title: `${title} | SalesExperienz`,
+    description,
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: 'SalesExperienz',
+      type: 'article',
+      publishedTime: post.publishedAt,
+      authors: post.author ? [post.author] : ['Laurent Guyonvarch'],
+      tags: post.tags ?? [],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      locale: 'fr_FR',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage],
+    },
+  }
+}
 
 // ─── Extraction du sommaire depuis le body PortableText ───────────────────────
 function extractToc(body: any[]): { id: string; text: string; level: number }[] {
@@ -321,6 +362,58 @@ export default async function PostPage({ params }: Props) {
 
       <SocialBlock />
       <Footer />
+
+      {/* ── JSON-LD BlogPosting — structured data pour Google & IA ───────── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.seoDescription || post.excerpt || '',
+            url: `${SITE_URL}/blog/${post.slug.current}`,
+            datePublished: post.publishedAt,
+            dateModified: post.publishedAt,
+            author: {
+              '@type': 'Person',
+              name: post.author || 'Laurent Guyonvarch',
+              url: `${SITE_URL}/a-propos`,
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'SalesExperienz',
+              url: SITE_URL,
+              logo: {
+                '@type': 'ImageObject',
+                url: `${SITE_URL}/logo.png`,
+              },
+            },
+            ...(post.mainImage && {
+              image: {
+                '@type': 'ImageObject',
+                url: urlFor(post.mainImage).width(1200).height(630).url(),
+                width: 1200,
+                height: 630,
+              },
+            }),
+            keywords: [
+              ...(post.categories ?? []),
+              ...(post.tags ?? []),
+            ].join(', '),
+            inLanguage: 'fr-FR',
+            isPartOf: {
+              '@type': 'Blog',
+              name: 'Blog SalesExperienz',
+              url: `${SITE_URL}/blog`,
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': `${SITE_URL}/blog/${post.slug.current}`,
+            },
+          }),
+        }}
+      />
     </>
   )
 }

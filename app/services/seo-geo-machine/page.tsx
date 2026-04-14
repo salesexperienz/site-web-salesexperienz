@@ -89,7 +89,7 @@ const blocs = [
 const compareRows = [
   {
     before: '2–4 articles/mois, coût 50–150 €/article',
-    after: '30–300 articles/mois, coût 2,65–6,56 €/article',
+    after: '10–30 articles/mois, coût 13,3–19,8 €/article',
   },
   {
     before: 'Contenu invisible pour ChatGPT et Perplexity',
@@ -284,7 +284,7 @@ export default function SeoGeoMachinePage() {
                     style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
                   >
                     <span className="font-display font-bold text-[22px] text-se-orange leading-tight">
-                      <CountUp end={7} duration={1200} />,40 €
+                      <CountUp end={13} duration={1200} />,3 €
                     </span>
                     <span className="font-body text-[12px] text-se-muted mt-0.5">Coût par article (vs 50–150 € marché)</span>
                   </div>
@@ -305,6 +305,15 @@ export default function SeoGeoMachinePage() {
                       <CountUp end={100} duration={1400} /> %
                     </span>
                     <span className="font-body text-[12px] text-se-muted mt-0.5">Propriété des workflows dès J+1</span>
+                  </div>
+                  <div
+                    className="flex flex-col items-center px-5 py-3 rounded-xl"
+                    style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
+                  >
+                    <span className="font-display font-bold text-[22px] text-se-orange leading-tight">
+                      +<CountUp end={1200} duration={1600} /> mots
+                    </span>
+                    <span className="font-body text-[12px] text-se-muted mt-0.5">Par article minimum garanti</span>
                   </div>
                 </div>
               </FadeUp>
@@ -746,83 +755,240 @@ export default function SeoGeoMachinePage() {
       {/* ══════════════════════════════════════════════════════════════════════
           SECTION 6 — MOTEUR TECHNIQUE
       ══════════════════════════════════════════════════════════════════════ */}
-      <section className="bg-white py-[80px] lg:py-[120px]">
+      <section className="py-[80px] lg:py-[120px]" style={{ background: '#F4F6F9' }}>
         <div className="max-w-container mx-auto px-6 lg:px-20">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* En-tête centré */}
+          <FadeUp className="text-center mb-16 lg:mb-24">
+            <p className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-orange mb-3">
+              MOTEUR TECHNIQUE
+            </p>
+            <h2 className="font-display font-bold text-[28px] md:text-[42px] leading-[1.2] text-se-navy mb-5 max-w-3xl mx-auto">
+              Un système propulsé par n8n, Next.js et les agents IA les plus avancés
+            </h2>
+            <p className="font-body text-[17px] leading-[1.7] text-se-navy max-w-2xl mx-auto">
+              Chaque brique technique est choisie pour sa performance, sa fiabilité et son impact SEO &amp; GEO direct.
+            </p>
+          </FadeUp>
 
-            {/* Colonne gauche — texte */}
+          {/* ── ÉTAPE 01 — Next.js, Git & Vercel — image à droite ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20 lg:mb-28">
+
+            {/* Texte */}
             <div>
               <FadeUp>
-                <p className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-orange mb-3">
-                  MOTEUR TECHNIQUE
-                </p>
-                <h2 className="font-display font-bold text-[28px] md:text-[38px] leading-[1.2] text-se-navy mb-6">
-                  Propulsé par n8n, Next.js et les agents IA les plus avancés
-                </h2>
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="w-10 h-10 rounded-full bg-se-navy flex items-center justify-center flex-shrink-0">
+                    <span className="font-display font-bold text-[13px] text-white">01</span>
+                  </span>
+                  <span className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-orange">
+                    Fondation technique
+                  </span>
+                </div>
+                <h3 className="font-display font-bold text-[24px] md:text-[32px] leading-[1.2] text-se-navy mb-4">
+                  Next.js, Git &amp; Vercel — La fondation haute performance
+                </h3>
               </FadeUp>
-
-              <FadeUp delay={0.08}>
-                <p className="font-body text-[17px] leading-[1.7] text-se-navy/60 mb-6">
-                  SEO GEO Machine repose sur <strong className="text-se-navy">n8n</strong> — le moteur
-                  d&apos;orchestration open-source qui connecte chaque brique du système. Les workflows
-                  de publication tournent en autonomie complète, 24h/24, sans intervention humaine.
-                </p>
-                <p className="font-body text-[17px] leading-[1.7] text-se-navy/60 mb-8">
-                  Au cœur de la rédaction : <strong className="text-se-navy">Claude AI</strong> (Anthropic)
-                  pour le contenu et l&apos;angle éditorial, <strong className="text-se-navy">GPT-4o</strong> pour
-                  la structure, <strong className="text-se-navy">Gemini</strong> pour les images. Chaque article
-                  intègre la méthode Capsule dès la génération — pas après coup.
+              <FadeUp delay={0.06}>
+                <p className="font-body text-[16px] leading-[1.8] text-se-navy mb-6">
+                  Le site est construit sur <strong>Next.js</strong>, versionné avec <strong>Git</strong> et déployé en continu sur <strong>Vercel</strong>. Dès la mise en ligne, la technique SEO et GEO est enracinée dans l&apos;architecture : balises, vitesse, maillage, données structurées. Rien n&apos;est ajouté après coup — tout est natif.
                 </p>
               </FadeUp>
-
-              <FadeUp delay={0.14}>
-                <div className="grid grid-cols-2 gap-3">
+              <FadeUp delay={0.1}>
+                {/* Logos */}
+                <div className="flex items-center gap-7 mb-7">
                   {[
-                    { label: 'n8n', desc: 'Orchestration des workflows' },
-                    { label: 'Claude AI', desc: 'Rédaction + méthode Capsule' },
-                    { label: 'GPT-4o', desc: "Structure SEO de l'article" },
-                    { label: 'DataForSEO', desc: 'Recherche de mots-clés' },
-                    { label: 'Next.js / Vercel', desc: 'Site web haute performance' },
-                    { label: 'Sanity CMS', desc: 'Back-office simplifié' },
-                    { label: 'Brevo', desc: 'Intégration CRM & email' },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="rounded-xl p-4 border border-se-navy/08 bg-gray-50 hover:border-se-teal/30 transition-colors duration-200"
-                    >
-                      <p className="font-display font-bold text-[14px] text-se-navy mb-0.5">{item.label}</p>
-                      <p className="font-body text-[12px] text-se-navy/50">{item.desc}</p>
+                    { src: '/logos/nextjs.svg', label: 'Next.js' },
+                    { src: '/logos/git.svg', label: 'Git' },
+                    { src: '/logos/vercel.svg', label: 'Vercel' },
+                  ].map((logo) => (
+                    <div key={logo.label} className="flex flex-col items-center gap-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={logo.src} alt={logo.label} className="w-9 h-9 object-contain" />
+                      <span className="font-body text-[11px] font-medium text-se-navy/50">{logo.label}</span>
                     </div>
+                  ))}
+                </div>
+                {/* Mots-clés */}
+                <div className="flex flex-wrap gap-2">
+                  {['Vitesse de chargement', 'Design', 'Optimisation SEO & GEO'].map((kw) => (
+                    <span
+                      key={kw}
+                      className="font-body text-[13px] font-semibold text-se-navy px-4 py-1.5 rounded-full"
+                      style={{ background: 'rgba(74,191,176,0.12)', border: '1.5px solid rgba(74,191,176,0.40)' }}
+                    >
+                      {kw}
+                    </span>
                   ))}
                 </div>
               </FadeUp>
             </div>
 
-            {/* Colonne droite — screenshot workflow */}
-            <FadeUp delay={0.1}>
-              <div className="animate-float" style={{ boxShadow: '0 24px 60px rgba(0,0,0,0.12)' }}>
-                <div className="rounded-2xl overflow-hidden" style={{ border: '1.5px solid rgba(74,191,176,0.25)' }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/exemple-wokflow.png"
-                    alt="Exemple de workflow n8n Autoblogger SEO GEO Machine — SalesExperienz"
-                    className="w-full block"
-                  />
-                  <div
-                    className="px-5 py-3 flex items-center gap-2"
-                    style={{ background: '#0D1B3E' }}
-                  >
-                    <span className="w-2 h-2 rounded-full bg-se-teal flex-shrink-0" />
-                    <p className="font-body text-[13px] text-white/60">
-                      Workflow Autoblogger n8n — génération, publication et maillage automatiques
-                    </p>
-                  </div>
+            {/* Image */}
+            <FadeUp delay={0.08}>
+              <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.13)]" style={{ border: '1.5px solid rgba(74,191,176,0.25)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/photo2.png"
+                  alt="Création site Next.js Git Vercel — SalesExperienz"
+                  className="w-full block"
+                />
+                <div className="px-5 py-3 flex items-center gap-2 bg-se-navy">
+                  <span className="w-2 h-2 rounded-full bg-se-teal flex-shrink-0" />
+                  <p className="font-body text-[13px] text-white/70">
+                    Déploiement continu Next.js + Vercel — structure SEO &amp; GEO native
+                  </p>
                 </div>
               </div>
             </FadeUp>
 
           </div>
+
+          {/* ── ÉTAPE 02 — Sanity CMS — image à gauche ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20 lg:mb-28">
+
+            {/* Image (gauche desktop) */}
+            <FadeUp delay={0.08} className="order-2 lg:order-1">
+              <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.13)]" style={{ border: '1.5px solid rgba(74,191,176,0.25)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/tableau-de-bord-sanity.png"
+                  alt="Tableau de bord Sanity CMS — gestion articles SEO — SalesExperienz"
+                  className="w-full block"
+                />
+                <div className="px-5 py-3 flex items-center gap-2 bg-se-navy">
+                  <span className="w-2 h-2 rounded-full bg-se-teal flex-shrink-0" />
+                  <p className="font-body text-[13px] text-white/70">
+                    Sanity CMS — saisie, validation et publication simultanée
+                  </p>
+                </div>
+              </div>
+            </FadeUp>
+
+            {/* Texte (droite desktop) */}
+            <div className="order-1 lg:order-2">
+              <FadeUp>
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="w-10 h-10 rounded-full bg-se-navy flex items-center justify-center flex-shrink-0">
+                    <span className="font-display font-bold text-[13px] text-white">02</span>
+                  </span>
+                  <span className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-orange">
+                    Gestion éditoriale
+                  </span>
+                </div>
+                <h3 className="font-display font-bold text-[24px] md:text-[32px] leading-[1.2] text-se-navy mb-4">
+                  Sanity CMS — La salle de rédaction
+                </h3>
+              </FadeUp>
+              <FadeUp delay={0.06}>
+                <p className="font-body text-[16px] leading-[1.8] text-se-navy mb-6">
+                  Chaque article est créé avec titre, sous-titre, catégorie, balises SEO, image et slug. La publication est instantanée : dès validation dans <strong>Sanity</strong>, le contenu est exporté simultanément sur le site web. Aucun copier-coller, aucune friction entre l&apos;éditorial et la mise en ligne.
+                </p>
+              </FadeUp>
+              <FadeUp delay={0.1}>
+                {/* Logo */}
+                <div className="flex items-center gap-7 mb-7">
+                  <div className="flex flex-col items-center gap-2">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/logos/sanity.svg" alt="Sanity" className="w-9 h-9 object-contain" />
+                    <span className="font-body text-[11px] font-medium text-se-navy/50">Sanity</span>
+                  </div>
+                </div>
+                {/* Mots-clés */}
+                <div className="flex flex-wrap gap-2">
+                  {["Gestion d'un blog", "Rédaction d'articles", 'Rapidité'].map((kw) => (
+                    <span
+                      key={kw}
+                      className="font-body text-[13px] font-semibold text-se-navy px-4 py-1.5 rounded-full"
+                      style={{ background: 'rgba(74,191,176,0.12)', border: '1.5px solid rgba(74,191,176,0.40)' }}
+                    >
+                      {kw}
+                    </span>
+                  ))}
+                </div>
+              </FadeUp>
+            </div>
+
+          </div>
+
+          {/* ── ÉTAPE 03 — n8n + Agents IA — image à droite ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {/* Texte */}
+            <div>
+              <FadeUp>
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="w-10 h-10 rounded-full bg-se-navy flex items-center justify-center flex-shrink-0">
+                    <span className="font-display font-bold text-[13px] text-white">03</span>
+                  </span>
+                  <span className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-orange">
+                    Automatisation totale
+                  </span>
+                </div>
+                <h3 className="font-display font-bold text-[24px] md:text-[32px] leading-[1.2] text-se-navy mb-4">
+                  n8n + Agents IA — Le moteur de publication autonome
+                </h3>
+              </FadeUp>
+              <FadeUp delay={0.06}>
+                <p className="font-body text-[16px] leading-[1.8] text-se-navy mb-4">
+                  SEO GEO Machine repose sur <strong>n8n</strong> — le moteur d&apos;orchestration open-source qui connecte chaque brique du système. Les workflows de publication tournent en autonomie complète, 24h/24, sans intervention humaine.
+                </p>
+                <p className="font-body text-[16px] leading-[1.8] text-se-navy mb-6">
+                  Au cœur de la rédaction : <strong>Claude AI</strong> (Anthropic) pour le contenu et l&apos;angle éditorial, <strong>GPT-4o</strong> pour la structure, <strong>Gemini</strong> pour les images. Chaque article intègre la méthode Capsule dès la génération — pas après coup.
+                </p>
+              </FadeUp>
+              <FadeUp delay={0.1}>
+                {/* Logos */}
+                <div className="flex items-center gap-7 mb-7">
+                  {[
+                    { src: '/logos/n8n.svg', label: 'n8n' },
+                    { src: '/logos/anthropic.svg', label: 'Claude AI' },
+                    { src: '/logos/openai.svg', label: 'GPT-4o' },
+                    { src: '/logos/gemini.svg', label: 'Gemini' },
+                    { src: '/logos/dataforseo.png', label: 'DataForSEO' },
+                  ].map((logo) => (
+                    <div key={logo.label} className="flex flex-col items-center gap-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={logo.src} alt={logo.label} className="w-9 h-9 object-contain" />
+                      <span className="font-body text-[11px] font-medium text-se-navy/50">{logo.label}</span>
+                    </div>
+                  ))}
+                </div>
+                {/* Mots-clés */}
+                <div className="flex flex-wrap gap-2">
+                  {['Point de vue humain', 'Articles en automatique', 'Recherche & stratégie de mots clés'].map((kw) => (
+                    <span
+                      key={kw}
+                      className="font-body text-[13px] font-semibold text-se-navy px-4 py-1.5 rounded-full"
+                      style={{ background: 'rgba(74,191,176,0.12)', border: '1.5px solid rgba(74,191,176,0.40)' }}
+                    >
+                      {kw}
+                    </span>
+                  ))}
+                </div>
+              </FadeUp>
+            </div>
+
+            {/* Image */}
+            <FadeUp delay={0.08}>
+              <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.13)]" style={{ border: '1.5px solid rgba(74,191,176,0.25)' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/Workflow SEO-GEO.png"
+                  alt="Workflow n8n Autoblogger SEO GEO Machine — SalesExperienz"
+                  className="w-full block"
+                />
+                <div className="px-5 py-3 flex items-center gap-2 bg-se-navy">
+                  <span className="w-2 h-2 rounded-full bg-se-teal flex-shrink-0" />
+                  <p className="font-body text-[13px] text-white/70">
+                    Workflow Autoblogger n8n — génération, publication et maillage automatiques
+                  </p>
+                </div>
+              </div>
+            </FadeUp>
+
+          </div>
+
         </div>
       </section>
 
@@ -1127,7 +1293,7 @@ export default function SeoGeoMachinePage() {
                   ))}
                 </ul>
                 <p className="font-display font-bold text-[26px] text-se-navy">
-                  97 €{' '}
+                  197 €{' '}
                   <span className="font-body text-[13px] font-normal text-se-navy/50">/mois</span>
                 </p>
               </div>
@@ -1289,7 +1455,7 @@ export default function SeoGeoMachinePage() {
           <FadeUp delay={0.05}>
             <p className="capsule-geo rounded-2xl px-7 py-5 mb-10 max-w-3xl font-body text-[15px] leading-[1.75] text-se-navy"
               style={{ background: 'rgba(74,191,176,0.08)', border: '1.5px solid rgba(74,191,176,0.30)', borderLeft: '4px solid #4ABFB0' }}>
-              Un article SEO GEO Machine revient à 2,65–6,56 €, intègre méthode Capsule + optimisation GEO et se génère en 60 secondes.
+              Un article SEO GEO Machine revient à 13,3–19,8 €, intègre méthode Capsule + optimisation GEO et se génère en 60 secondes.
             </p>
           </FadeUp>
 
@@ -1306,7 +1472,7 @@ export default function SeoGeoMachinePage() {
                 </thead>
                 <tbody>
                   {[
-                    { label: 'Coût par article', human: '50 – 150 €', machine: '2,65 – 6,56 €', good: true },
+                    { label: 'Coût par article', human: '50 – 150 €', machine: '13,3 – 19,8 €', good: true },
                     { label: 'Temps de production', human: '2 – 4 heures', machine: '60 secondes', good: true },
                     { label: 'Point de vue & angle éditorial', human: '✅ Oui', machine: '✅ Oui', good: false },
                     { label: 'Méthode Capsule GEO intégrée', human: '❌ Non', machine: '✅ Systématique', good: true },
@@ -1338,10 +1504,12 @@ export default function SeoGeoMachinePage() {
                   name: 'ESSENTIEL',
                   engagement: '6 mois',
                   price: '197 €',
-                  articles: '30/mois',
-                  perArticle: '6,56 €',
-                  kwPerMonth: '3',
+                  articles: '10/mois',
+                  perArticle: '19,7 €',
+                  kwPerMonth: '1',
                   features: [
+                    'Articles de 1 200 à 2 000 mots',
+                    'Choix de 1 mot clé',
                     'Surveillance quotidienne',
                     'Correction bugs < 48h',
                     'Support email < 24h',
@@ -1353,10 +1521,13 @@ export default function SeoGeoMachinePage() {
                   name: 'DÉVELOPPEMENT',
                   engagement: '6 mois',
                   price: '297 €',
-                  articles: '72/mois',
-                  perArticle: '4,12 €',
-                  kwPerMonth: '6',
+                  articles: '15/mois',
+                  perArticle: '19,8 €',
+                  kwPerMonth: '3',
                   features: [
+                    'Articles de 1 200 à 2 000 mots',
+                    'Images supplémentaires pour 5 articles au choix',
+                    'Choix de 3 mots clés',
                     'Surveillance quotidienne',
                     'Correction bugs < 48h',
                     'Support email < 24h',
@@ -1368,10 +1539,13 @@ export default function SeoGeoMachinePage() {
                   name: 'PERFORMANCE',
                   engagement: '6 mois',
                   price: '397 €',
-                  articles: '150/mois',
-                  perArticle: '2,65 €',
-                  kwPerMonth: '10',
+                  articles: '30/mois',
+                  perArticle: '13,3 €',
+                  kwPerMonth: '5',
                   features: [
+                    'Articles de 1 200 à 2 000 mots',
+                    'Images supplémentaires pour 5 articles au choix',
+                    'Choix de 5 mots clés',
                     'Surveillance quotidienne',
                     'Correction bugs < 48h',
                     'Email + WhatsApp',
