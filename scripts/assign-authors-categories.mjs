@@ -16,7 +16,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 const sanity = createClient({
   projectId: '0wgbhtrw',
   dataset: 'production',
-  token: 'sk2SCaOIjrTY8dDVlwRuxYVo3Wd6jK48qU04EiyFz3gPiCTMJsKRTAs3KuO6SSAKEWBn6wK9H2AOhWTGoFR16IvtX6mltPUfSqhyPXFFn7DSI9yOttQo1tcUK61T7xT1MznUKtMmP3NEn2K9E2y4RL6Wlcun3423IRMfBb1oPFjhzEgqvIMD',
+  token:process.env.'skxtL49c9UpIHB0j1tNr8KTkuAkvxrwhDh5RmeeUEOdhTkHppRbZZLwMLrV4KA83Di9llPugnqeh8R3DsFZuvseBKqP96m7GGGwM5rJCUeG1XLE71g4ClzhpLEPmJNi5mQUKJn5YCinTybzzlGa3RHJL8nbgq1sqjHDwgOiD4ZceQINcByq2',
   apiVersion: '2026-04-12',
   useCdn: false,
 })
