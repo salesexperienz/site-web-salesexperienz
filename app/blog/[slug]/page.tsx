@@ -343,19 +343,21 @@ export default async function PostPage({ params }: Props) {
                       En résumé
                     </span>
                   </div>
-                  <p className="text-[15px] text-se-navy/80 leading-relaxed whitespace-pre-line">
-                    {post.capsule}
-                  </p>
+                  <div className="space-y-2">
+                    {post.capsule.split(/(?<=[.!?])\s+/).filter(Boolean).map((s: string, i: number) => (
+                      <p key={i} className="text-[15px] text-se-navy/80 leading-relaxed">{s}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
 
             {/* ── Introduction ──────────────────────────────────────────── */}
             {post.introduction && (
-              <div className="mb-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5">
-                <p className="text-[15px] text-se-navy/80 leading-relaxed whitespace-pre-line">
-                  {post.introduction}
-                </p>
+              <div className="mb-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5 space-y-2">
+                {post.introduction.split(/(?<=[.!?])\s+/).filter(Boolean).map((s: string, i: number) => (
+                  <p key={i} className="text-[15px] text-se-navy/80 leading-relaxed">{s}</p>
+                ))}
               </div>
             )}
 
@@ -398,10 +400,10 @@ export default async function PostPage({ params }: Props) {
 
             {/* ── Conclusion ────────────────────────────────────────────── */}
             {post.conclusion && (
-              <div className="mt-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5">
-                <p className="text-[15px] text-se-navy/80 leading-relaxed whitespace-pre-line">
-                  {post.conclusion}
-                </p>
+              <div className="mt-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5 space-y-2">
+                {post.conclusion.split(/(?<=[.!?])\s+/).filter(Boolean).map((s: string, i: number) => (
+                  <p key={i} className="text-[15px] text-se-navy/80 leading-relaxed">{s}</p>
+                ))}
               </div>
             )}
 
