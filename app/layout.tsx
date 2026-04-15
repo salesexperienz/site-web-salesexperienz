@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Urbanist, Plus_Jakarta_Sans, Caveat } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
@@ -27,7 +27,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: 'Agence Marketing & Automatisation IA — Sales Experienz | Sète (34)',
   description:
-    'Sales Experienz, agence de marketing à Sète : automatisation n8n sur mesure, prospection B2B automatisée, SEO par IA. Laurent Guyonvarch, consultant depuis 2003. Premier échange offert — 45 min.',
+    'Agence marketing à Sète — automatisation n8n, prospection B2B automatisée, SEO par IA. Premier échange offert, 45 min. Sans engagement.',
   keywords:
     'agence marketing Sète, automatisation n8n, workflows IA, consultant automatisation BtoB, SEO automatisé, prospection automatisée, Hérault',
   alternates: {
@@ -52,6 +52,12 @@ export const metadata: Metadata = {
   },
 }
 
+// ─── VIEWPORT ────────────────────────────────────────────────────────────────
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 // ─── SCHEMA.ORG — @graph structuré ────────────────────────────────────────────
 // ⚠️  Le nom, l'adresse et le téléphone doivent être IDENTIQUES à la fiche GBP
 // ⚠️  Remplacer YOUR_GMB_CID par l'URL exacte de votre fiche Google Business
@@ -63,7 +69,7 @@ const schemaOrg = {
 
     // ── 1. Organisation principale ──────────────────────────────────────────
     {
-      '@type': ['Organization', 'LocalBusiness', 'MarketingAgency'],
+      '@type': 'MarketingAgency',
       '@id': `${SITE_URL}/#organization`,
       name: 'Sales Experienz',
       legalName: 'Sales Experienz',

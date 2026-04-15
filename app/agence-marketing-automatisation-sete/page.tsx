@@ -37,20 +37,7 @@ const pageSchema = {
   '@type': 'Service',
   name: 'Agence Marketing & Automatisation IA à Sète',
   description: 'Diagnostic stratégique + automatisation sur mesure pour PME-TPE. Workflows n8n, prospection B2B, SEO automatisé. Basé à Sète (Hérault), intervention en visio sur toute la France.',
-  provider: {
-    '@type': 'MarketingAgency',
-    name: 'Sales Experienz',
-    url: 'https://www.salesexperienz.fr',
-    telephone: '+33622951638',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '15 Bd Chevalier de Clerville, Bâtiment M3',
-      addressLocality: 'Sète',
-      postalCode: '34200',
-      addressRegion: 'Hérault',
-      addressCountry: 'FR',
-    },
-  },
+  provider: { '@id': 'https://www.salesexperienz.fr/#organization' },
   areaServed: { '@type': 'Country', name: 'France' },
   url: 'https://www.salesexperienz.fr/agence-marketing-automatisation-sete',
 }
