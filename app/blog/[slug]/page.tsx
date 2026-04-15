@@ -151,10 +151,10 @@ const ptComponents = {
   },
   list: {
     bullet: ({ children }: any) => (
-      <ul className="my-5 space-y-2 pl-5">{children}</ul>
+      <ul className="my-5 space-y-4 pl-5">{children}</ul>
     ),
     number: ({ children }: any) => (
-      <ol className="my-5 space-y-2 pl-5 list-decimal">{children}</ol>
+      <ol className="my-5 space-y-4 pl-5 list-decimal">{children}</ol>
     ),
   },
   listItem: {
@@ -343,7 +343,7 @@ export default async function PostPage({ params }: Props) {
                       En résumé
                     </span>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-4">
                     {post.capsule.split(/(?<=[.!?])\s+/).filter(Boolean).map((s: string, i: number) => (
                       <p key={i} className="text-[15px] text-se-navy/80 leading-relaxed">{s}</p>
                     ))}
@@ -354,7 +354,7 @@ export default async function PostPage({ params }: Props) {
 
             {/* ── Introduction ──────────────────────────────────────────── */}
             {post.introduction && (
-              <div className="mb-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5 space-y-2">
+              <div className="mb-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5 space-y-4">
                 {post.introduction.split(/(?<=[.!?])\s+/).filter(Boolean).map((s: string, i: number) => (
                   <p key={i} className="text-[15px] text-se-navy/80 leading-relaxed">{s}</p>
                 ))}
@@ -380,7 +380,7 @@ export default async function PostPage({ params }: Props) {
                     Questions fréquentes
                   </h2>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-4">
                   {post.faq.map((item: { question: string; answer: string }, i: number) => (
                     <details key={i} className="group rounded-xl border border-gray-200 bg-gray-50 overflow-hidden">
                       <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none font-semibold text-[15px] text-se-navy hover:bg-gray-100 transition-colors">
@@ -400,7 +400,7 @@ export default async function PostPage({ params }: Props) {
 
             {/* ── Conclusion ────────────────────────────────────────────── */}
             {post.conclusion && (
-              <div className="mt-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5 space-y-2">
+              <div className="mt-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5 space-y-4">
                 {post.conclusion.split(/(?<=[.!?])\s+/).filter(Boolean).map((s: string, i: number) => (
                   <p key={i} className="text-[15px] text-se-navy/80 leading-relaxed">{s}</p>
                 ))}
