@@ -454,7 +454,7 @@ export default async function PostPage({ params }: Props) {
             description: post.seoDescription || post.excerpt || '',
             url: `${SITE_URL}/blog/${post.slug.current}`,
             datePublished: post.publishedAt,
-            dateModified: post.publishedAt,
+            dateModified: post._updatedAt || post.publishedAt,
             author: {
               '@type': 'Person',
               name: post.author || 'Laurent Guyonvarch',
@@ -498,6 +498,14 @@ export default async function PostPage({ params }: Props) {
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': `${SITE_URL}/blog/${post.slug.current}`,
+            },
+            breadcrumb: {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Accueil', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+                { '@type': 'ListItem', position: 3, name: post.title, item: `${SITE_URL}/blog/${post.slug.current}` },
+              ],
             },
           }),
         }}

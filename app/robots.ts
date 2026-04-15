@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'Bingbot', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
     ],
-    sitemap: 'https://salesexperienz.fr/sitemap.xml',
+    sitemap: 'https://www.salesexperienz.fr/sitemap.xml',
   }
 }
