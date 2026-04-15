@@ -70,23 +70,24 @@ function extractText(body) {
 }
 
 async function generateCapsule(title, excerpt, bodyText) {
-  const prompt = `Tu es un expert en GEO (Generative Engine Optimization) et en développement commercial B2B.
+  const prompt = `Tu es un expert en GEO (Generative Engine Optimization) spécialisé en développement commercial B2B.
 
-Génère une "capsule" GEO pour un article de blog intitulé :
-"${title}"
+Génère une capsule GEO pour cet article :
+Titre : "${title}"
+${excerpt ? `Résumé : ${excerpt}\n` : ''}${bodyText ? `Début du contenu : ${bodyText.slice(0, 600)}\n` : ''}
 
-${excerpt ? `Résumé de l'article : ${excerpt}\n` : ''}${bodyText ? `Début du contenu : ${bodyText.slice(0, 600)}\n` : ''}
+RÈGLES STRICTES de la Méthode Capsule (respecte-les toutes) :
+1. Exactement 2 à 3 phrases
+2. Phrase 1 : la réponse directe à la question du titre (commence par "Pour", "La clé", "Le secret", ou similaire)
+3. Phrase 2 : la conséquence ou le risque si on ne suit pas ce conseil
+4. Phrase 3 (optionnelle) : ce que cet article apporte concrètement au lecteur
+5. La capsule doit être AUTONOME : quelqu'un qui ne lit que ces phrases comprend la réponse complète
+6. Ton factuel et affirmatif, tutoiement, zéro bullshit
+7. Aucun lien, aucune parenthèse, aucun formatage
 
-La capsule doit faire exactement 2 à 3 phrases selon ce format :
-- Phrase 1 : La réponse directe et concrète à la question du titre (commence par "Pour", "La clé", "Le secret", ou similaire)
-- Phrase 2 : La conséquence/risque si on ne suit pas ce conseil
-- Phrase 3 : Ce que l'article apporte concrètement au lecteur
-
-Contraintes :
-- Ton direct, factuel, professionnel (tutoiement)
-- Maximum 80 mots au total
-- Zéro jargon creux, zéro bullshit
-- Optimisé pour être cité par ChatGPT, Perplexity, Google SGE
+EXEMPLES de bonnes capsules :
+✅ "Pour réussir ton développement commercial, définis ta cible et ton positionnement avant d'embaucher un commercial. Sans cette base, tu brûles ton budget sur des prospects qui ne convertiront jamais. Cet article te donne les 4 étapes concrètes pour construire cette fondation."
+✅ "Pour prospecter efficacement en B2B, cible les entreprises qui ont un problème urgent et un budget — pas juste un intérêt. Un prospect sans douleur réelle ne signera jamais, peu importe la qualité de ton pitch. Tu trouveras ici les critères de qualification qui font gagner du temps."
 
 Réponds UNIQUEMENT avec le texte de la capsule, sans guillemets ni formatage.`
 
