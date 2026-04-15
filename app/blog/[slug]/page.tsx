@@ -106,18 +106,21 @@ const ptComponents = {
     ),
     h2: ({ children }: any) => (
       <h2 id={headingId(children)}
-        className="font-display font-extrabold text-[26px] text-se-navy mt-12 mb-4 leading-tight scroll-mt-28">
+        className="font-display font-extrabold text-[26px] mt-12 mb-4 leading-tight scroll-mt-28"
+        style={{ color: '#111c3d' }}>
         {children}
       </h2>
     ),
     h3: ({ children }: any) => (
       <h3 id={headingId(children)}
-        className="font-display font-bold text-[20px] text-se-navy mt-8 mb-3 leading-snug scroll-mt-28">
+        className="font-display font-bold text-[20px] mt-8 mb-3 leading-snug scroll-mt-28"
+        style={{ color: '#111c3d' }}>
         {children}
       </h3>
     ),
     h4: ({ children }: any) => (
-      <h4 className="font-display font-bold text-[17px] text-se-navy mt-6 mb-2 scroll-mt-28">
+      <h4 className="font-display font-bold text-[17px] mt-6 mb-2 scroll-mt-28"
+        style={{ color: '#111c3d' }}>
         {children}
       </h4>
     ),
@@ -322,6 +325,31 @@ export default async function PostPage({ params }: Props) {
 
           {/* Article */}
           <article className="flex-1 min-w-0 bg-white rounded-2xl shadow-sm border border-gray-100 px-8 md:px-12 py-10">
+
+            {/* ── Capsule GEO — réponse directe ─────────────────────────── */}
+            {post.capsule && (
+              <div className="mb-10 rounded-2xl border border-se-orange/20 bg-gradient-to-br from-se-orange/5 to-amber-50 p-6 relative overflow-hidden">
+                {/* Trait décoratif gauche */}
+                <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl bg-se-orange" />
+                <div className="pl-2">
+                  <div className="flex items-center gap-2 mb-3">
+                    {/* Icône éclair */}
+                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-se-orange text-white flex-shrink-0">
+                      <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                      </svg>
+                    </span>
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-se-orange">
+                      En résumé
+                    </span>
+                  </div>
+                  <p className="text-[15px] text-se-navy/80 leading-relaxed whitespace-pre-line">
+                    {post.capsule}
+                  </p>
+                </div>
+              </div>
+            )}
+
             {post.body ? (
               <PortableText value={post.body} components={ptComponents} />
             ) : (
@@ -401,6 +429,7 @@ export default async function PostPage({ params }: Props) {
               ...(post.categories ?? []),
               ...(post.tags ?? []),
             ].join(', '),
+            ...(post.capsule && { abstract: post.capsule }),
             inLanguage: 'fr-FR',
             isPartOf: {
               '@type': 'Blog',

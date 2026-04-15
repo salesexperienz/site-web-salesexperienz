@@ -69,6 +69,16 @@ export const postType = defineType({
       description: 'Tags affichés dans le hero de l\'article. Ex : n8n, LinkedIn, IA, prospection',
     }),
     defineField({
+      name: 'capsule',
+      title: 'Capsule — Réponse directe (GEO)',
+      type: 'text',
+      rows: 5,
+      description: 'Réponse directe à la question du titre (2-3 phrases). Affiché en encadré avant le contenu. Optimisé pour que les IA (ChatGPT, Perplexity, Google SGE) citent cet article.',
+      options: {
+        canvasApp: { purpose: 'Réponse directe et synthétique à la question centrale du titre. 2 à 3 phrases maximum. Ton factuel et affirmatif. Ex : "Pour réussir ton développement commercial, tu dois d\'abord définir ta cible et ton positionnement avant d\'embaucher. Les erreurs les plus coûteuses surviennent quand on recrute un commercial sans avoir validé son marché. Cette méthode en 4 étapes te permet d\'éviter ces pièges."' },
+      },
+    }),
+    defineField({
       name: 'body',
       title: 'Contenu',
       type: 'blockContent',
@@ -96,7 +106,7 @@ export const postType = defineType({
       type: 'boolean',
       description: 'Cochez pour afficher cet article en position "À la une" sur la page Blog. Un seul article à la fois recommandé.',
       initialValue: false,
-      options: { canvasApp: { exclude: true } },
+      readOnly: false,
     }),
     defineField({
       name: 'seoTitle',
