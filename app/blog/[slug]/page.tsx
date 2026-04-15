@@ -356,6 +356,37 @@ export default async function PostPage({ params }: Props) {
               <p className="text-gray-400 italic">Contenu à venir…</p>
             )}
 
+            {/* ── FAQ GEO — accordéon avant pied d'article ──────────────── */}
+            {post.faq && post.faq.length > 0 && (
+              <div className="mt-14 mb-4">
+                <div className="flex items-center gap-2 mb-5">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-se-navy text-white flex-shrink-0">
+                    <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                  <h2 className="font-display font-extrabold text-[22px] text-se-navy">
+                    Questions fréquentes
+                  </h2>
+                </div>
+                <div className="space-y-2">
+                  {post.faq.map((item: { question: string; answer: string }, i: number) => (
+                    <details key={i} className="group rounded-xl border border-gray-200 bg-gray-50 overflow-hidden">
+                      <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none font-semibold text-[15px] text-se-navy hover:bg-gray-100 transition-colors">
+                        <span>{item.question}</span>
+                        <svg className="w-4 h-4 flex-shrink-0 text-se-orange transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </summary>
+                      <div className="px-5 pb-4 pt-1 text-[14px] text-gray-700 leading-relaxed border-t border-gray-200">
+                        {item.answer}
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Pied d'article */}
             <div className="mt-14 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <Link href="/blog"
@@ -390,6 +421,27 @@ export default async function PostPage({ params }: Props) {
 
       <SocialBlock />
       <Footer />
+
+      {/* ── JSON-LD FAQPage — structured data GEO ───────────────────────── */}
+      {post.faq && post.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: post.faq.map((item: { question: string; answer: string }) => ({
+                '@type': 'Question',
+                name: item.question,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: item.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
 
       {/* ── JSON-LD BlogPosting — structured data pour Google & IA ───────── */}
       <script
@@ -430,6 +482,13 @@ export default async function PostPage({ params }: Props) {
               ...(post.tags ?? []),
             ].join(', '),
             ...(post.capsule && { abstract: post.capsule }),
+            ...(post.faq && post.faq.length > 0 && {
+              hasPart: post.faq.map((item: { question: string; answer: string }) => ({
+                '@type': 'WebPageElement',
+                isAccessibleForFree: true,
+                cssSelector: 'details',
+              })),
+            }),
             inLanguage: 'fr-FR',
             isPartOf: {
               '@type': 'Blog',

@@ -79,6 +79,27 @@ export const postType = defineType({
       },
     }),
     defineField({
+      name: 'faq',
+      title: 'FAQ — Questions fréquentes',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'object',
+          name: 'faqItem',
+          title: 'Question / Réponse',
+          fields: [
+            defineField({ name: 'question', title: 'Question', type: 'string' }),
+            defineField({ name: 'answer', title: 'Réponse', type: 'text', rows: 3 }),
+          ],
+          preview: { select: { title: 'question' } },
+        }),
+      ],
+      description: '3 à 5 questions/réponses affichées en accordéon avant la conclusion. Optimisé GEO pour ChatGPT, Perplexity, Google SGE.',
+      options: {
+        canvasApp: { exclude: true },
+      },
+    }),
+    defineField({
       name: 'body',
       title: 'Contenu',
       type: 'blockContent',
