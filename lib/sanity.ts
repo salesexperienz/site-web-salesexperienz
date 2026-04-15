@@ -44,7 +44,7 @@ export async function getPostsForSitemap() {
 export async function getPost(slug: string) {
   return client.fetch(`
     *[_type == "post" && slug.current == $slug][0] {
-      _id, title, slug, excerpt, capsule, faq, mainImage, publishedAt, _updatedAt, body,
+      _id, title, slug, excerpt, introduction, conclusion, capsule, faq, mainImage, publishedAt, _updatedAt, body,
       seoTitle, seoDescription,
       "tags": tags,
       "categories": categories[]->title,

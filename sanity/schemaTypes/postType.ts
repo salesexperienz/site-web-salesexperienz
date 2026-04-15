@@ -69,6 +69,26 @@ export const postType = defineType({
       description: 'Tags affichés dans le hero de l\'article. Ex : n8n, LinkedIn, IA, prospection',
     }),
     defineField({
+      name: 'introduction',
+      title: 'Introduction',
+      type: 'text',
+      rows: 4,
+      description: '3 à 4 phrases d\'introduction. Affiché en encadré après la capsule, avant le contenu.',
+      options: {
+        canvasApp: { purpose: 'Introduction percutante de l\'article en 3 à 4 phrases. Pose le contexte, identifie le problème du lecteur, annonce ce que l\'article va lui apporter. Ton adapté à celui de l\'article.' },
+      },
+    }),
+    defineField({
+      name: 'conclusion',
+      title: 'Conclusion',
+      type: 'text',
+      rows: 4,
+      description: '3 à 4 phrases de conclusion. Affiché en encadré après la FAQ.',
+      options: {
+        canvasApp: { purpose: 'Conclusion de l\'article en 3 à 4 phrases. Synthétise les points clés, donne un conseil actionnable immédiat, ouvre sur la suite. Ton adapté à celui de l\'article.' },
+      },
+    }),
+    defineField({
       name: 'capsule',
       title: 'Capsule — Réponse directe (GEO)',
       type: 'text',

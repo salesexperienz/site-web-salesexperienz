@@ -350,6 +350,15 @@ export default async function PostPage({ params }: Props) {
               </div>
             )}
 
+            {/* ── Introduction ──────────────────────────────────────────── */}
+            {post.introduction && (
+              <div className="mb-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5">
+                <p className="text-[15px] text-se-navy/80 leading-relaxed whitespace-pre-line">
+                  {post.introduction}
+                </p>
+              </div>
+            )}
+
             {post.body ? (
               <PortableText value={post.body} components={ptComponents} />
             ) : (
@@ -384,6 +393,15 @@ export default async function PostPage({ params }: Props) {
                     </details>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {/* ── Conclusion ────────────────────────────────────────────── */}
+            {post.conclusion && (
+              <div className="mt-10 rounded-xl border-l-4 border-se-orange bg-gray-100 px-6 py-5">
+                <p className="text-[15px] text-se-navy/80 leading-relaxed whitespace-pre-line">
+                  {post.conclusion}
+                </p>
               </div>
             )}
 
