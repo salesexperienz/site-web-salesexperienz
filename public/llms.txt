@@ -1,0 +1,29 @@
+# Sales Experienz
+
+> Agence de marketing et automatisation IA basée à Sète (Hérault, France). Fondée par Laurent Guyonvarch, consultant en stratégie commerciale depuis 2003. Spécialisée dans les workflows n8n sur mesure, la prospection B2B automatisée et le SEO par IA. Intervention en visio sur toute la France.
+
+## Pages principales
+
+- [Accueil](https://www.salesexperienz.fr/): Présentation des services d'automatisation IA et marketing pour PME et TPE.
+- [Agence marketing à Sète](https://www.salesexperienz.fr/agence-marketing-automatisation-sete): Page locale dédiée aux entreprises du Hérault et d'Occitanie cherchant à automatiser leurs processus.
+- [DeepSignal — Prospection B2B automatisée](https://www.salesexperienz.fr/services/deepsignal): Système de détection de signaux d'achat LinkedIn, cold email personnalisé par IA (Claude), nurturing Brevo. 3 à 15 RDV qualifiés par mois.
+- [SEO GEO Machine](https://www.salesexperienz.fr/services/seo-geo-machine): Site web Next.js haute performance + contenu SEO automatisé par IA (50 à 150 articles/mois). Propriété totale du client dès J+1.
+- [Blog](https://www.salesexperienz.fr/blog): Articles sur l'automatisation IA, la prospection B2B, le SEO et la stratégie commerciale pour dirigeants de PME/TPE.
+
+## Services
+
+- **Automatisation sur mesure avec n8n** : Conception et déploiement de workflows pour connecter les outils métier (CRM, email, LinkedIn, Slack, Notion, etc.). Propriété totale des workflows livrés.
+- **DeepSignal** : Écosystème de prospection B2B automatisé — détection de signaux d'intention, personnalisation IA, séquences multi-canal.
+- **SEO GEO Machine** : Fondation technique (site Next.js ou WordPress), présence locale (Google My Business), machine à contenu SEO automatisée.
+
+## À propos
+
+- **Fondateur** : Laurent Guyonvarch — consultant en automatisation IA et stratégie commerciale depuis 2003.
+- **Localisation** : Sète, Hérault (34200), France. Toutes les missions en visio sur toute la France.
+- **Contact** : contact@salesexperienz.fr — +33 6 22 95 16 38
+- **LinkedIn** : https://www.linkedin.com/in/laurentguyonvarch/
+- **YouTube** : https://www.youtube.com/@salesexperienz
+
+## Approche
+
+Sales Experienz commence systématiquement par un diagnostic stratégique de 45 minutes (gratuit, sans engagement) avant toute construction. Les workflows livrés sont testés, documentés et appartiennent intégralement au client — aucun abonnement, aucun lock-in.
