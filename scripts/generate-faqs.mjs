@@ -142,8 +142,11 @@ async function main() {
       const faq      = await generateFaq(post.title, post.excerpt, bodyText)
 
       console.log(`${num} ✅ "${post.title}"`)
-      faq.forEach(item => console.log(`       Q: ${item.question}`))
-      console.log()
+      faq.forEach((item, idx) => {
+        console.log(`       Q${idx + 1}: ${item.question}`)
+        console.log(`       R${idx + 1}: ${item.answer}`)
+        console.log()
+      })
 
       if (!DRY_RUN) {
         await sanity.patch(post._id).set({ faq }).commit()
