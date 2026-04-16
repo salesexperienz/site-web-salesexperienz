@@ -206,6 +206,77 @@ const schemaOrg = {
       },
     },
 
+    // ── 4. SiteNavigationElement — structure de navigation principale ─────────
+    {
+      '@type': 'ItemList',
+      '@id': `${SITE_URL}/#navigation`,
+      name: 'Navigation principale — Sales Experienz',
+      description: 'Pages principales du site Sales Experienz',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Accueil',
+          url: SITE_URL,
+          item: {
+            '@type': 'WebPage',
+            '@id': `${SITE_URL}/#webpage`,
+            name: 'Accueil — Agence Marketing & Automatisation IA',
+            url: SITE_URL,
+            description: 'Agence marketing à Sète — automatisation n8n, prospection B2B automatisée, SEO par IA.',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'DeepSignal — Prospection automatisée',
+          url: `${SITE_URL}/services/deepsignal`,
+          item: {
+            '@type': 'WebPage',
+            name: 'DeepSignal — Prospection B2B automatisée',
+            url: `${SITE_URL}/services/deepsignal`,
+            description: 'Écosystème de prospection B2B : détection de signaux LinkedIn, cold email personnalisé par IA, nurturing automatisé. 10 à 30 RDV qualifiés par mois.',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: 'SEO GEO Machine — Site web & contenu SEO',
+          url: `${SITE_URL}/services/seo-geo-machine`,
+          item: {
+            '@type': 'WebPage',
+            name: 'SEO GEO Machine — Création site web & contenu SEO automatisé',
+            url: `${SITE_URL}/services/seo-geo-machine`,
+            description: 'Site Next.js haute performance + contenu SEO automatisé par IA. Google My Business optimisé. Propriété totale dès J+1.',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: 'Agence à Sète',
+          url: `${SITE_URL}/agence-marketing-automatisation-sete`,
+          item: {
+            '@type': 'WebPage',
+            name: 'Agence Marketing & Automatisation IA à Sète — Hérault (34)',
+            url: `${SITE_URL}/agence-marketing-automatisation-sete`,
+            description: 'Consultant en automatisation et marketing digital basé à Sète. Interventions en visio sur toute la France.',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          name: 'Blog — Automatisation, SEO & IA',
+          url: `${SITE_URL}/blog`,
+          item: {
+            '@type': 'WebPage',
+            name: 'Blog — Automatisation, SEO & IA pour PME',
+            url: `${SITE_URL}/blog`,
+            description: 'Stratégies concrètes en automatisation, SEO/GEO, IA et prospection B2B — publiées par SalesExperienz à Sète.',
+          },
+        },
+      ],
+    },
+
   ],
 }
 

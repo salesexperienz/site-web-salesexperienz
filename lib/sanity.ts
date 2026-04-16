@@ -29,6 +29,17 @@ export async function getPosts() {
   `)
 }
 
+// Requête pour les N derniers articles (widget "Derniers articles")
+export async function getRecentPosts(limit = 3) {
+  return client.fetch(`
+    *[_type == "post"] | order(publishedAt desc) [0...$limit] {
+      _id, title, slug, excerpt, mainImage, publishedAt,
+      "categories": categories[]->title,
+      "readingTime": round(length(pt::text(body)) / 5 / 200)
+    }
+  `, { limit })
+}
+
 // Requête légère pour le sitemap (slug + dates uniquement)
 export async function getPostsForSitemap() {
   return client.fetch(`

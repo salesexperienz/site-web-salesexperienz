@@ -32,7 +32,7 @@ const defaultServices = [
     points: [
       'Site web Next.js ou WordPress SEO-ready',
       'Google My Business optimisé et aligné',
-      '50 à 150 articles SEO/mois automatisés',
+      '10 à 30 articles SEO/mois automatisés',
       'Propriété totale dès J+1',
     ],
     featured: false,

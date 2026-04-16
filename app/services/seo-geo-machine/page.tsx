@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import SocialBlock from '@/components/SocialBlock'
+import RecentArticles from '@/components/RecentArticles'
 import FadeUp from '@/components/FadeUp'
 import DeepSignalAccordion from '@/components/DeepSignalAccordion'
 import About from '@/components/About'
@@ -1708,6 +1709,7 @@ export default function SeoGeoMachinePage() {
         </div>
       </section>
 
+      <RecentArticles />
       <SocialBlock />
       <Footer />
 
