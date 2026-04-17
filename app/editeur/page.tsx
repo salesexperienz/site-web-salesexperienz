@@ -1,13 +1,8 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { ImageIcon } from 'lucide-react'
-
-const EditorApp = dynamic(
-  () => import('@/components/newsletter/EditorApp').then((m) => m.EditorApp),
-  { ssr: false }
-)
+import EditorWrapper from './EditorWrapper'
 
 export const metadata: Metadata = {
   title: 'Éditeur de Newsletter — Sales Experienz',
@@ -114,7 +109,7 @@ export default function EditeurPage() {
       </section>
 
       {/* Éditeur */}
-      <EditorApp />
+      <EditorWrapper />
 
       <Footer />
     </>
