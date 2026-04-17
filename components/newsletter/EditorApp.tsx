@@ -77,8 +77,21 @@ export function EditorApp() {
         )}
 
         <ExportButtons state={state} colors={colors} brand={brand} onImport={handleImport} />
-        <div className="p-3 text-xs text-stone-500 border-t border-stone-200 bg-stone-50 flex-shrink-0">
-          Modifications en temps réel.{!saved && ' (Non enregistré)'}
+        <div className="px-3 py-2 border-t border-stone-200 bg-stone-50 flex items-center justify-between gap-2 flex-shrink-0">
+          <span className="text-xs text-stone-500">
+            {saved ? 'Toutes les modifications sont enregistrées.' : 'Modifications non enregistrées.'}
+          </span>
+          <button
+            onClick={() => { saveState(state); setSaved(true); }}
+            disabled={saved}
+            className={`text-xs px-3 py-1.5 rounded font-medium transition-colors whitespace-nowrap ${
+              saved
+                ? 'bg-stone-200 text-stone-400 cursor-default'
+                : 'bg-orange-600 text-white hover:bg-orange-700'
+            }`}
+          >
+            {saved ? 'Enregistré ✓' : 'Enregistrer'}
+          </button>
         </div>
       </div>
 
