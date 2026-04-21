@@ -108,10 +108,12 @@ export function EditorApp() {
 
       {/* Prévisualisation */}
       <div className={`flex flex-col overflow-hidden ${isSmallScreen ? 'w-full' : 'flex-1'}`}
-        style={isSmallScreen ? { height: '500px' } : undefined}
+        style={isSmallScreen ? { height: '60vh' } : undefined}
       >
         <div className="px-3 py-2 border-b border-stone-200 bg-white flex items-center justify-between flex-shrink-0">
-          <span className="text-xs text-stone-600 font-medium">Prévisualisation</span>
+          <span className="text-xs text-stone-600 font-medium">
+            Prévisualisation {isSmallScreen && <span className="text-stone-400 font-normal">↓ fais défiler pour voir</span>}
+          </span>
           {!isSmallScreen && (
             <button onClick={() => setIsMobile(!isMobile)}
               className="text-xs px-3 py-1.5 rounded bg-orange-600 hover:bg-orange-700 text-white font-medium transition-colors">
