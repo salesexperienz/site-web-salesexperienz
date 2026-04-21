@@ -110,7 +110,7 @@ export default function EditeurPage() {
             <div className="flex-1">
               <p className="text-sm font-semibold text-se-navy mb-1">Rédige ta newsletter avec Claude, exporte-la ici en un clic</p>
               <p className="text-sm text-stone-500 leading-relaxed">
-                Installe le skill Claude pour rédiger ton contenu directement dans Claude Code, puis l&apos;exporter automatiquement dans cet éditeur — sans copier-coller.
+                Installe le skill Claude pour rédiger ton contenu directement dans Claude, puis l&apos;exporter automatiquement dans cet éditeur — sans copier-coller.
               </p>
             </div>
             <a
