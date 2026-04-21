@@ -17,11 +17,19 @@ export function EditorApp() {
   const [currentSection, setCurrentSection] = useState<SectionKey | null>(null);
   const [activeTab, setActiveTab]       = useState<'content' | 'brand'>('content');
   const [isMobile, setIsMobile]         = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [saved, setSaved]               = useState(true);
 
   useEffect(() => { saveState(state); }, [state]);
   useEffect(() => { saveColors(colors); }, [colors]);
   useEffect(() => { saveBrand(brand); }, [brand]);
+
+  useEffect(() => {
+    const check = () => setIsSmallScreen(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   const handleStateChange = (key: SectionKey, value: string) => {
     setState((prev) => ({ ...prev, [key]: value }));
@@ -39,10 +47,13 @@ export function EditorApp() {
   const handleResetAll    = () => { setColors(DEFAULT_COLORS); setBrand(DEFAULT_BRAND); };
 
   return (
-    <div className="flex bg-stone-50" style={{ height: 'calc(100vh - 64px)' }}>
+    <div
+      className={`bg-stone-50 ${isSmallScreen ? 'flex flex-col' : 'flex'}`}
+      style={isSmallScreen ? undefined : { height: 'calc(100vh - 64px)' }}
+    >
 
       {/* Colonne gauche */}
-      <div className="w-80 min-w-[280px] border-r border-stone-200 bg-white flex flex-col overflow-hidden">
+      <div className={`border-stone-200 bg-white flex flex-col ${isSmallScreen ? 'w-full border-b' : 'w-80 min-w-[280px] border-r overflow-hidden'}`}>
         <EditorHeader state={state} />
 
         {/* Onglets */}
@@ -96,15 +107,19 @@ export function EditorApp() {
       </div>
 
       {/* Prévisualisation */}
-      <div className="flex-1 flex flex-col overflow-hidden">
+      <div className={`flex flex-col overflow-hidden ${isSmallScreen ? 'w-full' : 'flex-1'}`}
+        style={isSmallScreen ? { height: '500px' } : undefined}
+      >
         <div className="px-3 py-2 border-b border-stone-200 bg-white flex items-center justify-between flex-shrink-0">
           <span className="text-xs text-stone-600 font-medium">Prévisualisation</span>
-          <button onClick={() => setIsMobile(!isMobile)}
-            className="text-xs px-3 py-1.5 rounded bg-orange-600 hover:bg-orange-700 text-white font-medium transition-colors">
-            {isMobile ? 'Vue desktop' : 'Vue mobile'}
-          </button>
+          {!isSmallScreen && (
+            <button onClick={() => setIsMobile(!isMobile)}
+              className="text-xs px-3 py-1.5 rounded bg-orange-600 hover:bg-orange-700 text-white font-medium transition-colors">
+              {isMobile ? 'Vue desktop' : 'Vue mobile'}
+            </button>
+          )}
         </div>
-        <Preview state={state} colors={colors} brand={brand} isMobile={isMobile} />
+        <Preview state={state} colors={colors} brand={brand} isMobile={isSmallScreen || isMobile} />
       </div>
 
     </div>
