@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { ImageIcon } from 'lucide-react'
+import { ImageIcon, Download } from 'lucide-react'
 import EditorWrapper from './EditorWrapper'
 
 export const metadata: Metadata = {
@@ -96,13 +96,31 @@ export default function EditeurPage() {
           </div>
 
           {/* Compatibilité outils */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3 mb-6">
             <span className="text-xs text-stone-400 uppercase tracking-wide font-medium">Compatible avec</span>
             {['Brevo', 'Mailchimp', 'ActiveCampaign', 'Sendinblue', 'HubSpot', 'Klaviyo'].map((tool) => (
               <span key={tool} className="text-xs px-3 py-1 rounded-full border border-stone-200 text-stone-600 bg-stone-50 font-medium">
                 {tool}
               </span>
             ))}
+          </div>
+
+          {/* Skill Claude */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-stone-50 border border-stone-200 rounded-lg px-4 py-4">
+            <div className="flex-1">
+              <p className="text-sm font-semibold text-se-navy mb-1">Rédige ta newsletter avec Claude, exporte-la ici en un clic</p>
+              <p className="text-sm text-stone-500 leading-relaxed">
+                Installe le skill Claude pour rédiger ton contenu directement dans Claude Code, puis l&apos;exporter automatiquement dans cet éditeur — sans copier-coller.
+              </p>
+            </div>
+            <a
+              href="/newsletter-editor-skill.zip"
+              download
+              className="flex-shrink-0 inline-flex items-center gap-2 bg-se-orange hover:bg-orange-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+            >
+              <Download size={16} />
+              Télécharger le skill Claude
+            </a>
           </div>
 
         </div>
