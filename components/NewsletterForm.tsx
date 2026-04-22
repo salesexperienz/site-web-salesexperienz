@@ -31,7 +31,7 @@ export default function NewsletterForm() {
   }
 
   return (
-    <div className="mt-10 max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto">
       <p className="text-center text-white font-bold text-[15px] mb-4 uppercase tracking-[0.12em]">
         Recevez nos conseils chaque semaine
       </p>

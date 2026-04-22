@@ -101,7 +101,11 @@ export default function SocialBlock() {
         </div>
 
         {/* Formulaire newsletter */}
-        <NewsletterForm />
+        <div className="mt-16 max-w-5xl mx-auto">
+          <div className="rounded-2xl px-8 py-10" style={{ background: 'rgba(255,255,255,0.12)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,0.22)' }}>
+            <NewsletterForm />
+          </div>
+        </div>
       </div>
     </section>
   )
