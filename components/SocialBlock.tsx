@@ -1,3 +1,5 @@
+import NewsletterForm from './NewsletterForm'
+
 const socials = [
   {
     name: 'LinkedIn',
@@ -97,6 +99,9 @@ export default function SocialBlock() {
             </a>
           ))}
         </div>
+
+        {/* Formulaire newsletter */}
+        <NewsletterForm />
       </div>
     </section>
   )

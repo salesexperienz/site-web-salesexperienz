@@ -1,11 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(req: NextRequest) {
-  const { email } = await req.json()
+  const { email, prenom } = await req.json()
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json({ error: 'Email invalide' }, { status: 400 })
   }
+
+  const body: Record<string, unknown> = {
+    email,
+    listIds: [21],
+    updateEnabled: true,
+  }
+  if (prenom) body.attributes = { PRENOM: prenom }
 
   const res = await fetch('https://api.brevo.com/v3/contacts', {
     method: 'POST',
@@ -13,11 +20,7 @@ export async function POST(req: NextRequest) {
       'Content-Type': 'application/json',
       'api-key': process.env.BREVO_API_KEY!,
     },
-    body: JSON.stringify({
-      email,
-      listIds: [21],
-      updateEnabled: true,
-    }),
+    body: JSON.stringify(body),
   })
 
   if (!res.ok && res.status !== 204) {
