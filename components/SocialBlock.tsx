@@ -54,11 +54,39 @@ export default function SocialBlock() {
 
       <div className="relative max-w-container mx-auto px-6 py-16">
         {/* En-tête */}
-        <div className="text-center mb-12">
+        <div className="relative text-center mb-12">
+
+          {/* Flèche rouge en relief — desktop uniquement */}
+          <div className="absolute left-0 top-[46px] hidden lg:block pointer-events-none">
+            <svg width="120" height="40" viewBox="0 0 120 40" fill="none">
+              <defs>
+                <linearGradient id="arrow-grad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#F05A2A" />
+                  <stop offset="100%" stopColor="#B83010" />
+                </linearGradient>
+                <filter id="arrow-shadow" x="-10%" y="-60%" width="140%" height="220%">
+                  <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="rgba(0,0,0,0.45)" />
+                  <feDropShadow dx="0" dy="1" stdDeviation="1" floodColor="rgba(184,48,16,0.4)" />
+                </filter>
+              </defs>
+              <g filter="url(#arrow-shadow)">
+                {/* Tige */}
+                <rect x="0" y="16" width="82" height="9" rx="4.5" fill="url(#arrow-grad)" />
+                {/* Pointe */}
+                <polygon points="76,2 120,20.5 76,39" fill="url(#arrow-grad)" />
+              </g>
+              {/* Highlight haut pour effet 3D */}
+              <rect x="4" y="17" width="72" height="3" rx="1.5" fill="rgba(255,255,255,0.22)" />
+            </svg>
+          </div>
+
           <span className="inline-block text-white/60 text-[11px] font-bold uppercase tracking-[0.2em] mb-3">
             Restons connectés
           </span>
-          <h3 className="font-display font-extrabold text-[28px] md:text-[36px] text-white leading-tight">
+          <h3
+            className="font-display font-extrabold text-[28px] md:text-[36px] text-white leading-tight"
+            style={{ textShadow: '0 2px 8px rgba(0,0,0,0.35), 0 -1px 1px rgba(255,255,255,0.12), 2px 2px 0 rgba(0,0,0,0.15)' }}
+          >
             Suivez Sales Experienz
           </h3>
           <p className="text-white/75 text-[15px] mt-3 max-w-md mx-auto leading-relaxed">
