@@ -37,3 +37,5 @@ npm-debug.log*
 next-env.d.ts
 .env*.local
 scripts/generate-body-images.mjs
+
+service-account.json
