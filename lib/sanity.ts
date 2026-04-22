@@ -58,6 +58,7 @@ export async function getPost(slug: string) {
       _id, title, slug, excerpt, introduction, conclusion, capsule, faq, mainImage, publishedAt, _updatedAt, body,
       seoTitle, seoDescription,
       "tags": tags,
+      "offrePhare": offrePhare,
       "categories": categories[]->title,
       "author": author->name,
       "readingTime": round(length(pt::text(body)) / 5 / 200)

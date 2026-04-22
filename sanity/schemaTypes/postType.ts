@@ -128,6 +128,23 @@ export const postType = defineType({
       },
     }),
     defineField({
+      name: 'offrePhare',
+      title: 'Offre(s) mise(s) en avant',
+      type: 'array',
+      of: [defineArrayMember({ type: 'string' })],
+      options: {
+        list: [
+          { title: 'DeepSignal — Prospection automatisée', value: 'deepsignal' },
+          { title: 'SEO GEO Machine — Rédigé pour Google et les IA', value: 'seo-geo' },
+          { title: 'Workflows n8n — Automatisation sur mesure', value: 'automatisation' },
+          { title: 'Impact Vidéo — Votre offre en vidéo sans tournage', value: 'impact-video' },
+        ],
+        layout: 'tags',
+        canvasApp: { exclude: true },
+      },
+      description: 'Laissez vide pour auto-détecter selon les catégories. Sélectionnez 1 ou 2 offres à afficher en bas de cet article.',
+    }),
+    defineField({
       name: 'badge',
       title: 'Badge mis en avant',
       type: 'string',

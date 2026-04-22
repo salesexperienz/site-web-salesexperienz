@@ -437,7 +437,7 @@ export default async function PostPage({ params }: Props) {
 
         {/* Blocs de fin — pleine largeur */}
         <div className="max-w-container mx-auto px-6 pb-16">
-          <ArticleFooterBlocks categories={post.categories} />
+          <ArticleFooterBlocks categories={post.categories} offrePhare={post.offrePhare} />
         </div>
       </div>
 

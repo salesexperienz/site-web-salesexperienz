@@ -2,14 +2,54 @@ import Link from 'next/link'
 import { DISCOVERY_URL } from '@/lib/constants'
 
 // ─── Offres disponibles ───────────────────────────────────────────────────────
-type OfferKey = 'deepsignal' | 'seo-geo' | 'automatisation'
+type OfferKey = 'deepsignal' | 'seo-geo' | 'automatisation' | 'impact-video'
 
 const CATEGORY_OFFER_MAP: Record<string, OfferKey> = {
-  'Prospection': 'deepsignal',
-  'IA':          'deepsignal',
-  'SEO & IA':    'seo-geo',
-  'Automatisation': 'automatisation',
-  'Stratégie':   'automatisation',
+  // DeepSignal — prospection, commercial, LinkedIn
+  'Prospection':              'deepsignal',
+  'Prospection commerciale':  'deepsignal',
+  'IA':                       'deepsignal',
+  'Linkedin':                 'deepsignal',
+  'Signaux':                  'deepsignal',
+  'CRM':                      'deepsignal',
+  'Commercial':               'deepsignal',
+  'Performance commerciale':  'deepsignal',
+  'Automatisation commerciale': 'deepsignal',
+  'Démarche commerciale':     'deepsignal',
+  'leads':                    'deepsignal',
+  'relation client':          'deepsignal',
+  'BtoB':                     'deepsignal',
+  'Méthode des 3A':           'deepsignal',
+  'PME':                      'deepsignal',
+  'Pilotage commercial':      'deepsignal',
+  'Plan commercial':          'deepsignal',
+  'Stratégie commerciale':    'deepsignal',
+  'strategie de vente':       'deepsignal',
+  'Sales Experienz':          'deepsignal',
+  // SEO GEO Machine — contenu, visibilité, SEO
+  'SEO':                      'seo-geo',
+  'Rédaction SEO':            'seo-geo',
+  'Référencement Google':     'seo-geo',
+  'Stratégie de contenu':     'seo-geo',
+  'copywriting':              'seo-geo',
+  'Marketing Digital':        'seo-geo',
+  'visibilité':               'seo-geo',
+  'blog':                     'seo-geo',
+  'marketing':                'seo-geo',
+  'Site Web':                 'seo-geo',
+  'Wordpress':                'seo-geo',
+  'SEO & IA':                 'seo-geo',
+  // Automatisation n8n
+  'Automatisation':           'automatisation',
+  'Workflow n8n':             'automatisation',
+  'n8n':                      'automatisation',
+  'Stratégie':                'automatisation',
+  // Impact Vidéo
+  'Réseaux sociaux':          'impact-video',
+  'Stratégie de communication': 'impact-video',
+  'Coaching commercial':      'impact-video',
+  'Vidéo':                    'impact-video',
+  'Personal Branding':        'impact-video',
 }
 
 function resolveOffers(categories: string[]): OfferKey[] {
@@ -96,6 +136,29 @@ const OFFERS: Record<OfferKey, {
       <svg className="w-7 h-7 text-se-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
           d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+      </svg>
+    ),
+  },
+  'impact-video': {
+    eyebrow: 'Votre offre en vidéo — sans tournage',
+    title: 'Impact Vidéo — Votre offre expliquée en 3 minutes',
+    description: (
+      <>
+        Coaching commercial + script sur-mesure + vidéo Remotion livrée en 7 à 14 jours.
+        Votre offre expliquée en 3 minutes,{' '}
+        <strong className="text-white font-semibold">déployable sur LinkedIn, YouTube et votre landing page</strong>.
+      </>
+    ),
+    features: ['Coaching stratégique inclus', 'Technologie Remotion (React)', 'Formats 16:9, 9:16, 45 s', 'Code Next.js livré clé en main'],
+    cta: 'En savoir plus sur Impact Vidéo',
+    href: DISCOVERY_URL,
+    external: true,
+    icon: (
+      <svg className="w-7 h-7 text-se-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+          d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
+          d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
   },
@@ -214,8 +277,17 @@ function ReadyBlock() {
 // ─── Export ───────────────────────────────────────────────────────────────────
 import type React from 'react'
 
-export default function ArticleFooterBlocks({ categories }: { categories?: string[] }) {
-  const offers = resolveOffers(categories ?? [])
+export default function ArticleFooterBlocks({
+  categories,
+  offrePhare,
+}: {
+  categories?: string[]
+  offrePhare?: string[]
+}) {
+  const offers =
+    offrePhare && offrePhare.length > 0
+      ? (offrePhare.filter((k): k is OfferKey => k in OFFERS) as OfferKey[]).slice(0, 2)
+      : resolveOffers(categories ?? [])
 
   return (
     <div className="flex flex-col gap-6 mt-10">
