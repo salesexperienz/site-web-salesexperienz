@@ -41,43 +41,50 @@ const socials = [
 
 export default function SocialBlock() {
   return (
-    <section style={{ background: '#eaf4ec' }}>
-      <div className="max-w-container mx-auto px-6 py-14">
-        <div className="rounded-2xl border border-[#c8e6cc] p-8 md:p-10" style={{ background: '#eaf4ec' }}>
-          <div className="text-center mb-8">
-            <span className="text-se-teal text-[11px] font-bold uppercase tracking-[0.15em]">
-              Restons connectés
-            </span>
-            <h3 className="font-display font-extrabold text-[22px] text-gray-900 mt-2">
-              Suivez Sales Experienz
-            </h3>
-            <p className="text-gray-700 text-[14px] mt-2">
-              Conseils pratiques, outils et coulisses — chaque semaine.
-            </p>
-          </div>
+    <section
+      className="relative overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #899bc4 0%, #6b7fa8 100%)' }}
+    >
+      {/* Lueurs décoratives */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.12),transparent_55%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(17,28,61,0.25),transparent_60%)] pointer-events-none" />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {socials.map((s) => (
-              <a
-                key={s.name}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-start gap-4 p-5 rounded-xl border border-[#c8e6cc] bg-white hover:border-se-orange/30 hover:shadow-sm transition-all duration-200 hover:-translate-y-0.5"
-              >
-                <div className={`w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center text-white flex-shrink-0 ${s.color}`}>
-                  {s.icon}
-                </div>
-                <div className="min-w-0">
-                  <p className="font-display font-bold text-[15px] text-gray-900 group-hover:text-se-orange transition-colors">
-                    {s.name}
-                  </p>
-                  <p className="text-se-teal text-[12px] mb-1">{s.handle}</p>
-                  <p className="text-gray-600 text-[12px] leading-snug">{s.description}</p>
-                </div>
-              </a>
-            ))}
-          </div>
+      <div className="relative max-w-container mx-auto px-6 py-16">
+        {/* En-tête */}
+        <div className="text-center mb-10">
+          <span className="inline-block text-white/60 text-[11px] font-bold uppercase tracking-[0.2em] mb-3">
+            Restons connectés
+          </span>
+          <h3 className="font-display font-extrabold text-[28px] md:text-[36px] text-white leading-tight">
+            Suivez Sales Experienz
+          </h3>
+          <p className="text-white/75 text-[15px] mt-3 max-w-md mx-auto leading-relaxed">
+            Conseils pratiques, outils et coulisses — chaque semaine.
+          </p>
+        </div>
+
+        {/* Cartes réseaux */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          {socials.map((s) => (
+            <a
+              key={s.name}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-start gap-4 p-6 rounded-2xl bg-white border border-white/60 shadow-[0_2px_12px_rgba(17,28,61,0.12)] hover:shadow-[0_8px_28px_rgba(17,28,61,0.22)] hover:-translate-y-1 transition-all duration-200"
+            >
+              <div className={`w-11 h-11 rounded-xl overflow-hidden flex items-center justify-center text-white flex-shrink-0 ${s.color}`}>
+                {s.icon}
+              </div>
+              <div className="min-w-0">
+                <p className="font-display font-bold text-[15px] text-se-navy group-hover:text-se-orange transition-colors duration-200">
+                  {s.name}
+                </p>
+                <p className="text-[#6b7fa8] text-[12px] font-semibold mb-1.5">{s.handle}</p>
+                <p className="text-gray-500 text-[12px] leading-snug">{s.description}</p>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>

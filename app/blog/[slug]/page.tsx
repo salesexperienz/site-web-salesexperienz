@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import ArticleSidebar from '@/components/ArticleSidebar'
 import ArticleFooterBlocks from '@/components/ArticleFooterBlocks'
 import SocialBlock from '@/components/SocialBlock'
+import RecentArticles from '@/components/RecentArticles'
 import Link from 'next/link'
 
 const SITE_URL = 'https://www.salesexperienz.fr'
@@ -435,10 +436,11 @@ export default async function PostPage({ params }: Props) {
 
         {/* Blocs de fin — pleine largeur */}
         <div className="max-w-container mx-auto px-6 pb-16">
-          <ArticleFooterBlocks />
+          <ArticleFooterBlocks categories={post.categories} />
         </div>
       </div>
 
+      <RecentArticles />
       <SocialBlock />
       <Footer />
 
