@@ -11,6 +11,7 @@ import RecentArticles from '@/components/RecentArticles'
 import Link from 'next/link'
 
 const SITE_URL = 'https://www.salesexperienz.fr'
+export const revalidate = 60;
 
 export async function generateStaticParams() {
   const posts = await getPosts()
