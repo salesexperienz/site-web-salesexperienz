@@ -36,6 +36,9 @@ export default function Footer() {
             <a href="/expert-automatisation-commerciale-paris" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
               Automatisation Paris
             </a>
+            <a href="/agence-marketing-automatisation-sete" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
+              Automatisation Sète
+            </a>
           </div>
 
           {/* Contact + NAP */}
