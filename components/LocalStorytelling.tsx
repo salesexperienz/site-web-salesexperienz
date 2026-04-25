@@ -24,6 +24,17 @@ export default function LocalStorytelling({ ville, intro, problems, methode, hig
           </h2>
         </FadeUp>
 
+        {/* Photo mobile — centrée sous le titre */}
+        <FadeUp delay={0.08} className="flex lg:hidden justify-center mb-8">
+          <Image
+            src="/LaurentG.png"
+            alt="Laurent Guyonvarch — Sales Experienz"
+            width={200}
+            height={200}
+            className="rounded-2xl shadow-xl"
+          />
+        </FadeUp>
+
         {/* Intro + problèmes à gauche, photo à droite — alignés en haut */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
           <div className="flex-1 min-w-0">
@@ -46,7 +57,7 @@ export default function LocalStorytelling({ ville, intro, problems, methode, hig
             </FadeUp>
           </div>
 
-          {/* Photo Laurent */}
+          {/* Photo desktop */}
           <FadeUp delay={0.1} className="hidden lg:block flex-shrink-0">
             <Image
               src="/LaurentG.png"
