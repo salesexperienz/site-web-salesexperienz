@@ -22,13 +22,13 @@ import Footer from '@/components/Footer'
 // ─── METADATA ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Expert automatisation commerciale Paris — SalesExperienz',
-  description: "Automatisez votre prospection B2B à Paris avec Deep Signal : détection de signaux d'intention, personnalisation IA, 10 à 60 RDV/mois. Audit gratuit 45 min.",
+  description: "Expert automatisation commerciale à Paris : systèmes sur mesure pour startups et PME en Île-de-France. Prospection B2B, contenu automatisé, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit stratégique 45 min.",
   alternates: {
     canonical: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris',
   },
   openGraph: {
     title: 'Expert automatisation commerciale Paris — SalesExperienz',
-    description: "Automatisez votre prospection B2B à Paris avec Deep Signal : détection de signaux d'intention, personnalisation IA, 10 à 60 RDV/mois. Audit gratuit 45 min.",
+    description: "Expert automatisation commerciale à Paris : systèmes sur mesure pour startups et PME en Île-de-France. Prospection B2B, contenu automatisé, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit stratégique 45 min.",
     url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris',
     siteName: 'Sales Experienz',
     locale: 'fr_FR',
@@ -59,7 +59,7 @@ const schemaLocal = {
       '@type': 'WebPage',
       '@id': 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris',
       name: 'Expert automatisation commerciale Paris — SalesExperienz',
-      description: "Automatisez votre prospection B2B à Paris avec Deep Signal : détection de signaux d'intention, personnalisation IA, 10 à 60 RDV/mois. Audit gratuit 45 min.",
+      description: "Expert automatisation commerciale à Paris : systèmes sur mesure pour startups et PME en Île-de-France. Prospection B2B, contenu automatisé, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit stratégique 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
       breadcrumb: {

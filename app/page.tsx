@@ -1,3 +1,21 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'SalesExperienz — Expert Automatisation Commerciale & Systèmes IA | n8n',
+  description: "Laurent Guyonvarch conçoit des systèmes d'automatisation sur mesure pour dirigeants de PME/TPE : prospection B2B, contenu automatisé, visibilité en ligne. Basé à Sète, partout en France en visio. Audit stratégique gratuit 45 min.",
+  keywords: 'automatisation commerciale, expert n8n, système automatisation PME, prospection B2B automatisée, automatisation IA, workflows n8n, Sales Experienz',
+  alternates: { canonical: 'https://www.salesexperienz.fr' },
+  openGraph: {
+    title: 'SalesExperienz — Expert Automatisation Commerciale & Systèmes IA',
+    description: "Des systèmes d'automatisation sur mesure pour PME/TPE : prospection B2B, contenu, visibilité. Pas des workflows isolés — des systèmes complets. Basé à Sète, partout en France.",
+    url: 'https://www.salesexperienz.fr',
+    siteName: 'Sales Experienz',
+    locale: 'fr_FR',
+    type: 'website',
+    images: [{ url: 'https://www.salesexperienz.fr/portrait.png', width: 1200, height: 630, alt: 'Laurent Guyonvarch — Sales Experienz, expert automatisation commerciale' }],
+  },
+}
+
 import Navbar             from '@/components/Navbar'
 import Hero               from '@/components/Hero'
 import LocalStorytelling  from '@/components/LocalStorytelling'

@@ -22,13 +22,13 @@ import Footer from '@/components/Footer'
 // ─── METADATA ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Expert automatisation commerciale Marseille — SalesExperienz',
-  description: "Automatisez votre prospection B2B à Marseille avec Deep Signal : détection de signaux d'intention, personnalisation IA, 10 à 60 RDV/mois. Audit gratuit 45 min.",
+  description: "Expert automatisation commerciale à Marseille : systèmes sur mesure pour TPE et PME en PACA. Prospection B2B, visibilité en ligne, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit 45 min.",
   alternates: {
     canonical: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille',
   },
   openGraph: {
     title: 'Expert automatisation commerciale Marseille — SalesExperienz',
-    description: "Automatisez votre prospection B2B à Marseille avec Deep Signal : détection de signaux d'intention, personnalisation IA, 10 à 60 RDV/mois. Audit gratuit 45 min.",
+    description: "Expert automatisation commerciale à Marseille : systèmes sur mesure pour TPE et PME en PACA. Prospection B2B, visibilité en ligne, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit 45 min.",
     url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille',
     siteName: 'Sales Experienz',
     locale: 'fr_FR',
@@ -59,7 +59,7 @@ const schemaLocal = {
       '@type': 'WebPage',
       '@id': 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille',
       name: 'Expert automatisation commerciale Marseille — SalesExperienz',
-      description: "Automatisez votre prospection B2B à Marseille avec Deep Signal : détection de signaux d'intention, personnalisation IA, 10 à 60 RDV/mois. Audit gratuit 45 min.",
+      description: "Expert automatisation commerciale à Marseille : systèmes sur mesure pour TPE et PME en PACA. Prospection B2B, visibilité en ligne, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
       breadcrumb: {
