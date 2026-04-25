@@ -10,21 +10,21 @@ const points = [
     num: '01',
     label: 'Concurrence',
     title: 'Vos concurrents avancent pendant ce temps',
-    body: "Des équipes commerciales automatisent déjà leur prospection et ferment des deals. Chaque mois sans automatisation est un mois d'avance offert à vos concurrents — sans le savoir.",
+    body: "Des équipes automatisent déjà leur prospection et leur présence en ligne — elles apparaissent plus, closent plus vite. Chaque mois sans système est un mois d'avance offert à vos concurrents.",
     note: '→ un mois de retard = un mois d\'avance pour eux',
   },
   {
     num: '02',
     label: 'Temps englouti',
-    title: '60 % du temps commercial perdu à prospecter',
-    body: "La prospection manuelle mobilise la majeure partie de vos ressources commerciales. Ces heures pourraient aller à la relation client, à la négociation, à la stratégie — là où elles créent vraiment de la valeur.",
-    note: '→ chaque heure prospectée = une heure non-stratégique',
+    title: 'Relances, contenu, reporting : tout ça prend du temps',
+    body: "Les heures passées sur des tâches manuelles — relances, création de contenu, suivi de pipeline — ne génèrent pas de valeur directe. Ces heures appartiennent à la stratégie, à la relation client, à la négociation.",
+    note: '→ chaque heure manuelle = une heure non-stratégique',
   },
   {
     num: '03',
-    label: 'Pipeline qui fuit',
-    title: 'Des opportunités perdues sans ligne de facture',
-    body: "Un pipeline mal alimenté coûte plus cher que l'automatisation elle-même. Les opportunités manquées ne s'affichent pas dans un tableau de bord — mais elles s'accumulent chaque trimestre.",
+    label: 'Visibilité qui stagne',
+    title: 'Votre pipeline dépend de vos disponibilités',
+    body: "Sans système, votre visibilité et votre prospection s'arrêtent quand vous êtes à plein. Un workflow bien conçu travaille pour vous en continu — même quand vous êtes en rendez-vous.",
     note: '→ ce coût invisible grossit en silence',
   },
 ]
@@ -40,9 +40,9 @@ export default function LocalUrgency({ ville }: LocalUrgencyProps) {
             CHAQUE MOIS QUI PASSE
           </p>
           <h2 className="font-display font-bold text-[28px] md:text-[42px] leading-[1.15] text-se-navy">
-            Ce que la prospection manuelle vous coûte vraiment{ville ? ` à ${ville}` : ''}
+            Ce que l&apos;inertie commerciale et marketing vous coûte vraiment{ville ? ` à ${ville}` : ''}
           </h2>
-          <p className="font-body text-[17px] text-se-navy/55 mt-5 leading-[1.7]">
+          <p className="font-body text-[17px] text-se-navy mt-5 leading-[1.7]">
             Les coûts visibles sont faciles à calculer. Les coûts cachés de l'inertie, beaucoup moins.
           </p>
         </FadeUp>
@@ -88,13 +88,13 @@ export default function LocalUrgency({ ville }: LocalUrgencyProps) {
                   </h3>
 
                   {/* Corps */}
-                  <p className="font-body text-[15px] text-se-navy/60 leading-[1.65]">
+                  <p className="font-body text-[15px] text-se-navy leading-[1.65]">
                     {p.body}
                   </p>
 
                   {/* Annotation manuscrite Caveat */}
                   <div className="mt-auto pt-5 border-t border-dashed border-se-navy/[0.12]">
-                    <p className="font-handwriting text-[19px] text-se-teal leading-[1.4]">
+                    <p className="font-handwriting font-bold text-[24px] text-se-teal leading-[1.4]">
                       {p.note}
                     </p>
                   </div>
@@ -106,7 +106,7 @@ export default function LocalUrgency({ ville }: LocalUrgencyProps) {
 
         {/* Conclusion manuscrite */}
         <FadeUp delay={0.45} className="text-center">
-          <p className="font-handwriting text-[28px] md:text-[38px] text-se-navy/65 leading-[1.4] max-w-2xl mx-auto">
+          <p className="font-handwriting text-[28px] md:text-[38px] text-se-navy leading-[1.4] max-w-2xl mx-auto">
             Automatiser maintenant{ville ? ` à ${ville}` : ''}, c'est reprendre l'avantage — durablement.
           </p>
           <div

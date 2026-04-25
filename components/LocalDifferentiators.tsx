@@ -14,35 +14,97 @@ interface LocalDifferentiatorsProps {
 
 export default function LocalDifferentiators({ ville, items }: LocalDifferentiatorsProps) {
   return (
-    <section className="relative bg-[#162248] py-[80px] lg:py-[120px]">
-      <div className="absolute top-0 left-0 right-0 h-[4px]" style={{ background: 'linear-gradient(90deg, #E8621A 0%, #4ABFB0 100%)' }} />
+    <section className="bg-white py-[80px] lg:py-[120px]">
       <div className="max-w-container mx-auto px-6 lg:px-20">
 
-        <FadeUp className="mb-14 max-w-2xl">
+        {/* Header centré */}
+        <FadeUp className="mb-20 max-w-2xl mx-auto text-center">
           <p className="font-body text-[12px] font-medium uppercase tracking-[0.2em] text-se-orange mb-4">
             MON APPROCHE
           </p>
-          <h2 className="font-display font-bold text-[28px] md:text-[42px] leading-[1.15] text-white">
+          <h2 className="font-display font-bold text-[28px] md:text-[42px] leading-[1.15] text-se-navy">
             Ce qui me rend différent des autres experts automatisation commerciale{ville ? ` à ${ville}` : ''}
           </h2>
         </FadeUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {items.map((item, i) => (
-            <FadeUp key={i} delay={i * 0.08}>
-              <div className="group bg-white rounded-2xl p-7 h-full flex flex-col gap-4 border border-se-navy/[0.07] hover:border-se-orange/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(232,98,26,0.10)]">
-                <span className="font-display font-bold text-[52px] leading-none select-none" style={{ color: '#e86119' }}>
-                  {item.num}
-                </span>
-                <h3 className="font-display font-bold text-[18px] text-se-navy leading-[1.3]">
-                  {item.title}
-                </h3>
-                <p className="font-body text-[15px] text-se-navy/55 leading-[1.65]">
-                  {item.text}
-                </p>
-              </div>
-            </FadeUp>
-          ))}
+        {/* Timeline */}
+        <div className="relative">
+
+          {/* Ligne verticale centrale — desktop uniquement */}
+          <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px]"
+            style={{ background: 'linear-gradient(180deg, #E8621A 0%, #4ABFB0 100%)' }} />
+
+          <div className="flex flex-col gap-8 lg:gap-0">
+            {items.map((item, i) => {
+              const isLeft = i % 2 === 0
+              return (
+                <FadeUp key={i} delay={i * 0.08}>
+                  {/* Rangée : contenu gauche | point central | contenu droit */}
+                  <div className="flex items-start lg:items-center">
+
+                    {/* Côté gauche */}
+                    <div className={`flex-1 min-w-0 lg:py-5 ${isLeft ? 'lg:pr-16' : 'lg:pr-16 hidden lg:block'}`}>
+                      {isLeft && (
+                        <div className="relative">
+                          {/* Numéro watermark */}
+                          <span className="hidden lg:block absolute -top-4 right-0 font-display font-bold leading-none select-none pointer-events-none"
+                            style={{ fontSize: '120px', color: 'rgba(14,27,62,0.04)' }}>
+                            {item.num}
+                          </span>
+                          <div className="relative z-10 lg:text-right">
+                            <span className="font-display font-bold text-[42px] leading-none text-se-orange/20 select-none block mb-3">
+                              {item.num}
+                            </span>
+                            <h3 className="font-display font-bold text-[20px] text-se-navy leading-[1.3] mb-3">
+                              {item.title}
+                            </h3>
+                            <p className="font-body text-[16px] text-se-navy/70 leading-[1.7]">
+                              {item.text}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Point central */}
+                    <div className="hidden lg:flex flex-shrink-0 w-14 items-center justify-center">
+                      <div className="w-5 h-5 rounded-full bg-se-orange border-[3px] border-white shadow-[0_0_0_3px_#E8621A] z-10" />
+                    </div>
+
+                    {/* Côté droit */}
+                    <div className={`flex-1 min-w-0 lg:py-5 ${!isLeft ? 'lg:pl-16' : 'lg:pl-16 hidden lg:block'}`}>
+                      {!isLeft && (
+                        <div className="relative">
+                          {/* Numéro watermark */}
+                          <span className="hidden lg:block absolute -top-4 left-0 font-display font-bold leading-none select-none pointer-events-none"
+                            style={{ fontSize: '120px', color: 'rgba(14,27,62,0.04)' }}>
+                            {item.num}
+                          </span>
+                          <div className="relative z-10">
+                            <span className="font-display font-bold text-[42px] leading-none text-se-orange/20 select-none block mb-3">
+                              {item.num}
+                            </span>
+                            <h3 className="font-display font-bold text-[20px] text-se-navy leading-[1.3] mb-3">
+                              {item.title}
+                            </h3>
+                            <p className="font-body text-[16px] text-se-navy/70 leading-[1.7]">
+                              {item.text}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                  </div>
+
+                  {/* Séparateur mobile */}
+                  <div className="lg:hidden h-px bg-se-navy/10 mt-10" />
+
+                </FadeUp>
+              )
+            })}
+          </div>
+
         </div>
 
       </div>

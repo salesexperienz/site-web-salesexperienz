@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import LocalStorytelling from '@/components/LocalStorytelling'
+import SystemGraph from '@/components/SystemGraph'
 import LocalWhyChoose from '@/components/LocalWhyChoose'
 import LocalDifferentiators from '@/components/LocalDifferentiators'
 import LocalUrgency from '@/components/LocalUrgency'
@@ -122,21 +123,28 @@ const heroSettings = {
 // ─── SECTION 1 : STORYTELLING ────────────────────────────────────────────────
 const storytellingData = {
   ville: 'Paris',
-  intro: "À Paris, les équipes commerciales sont sur-sollicitées et les décideurs injoignables. Le cold call ne convertit plus. Et les outils mis en place sans stratégie derrière n'amènent ni rendez-vous ni chiffre d'affaires.",
+  intro: "À Paris, les dirigeants perdent des opportunités sur deux fronts : une démarche commerciale sous tension où les décideurs sont injoignables, et une présence en ligne irrégulière qui ne génère pas de visibilité durable. Des outils sans stratégie, du contenu publié sans système — et au final, peu de résultats concrets.",
   problems: [
-    "Des prestataires qui livrent des tableaux de bord, mais aucun rendez-vous qualifié",
-    "Des outils d'automatisation configurés sans stratégie commerciale précise derrière",
-    "Des commerciaux qui passent 80 % de leur temps à prospecter manuellement",
+    "Des outils configurés sans stratégie — qui ne génèrent ni rendez-vous qualifiés ni visibilité durable sur le marché parisien",
+    "Une présence en ligne dépendante de vos disponibilités, pas d'un système qui travaille en continu",
+    "Des journées remplies de tâches manuelles — relances, contenu, reporting — qui n'avancent pas votre business",
   ],
   methode: (
     <>
-      Je commence par comprendre votre pipeline, vos cycles de vente, vos profils clients.
-      Ensuite, on construit ensemble des automatisations qui déclenchent de{' '}
-      <strong className="text-se-navy font-semibold">vrais rendez-vous</strong> — pas du volume sans valeur.{' '}
-      En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant</strong>, vous travaillez{' '}
-      <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
-      <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
-      Et comme tout se passe en visio, la localisation ne change rien à la qualité du travail — que vous soyez à La Défense, dans le Marais ou à Paris-Saclay.
+      <p className="mb-5">
+        Je ne propose pas des workflows isolés. Je conçois des{' '}
+        <strong className="text-se-navy font-semibold">systèmes</strong> — des ensembles cohérents d&apos;automatisations qui s&apos;articulent autour de vos objectifs : générer des rendez-vous qualifiés, maintenir une présence en ligne régulière, nourrir votre pipeline sans y passer vos journées.
+      </p>
+      <p className="mb-5">
+        Avant de construire quoi que ce soit, je commence par comprendre votre pipeline, vos cycles de vente, vos profils clients parisiens.{' '}
+        <strong className="text-se-navy font-semibold">Le système vient après. Pas avant.</strong>
+      </p>
+      <p>
+        En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant</strong>, vous travaillez{' '}
+        <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
+        <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
+        Les rendez-vous se font en visio — et je peux me déplacer à Paris selon les besoins du projet.
+      </p>
     </>
   ),
   highlight: "Carte des Opportunités : avant de construire quoi que ce soit, on cartographie vos processus commerciaux. Zéro solution générique imposée. On part de votre réalité parisienne, pas d'un modèle standard.",
@@ -260,6 +268,7 @@ export default function PageParis() {
       <Navbar />
       <Hero settings={heroSettings} />
       <LocalStorytelling {...storytellingData} />
+      <SystemGraph />
       <LocalWhyChoose {...whyChooseData} />
       <LocalDifferentiators {...differentiatorsData} />
       <LocalUrgency ville="Paris" />

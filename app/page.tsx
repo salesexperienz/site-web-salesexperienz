@@ -1,6 +1,7 @@
 import Navbar             from '@/components/Navbar'
 import Hero               from '@/components/Hero'
 import LocalStorytelling  from '@/components/LocalStorytelling'
+import SystemGraph        from '@/components/SystemGraph'
 import LocalWhyChoose     from '@/components/LocalWhyChoose'
 import LocalDifferentiators from '@/components/LocalDifferentiators'
 import LocalUrgency       from '@/components/LocalUrgency'
@@ -21,21 +22,28 @@ import { getSiteSettings } from '@/lib/sanity'
 
 // ─── SECTION 1 : STORYTELLING ────────────────────────────────────────────────
 const storytellingData = {
-  intro: "La plupart des équipes commerciales ont un goulot d'étranglement qui plafonne leur chiffre d'affaires. Des outils qui ne se parlent pas, une prospection manuelle qui tourne à vide, des heures perdues qui ne génèrent pas de résultats concrets.",
+  intro: "La plupart des dirigeants perdent des opportunités sur deux fronts à la fois : une démarche commerciale manuelle qui tourne à vide, et une présence en ligne irrégulière qui ne génère pas de visibilité. Des outils qui ne se parlent pas, des heures perdues sur du contenu publié sans système — et au final, peu de résultats concrets.",
   problems: [
-    "Des prestataires qui livrent des outils sans comprendre votre modèle commercial",
-    "Des automatisations montées en urgence qui tombent en panne au premier cas limite",
-    "Des journées remplies de tâches répétitives qui ne génèrent pas de chiffre d'affaires",
+    "Des outils configurés sans stratégie — qui ne génèrent ni rendez-vous qualifiés ni visibilité durable",
+    "Une présence en ligne dépendante de vos disponibilités, pas d'un système qui travaille en continu",
+    "Des journées remplies de tâches manuelles — relances, contenu, reporting — qui n'avancent pas votre business",
   ],
   methode: (
     <>
-      Je commence par comprendre votre pipeline, vos cycles de vente, vos profils clients.
-      Ensuite, on construit ensemble des automatisations qui déclenchent de{' '}
-      <strong className="text-se-navy font-semibold">vrais rendez-vous</strong> — pas du volume sans valeur.{' '}
-      En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant</strong>, vous travaillez{' '}
-      <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
-      <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
-      Et comme tout se passe en visio, la localisation ne change rien à la qualité du travail.
+      <p className="mb-5">
+        Je ne propose pas des workflows isolés. Je conçois des{' '}
+        <strong className="text-se-navy font-semibold">systèmes</strong> — des ensembles cohérents d&apos;automatisations qui s&apos;articulent autour de vos objectifs : générer des rendez-vous qualifiés, maintenir une présence en ligne régulière, nourrir votre pipeline sans y passer vos journées.
+      </p>
+      <p className="mb-5">
+        Avant de construire quoi que ce soit, je commence par comprendre votre pipeline, vos cycles de vente, vos profils clients.{' '}
+        <strong className="text-se-navy font-semibold">Le système vient après. Pas avant.</strong>
+      </p>
+      <p>
+        En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant</strong>, vous travaillez{' '}
+        <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
+        <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
+        Les rendez-vous se font en visio — et je peux me déplacer selon les besoins du projet.
+      </p>
     </>
   ),
   highlight: "Carte des Opportunités : avant de construire quoi que ce soit, on cartographie vos processus commerciaux. Zéro solution générique imposée. On part de votre réalité, pas d'un template.",
@@ -129,6 +137,7 @@ export default async function Home() {
       <Navbar />
       <Hero settings={settings} />
       <LocalStorytelling {...storytellingData} />
+      <SystemGraph />
       <LocalWhyChoose {...whyChooseData} />
       <LocalDifferentiators {...differentiatorsData} />
       <LocalUrgency />

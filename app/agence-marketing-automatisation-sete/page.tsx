@@ -8,6 +8,7 @@ import AboutSete            from '@/components/AboutSete'
 import FaqSete              from '@/components/FaqSete'
 import WhatToAutomate       from '@/components/WhatToAutomate'
 import LocalStorytelling    from '@/components/LocalStorytelling'
+import SystemGraph          from '@/components/SystemGraph'
 import LocalWhyChoose       from '@/components/LocalWhyChoose'
 import LocalDifferentiators from '@/components/LocalDifferentiators'
 import LocalUrgency         from '@/components/LocalUrgency'
@@ -131,22 +132,28 @@ const processSteps = [
 // ─── DONNÉES LOCALES SÈTE ─────────────────────────────────────────────────────
 const storytellingSete = {
   ville: 'Sète',
-  intro: "À Sète et dans tout l'Hérault, les dirigeants de PME jonglent avec des outils qui ne se parlent pas et une prospection qui tourne à vide. Le marché local évolue vite — et les entreprises qui n'automatisent pas perdent du terrain face à des concurrents mieux équipés.",
+  intro: "À Sète et dans tout l'Hérault, les dirigeants de PME perdent des opportunités sur deux fronts : une démarche commerciale manuelle qui tourne à vide, et une présence en ligne irrégulière qui ne génère pas de visibilité. Le marché local évolue vite — et sans système, vous avancez à vue.",
   problems: [
-    "Des prestataires qui configurent des outils sans comprendre votre modèle commercial local",
-    "Des automatisations montées en urgence qui tombent en panne au premier cas limite",
-    "Des journées remplies de tâches répétitives qui ne génèrent pas de chiffre d'affaires",
+    "Des outils configurés sans stratégie — qui ne génèrent ni rendez-vous qualifiés ni visibilité locale durable",
+    "Une présence en ligne dépendante de vos disponibilités, pas d'un système qui travaille en continu",
+    "Des journées remplies de tâches manuelles — relances, contenu, reporting — qui n'avancent pas votre business",
   ],
   methode: (
     <>
-      Basé à Sète depuis plusieurs années, je connais le tissu économique de l&apos;Hérault —
-      de Montpellier à Agde, du Bassin de Thau à la Méditerranée. Je commence par comprendre
-      votre pipeline, vos cycles de vente, vos profils clients avant de construire quoi que ce soit.{' '}
-      En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant basé localement</strong>,
-      vous travaillez <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
-      <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
-      Et comme tout se passe en visio, je peux aussi bien accompagner une PME sétoïse
-      qu&apos;une entreprise de toute la France.
+      <p className="mb-5">
+        Je ne propose pas des workflows isolés. Je conçois des{' '}
+        <strong className="text-se-navy font-semibold">systèmes</strong> — des ensembles cohérents d&apos;automatisations qui s&apos;articulent autour de vos objectifs : générer des rendez-vous qualifiés, maintenir une présence en ligne régulière, nourrir votre pipeline sans y passer vos journées.
+      </p>
+      <p className="mb-5">
+        Basé à Sète, je connais le tissu économique de l&apos;Hérault — de Montpellier à Agde, du Bassin de Thau à la Méditerranée. Avant de construire quoi que ce soit, je commence par comprendre votre pipeline, vos cycles de vente, vos profils clients.{' '}
+        <strong className="text-se-navy font-semibold">Le système vient après. Pas avant.</strong>
+      </p>
+      <p>
+        En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant basé localement</strong>, vous travaillez{' '}
+        <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
+        <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
+        Les rendez-vous se font en visio — et je peux me déplacer dans l&apos;Hérault et au-delà selon les besoins du projet.
+      </p>
     </>
   ),
   highlight: "Carte des Opportunités : avant de construire quoi que ce soit, on cartographie vos processus commerciaux. Zéro solution générique. On part de votre réalité — sétoïse, héraultaise, ou nationale.",
@@ -377,6 +384,7 @@ export default function PageGBP() {
       </section>
 
       <LocalStorytelling {...storytellingSete} />
+      <SystemGraph />
       <LocalWhyChoose {...whyChooseSete} />
       <LocalDifferentiators {...differentiatorsSete} />
       <LocalUrgency ville="Sète" />
