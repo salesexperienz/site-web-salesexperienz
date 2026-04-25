@@ -33,12 +33,13 @@ export default function Footer() {
           {/* Pages locales */}
           <div className="flex flex-col gap-2">
             <p className="font-body text-[14px] font-bold text-se-muted">Expertises locales</p>
-            <a href="/expert-automatisation-commerciale-paris" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
-              Automatisation Paris
-            </a>
-            <a href="/agence-marketing-automatisation-sete" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
-              Automatisation Sète
-            </a>
+            <a href="/expert-automatisation-commerciale-paris" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Paris</a>
+            <a href="/expert-automatisation-commerciale-lyon" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Lyon</a>
+            <a href="/expert-automatisation-commerciale-marseille" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Marseille</a>
+            <a href="/expert-automatisation-commerciale-toulouse" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Toulouse</a>
+            <a href="/expert-automatisation-commerciale-nantes" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Nantes</a>
+            <a href="/expert-automatisation-commerciale-nice" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Nice</a>
+            <a href="/agence-marketing-automatisation-sete" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">Automatisation Sète</a>
           </div>
 
           {/* Contact + NAP */}
