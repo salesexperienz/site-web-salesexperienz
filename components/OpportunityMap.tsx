@@ -1,5 +1,5 @@
 'use client'
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import FadeUp from './FadeUp'
 import { DISCOVERY_URL } from '@/lib/constants'
@@ -96,10 +96,9 @@ export default function OpportunityMap() {
           {/* Desktop : grille + flèches */}
           <div className="hidden lg:grid lg:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-0 items-center">
             {steps.map((step, i) => (
-              <>
+              <React.Fragment key={step.num}>
                 {/* Carte */}
                 <motion.div
-                  key={step.num}
                   initial={{ opacity: 0, y: 24 }}
                   animate={timelineInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.55, delay: i * 0.12, ease: [0.25, 0.1, 0.25, 1] }}
@@ -118,11 +117,11 @@ export default function OpportunityMap() {
 
                 {/* Flèche entre cartes (sauf après la dernière) */}
                 {i < steps.length - 1 && (
-                  <div key={`arrow-${i}`} className="flex items-center justify-center px-3">
+                  <div className="flex items-center justify-center px-3">
                     <AnimatedArrow delay={i * 0.12 + 0.55} isInView={timelineInView} />
                   </div>
                 )}
-              </>
+              </React.Fragment>
             ))}
           </div>
 

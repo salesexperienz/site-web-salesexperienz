@@ -1,14 +1,19 @@
 import type { Metadata } from 'next'
-import Navbar          from '@/components/Navbar'
-import Footer          from '@/components/Footer'
-import SocialBlock     from '@/components/SocialBlock'
-import RecentArticles  from '@/components/RecentArticles'
-import FadeUp          from '@/components/FadeUp'
-import AboutSete       from '@/components/AboutSete'
-import FaqSete         from '@/components/FaqSete'
-import WhatToAutomate  from '@/components/WhatToAutomate'
-import { DISCOVERY_URL } from '@/lib/constants'
-import { faqJsonLdSete } from '@/lib/schema-faq'
+import Navbar               from '@/components/Navbar'
+import Footer               from '@/components/Footer'
+import SocialBlock          from '@/components/SocialBlock'
+import RecentArticles       from '@/components/RecentArticles'
+import FadeUp               from '@/components/FadeUp'
+import AboutSete            from '@/components/AboutSete'
+import FaqSete              from '@/components/FaqSete'
+import WhatToAutomate       from '@/components/WhatToAutomate'
+import LocalStorytelling    from '@/components/LocalStorytelling'
+import LocalWhyChoose       from '@/components/LocalWhyChoose'
+import LocalDifferentiators from '@/components/LocalDifferentiators'
+import LocalUrgency         from '@/components/LocalUrgency'
+import LocalCases           from '@/components/LocalCases'
+import { DISCOVERY_URL }    from '@/lib/constants'
+import { faqJsonLdSete }    from '@/lib/schema-faq'
 
 // ─── METADATA SEO LOCAL ────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -122,6 +127,108 @@ const processSteps = [
     result: "Votre entreprise tourne plus vite, avec une stratégie qui s'affine en continu.",
   },
 ]
+
+// ─── DONNÉES LOCALES SÈTE ─────────────────────────────────────────────────────
+const storytellingSete = {
+  ville: 'Sète',
+  intro: "À Sète et dans tout l'Hérault, les dirigeants de PME jonglent avec des outils qui ne se parlent pas et une prospection qui tourne à vide. Le marché local évolue vite — et les entreprises qui n'automatisent pas perdent du terrain face à des concurrents mieux équipés.",
+  problems: [
+    "Des prestataires qui configurent des outils sans comprendre votre modèle commercial local",
+    "Des automatisations montées en urgence qui tombent en panne au premier cas limite",
+    "Des journées remplies de tâches répétitives qui ne génèrent pas de chiffre d'affaires",
+  ],
+  methode: (
+    <>
+      Basé à Sète depuis plusieurs années, je connais le tissu économique de l&apos;Hérault —
+      de Montpellier à Agde, du Bassin de Thau à la Méditerranée. Je commence par comprendre
+      votre pipeline, vos cycles de vente, vos profils clients avant de construire quoi que ce soit.{' '}
+      En tant qu&apos;<strong className="text-se-navy font-semibold">expert indépendant basé localement</strong>,
+      vous travaillez <strong className="text-se-navy font-semibold">directement avec moi</strong>.{' '}
+      <strong className="text-se-navy font-semibold">Pas d&apos;intermédiaire, pas de délégation opaque.</strong>{' '}
+      Et comme tout se passe en visio, je peux aussi bien accompagner une PME sétoïse
+      qu&apos;une entreprise de toute la France.
+    </>
+  ),
+  highlight: "Carte des Opportunités : avant de construire quoi que ce soit, on cartographie vos processus commerciaux. Zéro solution générique. On part de votre réalité — sétoïse, héraultaise, ou nationale.",
+}
+
+const whyChooseSete = {
+  ville: 'Sète',
+  pains: [
+    "Vous payez un prestataire mais les résultats ne sont pas concrets",
+    "On vous parle d'automatisation mais rien n'est relié à vos objectifs",
+    "Vous ne savez pas si votre prospection génère vraiment du chiffre d'affaires",
+  ],
+  response: "Mon approche : transformer la prospection en canal d'acquisition mesurable depuis Sète. Chaque workflow est relié à une stratégie précise — pas à une liste de fonctionnalités. Dans l'Hérault, où les réseaux comptent et les opportunités circulent vite, chaque semaine sans pipeline actif coûte cher.",
+  case1: {
+    sector: 'Cabinet de conseil B2B',
+    location: 'Montpellier — Hérault',
+    result: '+22 RDV qualifiés/mois en 30 jours',
+    detail: 'Prospection automatisée sur LinkedIn, déclenchée sur signaux de croissance.',
+  },
+  case2: {
+    sector: 'PME services B2B',
+    location: 'Sète — Bassin de Thau',
+    result: 'Pipeline ×2,5 en 8 semaines',
+    detail: 'Moins de 2 heures de pilotage par semaine après déploiement.',
+  },
+  vision: [
+    { num: '01', text: <><strong className="text-se-navy font-semibold">Estimation du potentiel avant de démarrer</strong> : opportunités identifiées, objectifs commerciaux chiffrés.</> },
+    { num: '02', text: <><strong className="text-se-navy font-semibold">Des objectifs concrets</strong> : rendez-vous générés, pipeline créé, temps libéré chaque semaine.</> },
+    { num: '03', text: <><strong className="text-se-navy font-semibold">Un plan d&apos;action priorisé</strong> — pas une liste de tâches sans fin ni ordre de priorité clair.</> },
+  ],
+}
+
+const differentiatorsSete = {
+  ville: 'Sète',
+  items: [
+    {
+      num: '01',
+      title: 'Automatisation orientée résultats',
+      text: "Pas de workflow pour le workflow. Chaque automatisation est reliée à un objectif commercial précis : rendez-vous générés, pipeline créé, temps libéré.",
+    },
+    {
+      num: '02',
+      title: "Expert ancré dans l'Hérault",
+      text: "Basé à Sète, je connais le tissu économique local — de Montpellier à Agde. Je comprends les contraintes des PME héraultaises avant de proposer quoi que ce soit.",
+    },
+    {
+      num: '03',
+      title: 'Séquences qui génèrent des rendez-vous',
+      text: "Chaque workflow est conçu pour déclencher des rendez-vous qualifiés — pas du volume sans valeur ni du bruit dans votre agenda.",
+    },
+    {
+      num: '04',
+      title: "Détection de signaux d'intention",
+      text: "Vos prospects bougent avant de le dire. On détecte leurs signaux au bon moment, avant que votre concurrent ne les contacte.",
+    },
+    {
+      num: '05',
+      title: 'Autonomie totale après la mission',
+      text: "Formation incluse. Vous pilotez vos workflows vous-même après la mission. Vous restez indépendant à 100 % — aucune dépendance envers un prestataire extérieur.",
+    },
+    {
+      num: '06',
+      title: 'Transparence sur les résultats',
+      text: "Reporting clair : rendez-vous générés, pipeline créé, temps économisé. Vous savez exactement ce que l'automatisation vous génère, chaque semaine.",
+    },
+  ],
+}
+
+const localCasesSete = {
+  case1: {
+    sector: 'Cabinet de conseil B2B',
+    location: 'Montpellier — Hérault',
+    result: '+22 RDV qualifiés/mois en 30 jours',
+    detail: 'Prospection automatisée sur LinkedIn, déclenchée sur signaux de croissance.',
+  },
+  case2: {
+    sector: 'PME services B2B',
+    location: 'Sète — Bassin de Thau',
+    result: 'Pipeline ×2,5 en 8 semaines',
+    detail: 'Moins de 2 heures de pilotage par semaine après déploiement.',
+  },
+}
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
 export default function PageGBP() {
@@ -268,6 +375,11 @@ export default function PageGBP() {
 
       </div>
       </section>
+
+      <LocalStorytelling {...storytellingSete} />
+      <LocalWhyChoose {...whyChooseSete} />
+      <LocalDifferentiators {...differentiatorsSete} />
+      <LocalUrgency ville="Sète" />
 
       {/* ── 2. CHIFFRES ────────────────────────────────────────────────────── */}
       <section className="bg-se-navy py-12 px-6 lg:px-20">
@@ -475,6 +587,8 @@ export default function PageGBP() {
 
         </div>
       </section>
+
+      <LocalCases cases={localCasesSete} ville="Sète" />
 
       {/* ── 6. CTA FINAL ───────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden py-[80px] lg:py-[120px] bg-white">

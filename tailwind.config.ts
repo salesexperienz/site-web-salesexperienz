@@ -20,8 +20,9 @@ const config: Config = {
         'se-muted-teal':  '#7BBFB8',
       },
       fontFamily: {
-        display: ['var(--font-display)', 'sans-serif'],
-        body:    ['var(--font-body)', 'sans-serif'],
+        display:     ['var(--font-display)', 'sans-serif'],
+        body:        ['var(--font-body)', 'sans-serif'],
+        handwriting: ['var(--font-handwriting)', 'cursive'],
       },
       maxWidth: {
         container: '1200px',

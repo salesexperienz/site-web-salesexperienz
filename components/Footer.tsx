@@ -30,6 +30,14 @@ export default function Footer() {
             </a>
           </div>
 
+          {/* Pages locales */}
+          <div className="flex flex-col gap-2">
+            <p className="font-body text-[14px] font-bold text-se-muted">Expertises locales</p>
+            <a href="/expert-automatisation-commerciale-paris" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
+              Automatisation Paris
+            </a>
+          </div>
+
           {/* Contact + NAP */}
           <address
             className="not-italic flex flex-col gap-1"
