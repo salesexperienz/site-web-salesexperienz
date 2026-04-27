@@ -25,6 +25,12 @@ export default function Footer() {
             <a href="/blog" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200 mt-1">
               Blog
             </a>
+            <a href="/etudes-de-cas" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200">
+              Études de cas
+            </a>
+            <a href="/etudes-de-cas/ambassimmo" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
+              Ambassimmo — SEO Automatisé
+            </a>
             <a href="#" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200">
               Contact
             </a>
