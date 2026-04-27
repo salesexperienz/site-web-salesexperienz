@@ -31,6 +31,9 @@ export default function Footer() {
             <a href="/etudes-de-cas/ambassimmo" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
               Ambassimmo — SEO Automatisé
             </a>
+            <a href="/etudes-de-cas/ambassimmo-leads" className="font-body text-[14px] text-se-muted hover:text-white transition-colors duration-200 pl-3">
+              Ambassimmo — Pipeline Leads
+            </a>
             <a href="#" className="font-body text-[14px] font-bold text-se-muted hover:text-white transition-colors duration-200">
               Contact
             </a>

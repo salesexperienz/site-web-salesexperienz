@@ -126,7 +126,8 @@ const results = [
 ]
 
 const otherCases = [
-  { tag: 'Prospection automatisée', title: 'Captation de leads vendeurs immobiliers et envoi de contrats aux agences immobilières en automatique', time: null },
+  { tag: 'SEO Automatisé', title: 'De zéro contenu SEO à 30 articles publiés par mois et #1 Google "ambassadeur immobilier"', time: null, href: '#hero' },
+  { tag: 'Prospection automatisée', title: "De l'estimation en ligne au contrat agence signé en moins de 5 minutes", time: null, href: '/etudes-de-cas/ambassimmo-leads' },
 ]
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
@@ -159,7 +160,7 @@ export default function AmbassimmoPage() {
           .ambas-context-grid { grid-template-columns: 1fr !important; }
           .ambas-results-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .ambas-cta-grid     { grid-template-columns: 1fr !important; }
-          .ambas-cases-grid   { grid-template-columns: 1fr !important; }
+          .ambas-cases-grid   { grid-template-columns: repeat(2, 1fr) !important; }
         }
         @media (max-width: 480px) {
           .ambas-results-grid { grid-template-columns: 1fr !important; }
@@ -183,7 +184,7 @@ export default function AmbassimmoPage() {
       <Navbar />
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section style={{ background: '#0D1B3E', paddingTop: 180, paddingBottom: 80, position: 'relative', overflow: 'hidden' }}>
+      <section id="hero" style={{ background: '#0D1B3E', paddingTop: 180, paddingBottom: 80, position: 'relative', overflow: 'hidden' }}>
 
         {/* Glow derrière le glass pill */}
         <div aria-hidden="true" style={{ position: 'absolute', top: 80, left: '50%', transform: 'translateX(-50%)', width: 600, height: 260, background: 'radial-gradient(ellipse at 40% 50%, rgba(232,98,26,0.18) 0%, rgba(74,191,176,0.10) 45%, transparent 70%)', filter: 'blur(48px)', pointerEvents: 'none' }} />
@@ -562,7 +563,7 @@ export default function AmbassimmoPage() {
                 {otherCases.map((c, i) => (
                   <a
                     key={i}
-                    href="#"
+                    href={c.href ?? '#'}
                     className="ambas-other-card"
                     style={{ padding: 20, borderRadius: 8, border: '1px solid rgba(20,20,19,0.1)', background: '#fff', textDecoration: 'none', display: 'block', transition: 'border-color 0.2s, transform 0.2s, box-shadow 0.2s' }}
                   >
