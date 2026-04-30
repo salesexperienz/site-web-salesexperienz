@@ -1,0 +1,400 @@
+{
+  "date": "2026-04-30T16:04:49.978Z",
+  "dryRun": false,
+  "total": 39,
+  "replaced": 17,
+  "deleted": 22,
+  "unresolved": 0,
+  "proposals": [
+    {
+      "articleSlug": "automatiser-strategie-contenu-seo",
+      "originalUrl": "https://blog.hubspot.com/marketing/importance-of-marketing-automation",
+      "anchorText": "bénéfices de l’automatisation",
+      "suggestedUrl": "https://blog.hubspot.com/marketing/marketing-automation-benefits",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk201",
+      "postId": "wp-12550"
+    },
+    {
+      "articleSlug": "automatiser-prospection-linkedin-booster",
+      "originalUrl": "https://blog.hubspot.fr/marketing/structurer-iterations-prospection-commerciale",
+      "anchorText": "HubSpot",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk90",
+      "postId": "wp-12534"
+    },
+    {
+      "articleSlug": "automatisation-publication-reseaux-sociaux",
+      "originalUrl": "https://buffer.com/library/social-media-automation/",
+      "anchorText": "Gagner du temps avec l'automatisation",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk35",
+      "postId": "wp-12589"
+    },
+    {
+      "articleSlug": "quel-sont-4-piliers-seo",
+      "originalUrl": "https://developers.google.com/search/docs/beginner/robots-txt",
+      "anchorText": "Google Search Console",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk303",
+      "postId": "wp-12938"
+    },
+    {
+      "articleSlug": "coaching-commercial-performance",
+      "originalUrl": "https://hbr.org/2006/10/the-coaching-habit",
+      "anchorText": "les habitudes de coaching",
+      "suggestedUrl": "https://www.salesforce.com/fr/resources/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk46",
+      "postId": "wp-12401"
+    },
+    {
+      "articleSlug": "master-manager-strategie-performance-commerciale",
+      "originalUrl": "https://hbr.org/2010/10/column-to-raise-productivity-let-more-employees-work-from-home",
+      "anchorText": "Harvard Business Review",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk93",
+      "postId": "wp-13092"
+    },
+    {
+      "articleSlug": "strategie-communication-commerciale",
+      "originalUrl": "https://hbr.org/2016/03/the-new-sales-imperative",
+      "anchorText": "étude de Harvard Business Review",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk60",
+      "postId": "wp-13115"
+    },
+    {
+      "articleSlug": "gagner-temps-redaction-blog",
+      "originalUrl": "https://hbr.org/2018/07/what-everyones-getting-wrong-about-the-to-do-list",
+      "anchorText": "article fascinant de Harvard Business Review",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk159",
+      "postId": "wp-12349"
+    },
+    {
+      "articleSlug": "plan-action-commercial-exemple-pdf",
+      "originalUrl": "https://hbr.org/2018/09/the-metrics-that-marketers-should-and-shouldnt-focus-on",
+      "anchorText": "les métriques marketing et commerciales",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk190",
+      "postId": "wp-13089"
+    },
+    {
+      "articleSlug": "guide-workflow-vente-automatique",
+      "originalUrl": "https://hbr.org/2019/04/why-salespeople-need-to-develop-machine-intelligence",
+      "anchorText": "Explorez les synergies",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk30",
+      "postId": "wp-12604"
+    },
+    {
+      "articleSlug": "comment-ecrire-article-optimise-google",
+      "originalUrl": "https://moz.com/blog/34-ways-to-promote-your-content-5766",
+      "anchorText": "commentaires et retours",
+      "suggestedUrl": "https://moz.com/learn/seo/content-marketing",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk235",
+      "postId": "wp-12520"
+    },
+    {
+      "articleSlug": "secrets-automatisation-workflows-contenu",
+      "originalUrl": "https://moz.com/blog/content-workflow-systems",
+      "anchorText": "Explorer les outils",
+      "suggestedUrl": "https://www.salesforce.com/fr/resources/articles/workflow-automation/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk165",
+      "postId": "wp-12943"
+    },
+    {
+      "articleSlug": "quel-sont-4-piliers-seo",
+      "originalUrl": "https://moz.com/blog/seo-checklist",
+      "anchorText": "l'optimisation SEO",
+      "suggestedUrl": "https://moz.com/learn/seo/what-is-seo",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk355",
+      "postId": "wp-12938"
+    },
+    {
+      "articleSlug": "comment-ecrire-article-optimise-google",
+      "originalUrl": "https://moz.com/learn/seo/content-audit",
+      "anchorText": "cette ressource externe",
+      "suggestedUrl": "https://moz.com/learn/seo",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk143",
+      "postId": "wp-12520"
+    },
+    {
+      "articleSlug": "generer-leads-automatiquement-techno",
+      "originalUrl": "https://status.co/blog/automating-your-business-welcome-to-the-21st-century",
+      "anchorText": "l'avenir de l'automatisation",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk51",
+      "postId": "wp-12540"
+    },
+    {
+      "articleSlug": "automatisation-prospection-linkedin",
+      "originalUrl": "https://www.cmswire.com/marketing/what-is-linkedins-sales-navigator-really-good-for/",
+      "anchorText": "des retours",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk78",
+      "postId": "wp-12562"
+    },
+    {
+      "articleSlug": "comment-optimiser-seo-site-web",
+      "originalUrl": "https://www.digitalmarketinginstitute.com/blog/how-to-improve-seo",
+      "anchorText": "Découvrir plus",
+      "suggestedUrl": "https://moz.com/learn/seo",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk148",
+      "postId": "wp-12508"
+    },
+    {
+      "articleSlug": "automatisation-publication-reseaux-sociaux",
+      "originalUrl": "https://www.hootsuite.com/blog/social-media-automation/",
+      "anchorText": "site externe de référence",
+      "suggestedUrl": "https://blog.hootsuite.com/social-media-automation/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk159",
+      "postId": "wp-12589"
+    },
+    {
+      "articleSlug": "automatiser-prospection-commerciale-2",
+      "originalUrl": "https://www.hubspot.fr/blog-marketing/guide-automation-marketing",
+      "anchorText": "HubSpot – Guide de l'automatisation marketing",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk137",
+      "postId": "wp-12607"
+    },
+    {
+      "articleSlug": "automatiser-relation-client",
+      "originalUrl": "https://www.hubspot.fr/crm",
+      "anchorText": "site de HubSpot",
+      "suggestedUrl": "https://www.hubspot.fr/products/crm",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk33",
+      "postId": "wp-12580"
+    },
+    {
+      "articleSlug": "ia-generation-contenu-web",
+      "originalUrl": "https://www.hubspot.fr/marketing/ia-marketing-contenu",
+      "anchorText": "article de HubSpot",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk182",
+      "postId": "wp-12387"
+    },
+    {
+      "articleSlug": "comment-optimiser-seo-site-web",
+      "originalUrl": "https://www.hubspot.fr/social-media-marketing",
+      "anchorText": "HubSpot",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk206",
+      "postId": "wp-12508"
+    },
+    {
+      "articleSlug": "strategie-communication-commerciale",
+      "originalUrl": "https://www.ladn.eu/media-mutants/ecoute-active-cle-communication/",
+      "anchorText": "cet article de l'ADN sur l'écoute active",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk212",
+      "postId": "wp-13115"
+    },
+    {
+      "articleSlug": "strategie-approche-commerciale-2",
+      "originalUrl": "https://www.lefigaro.fr/secteur/high-tech/l-intelligence-artificielle-va-bouleverser-la-prospection-commerciale-20231205",
+      "anchorText": "avec l'intelligence artificielle qui révolutionne la prospection",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk115",
+      "postId": "wp-13110"
+    },
+    {
+      "articleSlug": "art-redaction-contenus-seo",
+      "originalUrl": "https://www.mobilemarketingassociationfrance.com/",
+      "anchorText": "Consultez ce guide sur les meilleurs pratiques pour le web mobile",
+      "suggestedUrl": "https://developers.google.com/search/mobile-sites",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk186",
+      "postId": "wp-12398"
+    },
+    {
+      "articleSlug": "automatisation-commerciale-definition-usage",
+      "originalUrl": "https://www.salesforce.com/blog/5-ways-marketing-automation-can-improve-roi/",
+      "anchorText": "Salesforce",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk323",
+      "postId": "wp-12793"
+    },
+    {
+      "articleSlug": "comment-creer-workflow-n8n",
+      "originalUrl": "https://www.salesforce.com/eu/blog/2021/05/how-to-use-automation-tools.html",
+      "anchorText": "Salesforce",
+      "suggestedUrl": "https://www.salesforce.com/fr/resources/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk58",
+      "postId": "wp-12927"
+    },
+    {
+      "articleSlug": "automatisation-prospection-linkedin",
+      "originalUrl": "https://www.salesforce.com/fr/blog/",
+      "anchorText": "blog de Salesforce",
+      "suggestedUrl": "https://www.salesforce.com/fr/resources/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk215",
+      "postId": "wp-12562"
+    },
+    {
+      "articleSlug": "outil-automatisation-commerciale-le-guide",
+      "originalUrl": "https://www.salesforce.com/fr/learning-centre/tech/what-is-automation/",
+      "anchorText": "guide sur l'automatisation de Salesforce",
+      "suggestedUrl": "https://www.salesforce.com/fr/resources/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk330",
+      "postId": "wp-12586"
+    },
+    {
+      "articleSlug": "automatiser-prospection-linkedin",
+      "originalUrl": "https://www.salesforce.com/products/marketing-cloud/best-practices/email-efficiency/",
+      "anchorText": "guide pratique",
+      "suggestedUrl": "https://www.salesforce.com/fr/resources/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk103",
+      "postId": "wp-12924"
+    },
+    {
+      "articleSlug": "strategie-approche-commerciale-2",
+      "originalUrl": "https://www.salesforce.com/resources/articles/sales-prospecting/",
+      "anchorText": "prospection efficace",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk197",
+      "postId": "wp-13110"
+    },
+    {
+      "articleSlug": "ia-generation-contenu-web",
+      "originalUrl": "https://www.searchenginejournal.com/artificial-intelligence-the-future-of-content-creation/391521/",
+      "anchorText": "Search Engine Journal",
+      "suggestedUrl": "https://www.searchenginejournal.com/ai-content-creation/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk85",
+      "postId": "wp-12387"
+    },
+    {
+      "articleSlug": "guide-redaction-seo-b2b",
+      "originalUrl": "https://www.searchenginejournal.com/digital-marketing-strategy-guide/",
+      "anchorText": "ici",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk96",
+      "postId": "wp-12394"
+    },
+    {
+      "articleSlug": "erreurs-redaction-seo",
+      "originalUrl": "https://www.searchenginejournal.com/mobile-seo/checklist-ranked/",
+      "anchorText": "Search Engine Journal",
+      "suggestedUrl": "https://www.searchenginejournal.com/seo/mobile-seo/",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk250",
+      "postId": "wp-12517"
+    },
+    {
+      "articleSlug": "texte-seo-essentiel-strategie",
+      "originalUrl": "https://www.searchenginejournal.com/seo-content-guide/",
+      "anchorText": "article externe",
+      "suggestedUrl": "https://moz.com/learn/seo/content-marketing",
+      "verified": true,
+      "action": "replace",
+      "defKey": "lnk273",
+      "postId": "wp-12946"
+    },
+    {
+      "articleSlug": "exemple-automatisation-commerciale",
+      "originalUrl": "https://www.shopify.fr/blog/automatiser-relations-clients",
+      "anchorText": "Mesurer et ajuster",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk136",
+      "postId": "wp-12914"
+    },
+    {
+      "articleSlug": "automatiser-strategies-contenu-seo",
+      "originalUrl": "https://www.techradar.com/best/best-seo-tools",
+      "anchorText": "Voyez quelles options conviennent le mieux à votre entreprise",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk153",
+      "postId": "wp-12547"
+    },
+    {
+      "articleSlug": "secrets-automatisation-workflows-contenu",
+      "originalUrl": "https://www.techradar.com/best/best-workflow-management-software",
+      "anchorText": "article de TechRadar",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk86",
+      "postId": "wp-12943"
+    },
+    {
+      "articleSlug": "solution-automatisation-pme",
+      "originalUrl": "https://www.zdnet.com/article/implementing-automation-for-business-efficiency/",
+      "anchorText": "l'automatisation dans l'efficacité des entreprises",
+      "suggestedUrl": null,
+      "verified": false,
+      "action": "delete_link",
+      "defKey": "lnk253",
+      "postId": "wp-12601"
+    }
+  ]
+}
