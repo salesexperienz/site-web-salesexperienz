@@ -1,0 +1,1737 @@
+{
+  "auditDate": "2026-04-30T15:45:49.901Z",
+  "durationSeconds": 295,
+  "totalPages": 98,
+  "pagesWithBrokenLinks": 98,
+  "totalBrokenLinks": 173,
+  "brokenInternalLinks": 15,
+  "brokenExternalLinks": 158,
+  "results": [
+    {
+      "pageUrl": "https://www.salesexperienz.fr",
+      "pageStatus": 200,
+      "totalLinks": 23,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/services/seo-geo-machine",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/services/deepsignal",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/agence-marketing-automatisation-sete",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog",
+      "pageStatus": 200,
+      "totalLinks": 66,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/expert-automatisation-commerciale-paris",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/expert-automatisation-commerciale-lyon",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/expert-automatisation-commerciale-toulouse",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/expert-automatisation-commerciale-nantes",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/expert-automatisation-commerciale-nice",
+      "pageStatus": 200,
+      "totalLinks": 27,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/conquete-commerciale-fail",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/structure-demarche-commerciale",
+          "text": "conquête commerciale",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-distribution-marketing",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://www.gartner.com/en/sales/insights/b2b-buying-journey",
+          "text": "le parcours d'achat B2B moderne",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesexperienz.fr/blog/strategie-de-commercialisation-politique-commerciale",
+          "text": "stratégie de commercialisation",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.salesexperienz.fr/strategies-marketing/strategie-de-commercialisation-et-politique-commerciale/",
+          "text": "stratégie de commercialisation et politique commerciale",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/politique-commerciale-marketing",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategies-commerciales-efficaces",
+      "pageStatus": 200,
+      "totalLinks": 34,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/strategie-commerciale",
+          "text": "stratégie commerciale",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-vente-pdf-echec",
+      "pageStatus": 200,
+      "totalLinks": 33,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/plan-action-commercial-exemple",
+          "text": "plan d'action commercial",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-prospection-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 33,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/automatisation-commerciale-definitions-usage",
+          "text": "prospection commerciale",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-marketing-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.gartner.com/en/newsroom/press-releases/2024-06-03-gartner-survey-reveals-marketing-and-sales-functions-collaborate-on-only-three-out-of-15-commercial-activities",
+          "text": "les équipes marketing et commerciales ne collaborent que sur 3 activités sur 15",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesexperienz.fr/blog/difference-marketing-et-commercial",
+          "text": "cet article sur la différence marketing et commercial",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/ameliorer-efficacite-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 33,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-acquisition-b2b",
+      "pageStatus": 200,
+      "totalLinks": 33,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/prospection-commerciale",
+          "text": "prospection commerciale et outils d'automatisation",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.salesexperienz.fr/blog/prospection-commerciale-et-outils-dautomatisation",
+          "text": "outils d'automatisation",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/difference-strategies-marketing-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 33,
+      "brokenLinks": [
+        {
+          "href": "https://www.gartner.com/en/sales/insights/b2b-buying-journey",
+          "text": "Gartner",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-d-animation-commerciale-entre-competition-saine-et-gamification",
+      "pageStatus": 200,
+      "totalLinks": 34,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-animation-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 37,
+      "brokenLinks": [
+        {
+          "href": "https://www.forbes.com/sites/forbeshumanresourcescouncil/2022/04/25/how-gamification-can-boost-employee-performance/",
+          "text": "Forbes",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-communication-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://hbr.org/2016/03/the-new-sales-imperative",
+          "text": "étude de Harvard Business Review",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/business/sales/blog/sales-tips/active-listening-in-sales",
+          "text": "techniques d'écoute active en vente",
+          "status": 400,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.ladn.eu/media-mutants/ecoute-active-cle-communication/",
+          "text": "cet article de l'ADN sur l'écoute active",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-approche-commerciale-2",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/outils-prospection",
+          "text": "outils de prospection",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/business/sales/blog/b2b-sales/the-real-secret-to-b2b-sales-success",
+          "text": "LinkedIn identifie comme une clé du succès en vente B2B",
+          "status": 400,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.lefigaro.fr/secteur/high-tech/l-intelligence-artificielle-va-bouleverser-la-prospection-commerciale-20231205",
+          "text": "avec l'intelligence artificielle qui révolutionne la prospection",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesforce.com/resources/articles/sales-prospecting/",
+          "text": "prospection efficace",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-approche-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.forbes.com/sites/salesforce/2023/01/01/data-driven-sales/",
+          "text": "outils d'automatisation",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesexperienz.fr/strategie-prospection-outils-automatisation",
+          "text": "stratégie de prospection",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/master-manager-strategie-performance-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 33,
+      "brokenLinks": [
+        {
+          "href": "https://hbr.org/2010/10/column-to-raise-productivity-let-more-employees-work-from-home",
+          "text": "Harvard Business Review",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/plan-action-commercial-exemple-pdf",
+      "pageStatus": 200,
+      "totalLinks": 34,
+      "brokenLinks": [
+        {
+          "href": "https://hbr.org/2018/09/the-metrics-that-marketers-should-and-shouldnt-focus-on",
+          "text": "les métriques marketing et commerciales",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-developpement-commercial",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/plan-action-commercial-exemple",
+          "text": "plan d'action commercial",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-commercialisation",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/definition-strategie-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/redacteur-seo",
+      "pageStatus": 200,
+      "totalLinks": 36,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/plan-action-commerciale-exemple-2",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/plan-action-commerciale-exemple",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategie-crm",
+      "pageStatus": 200,
+      "totalLinks": 36,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesexperienz.fr/blog/structuration-vente",
+          "text": "structuration commerciale",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.gartner.com/en/sales/topics/crm",
+          "text": "l'analyse de Gartner sur les CRM",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesexperienz.fr/blog/automatisation-commerciale",
+          "text": "automatisation commerciale",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/redaction-seo-conversion",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/4-p-marketing-depasses",
+      "pageStatus": 200,
+      "totalLinks": 34,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/gagner-argent-seo",
+      "pageStatus": 200,
+      "totalLinks": 30,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/augmentez-visibilite-seo",
+      "pageStatus": 200,
+      "totalLinks": 43,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/texte-seo-essentiel-strategie",
+      "pageStatus": 200,
+      "totalLinks": 45,
+      "brokenLinks": [
+        {
+          "href": "https://www.searchenginejournal.com/seo-content-guide/",
+          "text": "article externe",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/secrets-automatisation-workflows-contenu",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.techradar.com/best/best-workflow-management-software",
+          "text": "article de TechRadar",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://moz.com/blog/content-workflow-systems",
+          "text": "Explorer les outils",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.forbes.com/sites/forbestechcouncil/2022/11/13/why-automation-is-critical-for-business-success-in-2023/?sh=4f1e888273f0",
+          "text": "N'oubliez pas, comme pour TechDynamique, il ne s'agit pas juste de gagner du temps, mais de créer un écosystème de trava",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/quel-sont-4-piliers-seo",
+      "pageStatus": 200,
+      "totalLinks": 46,
+      "brokenLinks": [
+        {
+          "href": "https://developers.google.com/search/docs/beginner/robots-txt",
+          "text": "Google Search Console",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://moz.com/blog/seo-checklist",
+          "text": "l'optimisation SEO",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/comment-optimiser-seo-site-web-2",
+      "pageStatus": 200,
+      "totalLinks": 42,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/comment-creer-workflow-n8n",
+      "pageStatus": 200,
+      "totalLinks": 45,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesforce.com/eu/blog/2021/05/how-to-use-automation-tools.html",
+          "text": "Salesforce",
+          "status": 500,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-prospection-linkedin",
+      "pageStatus": 200,
+      "totalLinks": 43,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesforce.com/products/marketing-cloud/best-practices/email-efficiency/",
+          "text": "guide pratique",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/exemple-automatisation-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 45,
+      "brokenLinks": [
+        {
+          "href": "https://www.shopify.fr/blog/automatiser-relations-clients",
+          "text": "Mesurer et ajuster",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.marketingdonut.co.uk/",
+          "text": "transformation des processus de vente",
+          "status": 0,
+          "error": "This operation was aborted",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/pourquoi-automatiser-process-commercial",
+      "pageStatus": 200,
+      "totalLinks": 45,
+      "brokenLinks": [
+        {
+          "href": "https://www.forbes.com/sites/forbestechcouncil/2022/01/10/how-to-choose-the-right-automation-tools-for-your-business/",
+          "text": "un guide externe sur le choix des bons outils d'automatisation",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-commerciale-definition-usage",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.salesforce.com/blog/5-ways-marketing-automation-can-improve-roi/",
+          "text": "Salesforce",
+          "status": 500,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-prospection-commerciale-2",
+      "pageStatus": 200,
+      "totalLinks": 41,
+      "brokenLinks": [
+        {
+          "href": "https://www.hubspot.fr/blog-marketing/guide-automation-marketing",
+          "text": "HubSpot – Guide de l'automatisation marketing",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/guide-workflow-vente-automatique",
+      "pageStatus": 200,
+      "totalLinks": 39,
+      "brokenLinks": [
+        {
+          "href": "https://hbr.org/2019/04/why-salespeople-need-to-develop-machine-intelligence",
+          "text": "Explorez les synergies",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/solution-automatisation-pme",
+      "pageStatus": 200,
+      "totalLinks": 44,
+      "brokenLinks": [
+        {
+          "href": "https://www.usine-digitale.fr/",
+          "text": "USIne Digitale",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.capterra.com/",
+          "text": "Capterra",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.forrester.com/",
+          "text": "Forrester",
+          "status": 502,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.zdnet.com/article/implementing-automation-for-business-efficiency/",
+          "text": "l'automatisation dans l'efficacité des entreprises",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-commerciale-ia-efficacite",
+      "pageStatus": 200,
+      "totalLinks": 39,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/elements-essentiels-workflow-automatise",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.forbes.com/sites/forbestechcouncil/2020/12/30/how-to-successfully-implement-workflow-automation-in-sales/?sh=13f2e60f6e44",
+          "text": "Étude de cas : réussite grâce à l'automatisation",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/n8n-automatisation-marketing",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-publication-reseaux-sociaux",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://buffer.com/library/social-media-automation/",
+          "text": "Gagner du temps avec l'automatisation",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.hootsuite.com/blog/social-media-automation/",
+          "text": "site externe de référence",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/outil-automatisation-commerciale-le-guide",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.capterra.com/",
+          "text": "source externe fiable",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesforce.com/fr/learning-centre/tech/what-is-automation/",
+          "text": "guide sur l'automatisation de Salesforce",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-prospection-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 41,
+      "brokenLinks": [
+        {
+          "href": "https://impactbnd.com/automation-consulting",
+          "text": "Impact Branding & Design",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-relation-client",
+      "pageStatus": 200,
+      "totalLinks": 43,
+      "brokenLinks": [
+        {
+          "href": "https://www.hubspot.fr/crm",
+          "text": "site de HubSpot",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.gartner.com/",
+          "text": "automatisation vue par Gartner",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-commerciale-strategie-b2b",
+      "pageStatus": 200,
+      "totalLinks": 31,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-prospection-linkedin",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.cmswire.com/marketing/what-is-linkedins-sales-navigator-really-good-for/",
+          "text": "des retours",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.salesexperienz.fr/blog/auto-blog-seo",
+          "text": "Découvrir comment le faire vous-même",
+          "status": 404,
+          "isInternal": true
+        },
+        {
+          "href": "https://www.salesforce.com/fr/blog/",
+          "text": "blog de Salesforce",
+          "status": 500,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-reseaux-sociaux-strategie",
+      "pageStatus": 200,
+      "totalLinks": 37,
+      "brokenLinks": [
+        {
+          "href": "https://www.socialmediaexaminer.com/",
+          "text": "Social Media Examiner",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/optimiser-automatisation-b2b",
+      "pageStatus": 200,
+      "totalLinks": 34,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-contenu-seo",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-strategie-contenu-seo",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://blog.hubspot.com/marketing/importance-of-marketing-automation",
+          "text": "bénéfices de l’automatisation",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-strategies-contenu-seo",
+      "pageStatus": 200,
+      "totalLinks": 36,
+      "brokenLinks": [
+        {
+          "href": "https://www.forbes.com/sites/forbestechcouncil/2021/02/05/how-to-use-automation-to-transform-your-business/",
+          "text": "Forbes",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.techradar.com/best/best-seo-tools",
+          "text": "Voyez quelles options conviennent le mieux à votre entreprise",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-prospection-seo-ecosysteme",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.neilpatel.com/ubersuggest/",
+          "text": "Ubersuggest de Neil Patel",
+          "status": 403,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/generer-leads-automatiquement-techno",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://status.co/blog/automating-your-business-welcome-to-the-21st-century",
+          "text": "l'avenir de l'automatisation",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-marketing-digital-resultats",
+      "pageStatus": 200,
+      "totalLinks": 36,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-prospection-linkedin-booster",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://blog.hubspot.fr/marketing/structurer-iterations-prospection-commerciale",
+          "text": "HubSpot",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/guide-ultime-article-seo",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/creer-optimiser-vos-articles-blog",
+      "pageStatus": 200,
+      "totalLinks": 39,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/comment-ecrire-article-optimise-google",
+      "pageStatus": 200,
+      "totalLinks": 39,
+      "brokenLinks": [
+        {
+          "href": "https://moz.com/learn/seo/content-audit",
+          "text": "cette ressource externe",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://moz.com/blog/34-ways-to-promote-your-content-5766",
+          "text": "commentaires et retours",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/erreurs-redaction-seo",
+      "pageStatus": 200,
+      "totalLinks": 41,
+      "brokenLinks": [
+        {
+          "href": "https://www.searchenginejournal.com/mobile-seo/checklist-ranked/",
+          "text": "Search Engine Journal",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/quatre-piliers-article-seo",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/article-seo-secrets",
+      "pageStatus": 200,
+      "totalLinks": 37,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/comment-optimiser-seo-site-web",
+      "pageStatus": 200,
+      "totalLinks": 40,
+      "brokenLinks": [
+        {
+          "href": "https://www.digitalmarketinginstitute.com/blog/how-to-improve-seo",
+          "text": "Découvrir plus",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.hubspot.fr/social-media-marketing",
+          "text": "HubSpot",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/strategies-referencement-google-optimal",
+      "pageStatus": 200,
+      "totalLinks": 39,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/maitriser-referencement-naturel",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-son-blog-seo",
+      "pageStatus": 200,
+      "totalLinks": 41,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/coaching-commercial-performance",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://hbr.org/2006/10/the-coaching-habit",
+          "text": "les habitudes de coaching",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/art-redaction-contenus-seo",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.mobilemarketingassociationfrance.com/",
+          "text": "Consultez ce guide sur les meilleurs pratiques pour le web mobile",
+          "status": 0,
+          "error": "fetch failed",
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/guide-redaction-seo-b2b",
+      "pageStatus": 200,
+      "totalLinks": 38,
+      "brokenLinks": [
+        {
+          "href": "https://www.searchenginejournal.com/digital-marketing-strategy-guide/",
+          "text": "ici",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/ia-generation-contenu-web",
+      "pageStatus": 200,
+      "totalLinks": 36,
+      "brokenLinks": [
+        {
+          "href": "https://www.searchenginejournal.com/artificial-intelligence-the-future-of-content-creation/391521/",
+          "text": "Search Engine Journal",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.hubspot.fr/marketing/ia-marketing-contenu",
+          "text": "article de HubSpot",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-prospection-n8n-blog",
+      "pageStatus": 200,
+      "totalLinks": 39,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/redaction-seo-automatique-guide",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/ia-redaction-seo",
+      "pageStatus": 200,
+      "totalLinks": 37,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/ia-redaction-seo-transformation",
+      "pageStatus": 200,
+      "totalLinks": 31,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/impact-ia-copywriting",
+      "pageStatus": 200,
+      "totalLinks": 35,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/gagner-temps-redaction-blog",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://hbr.org/2018/07/what-everyones-getting-wrong-about-the-to-do-list",
+          "text": "article fascinant de Harvard Business Review",
+          "status": 404,
+          "isInternal": false
+        },
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatisation-seo-entreprises",
+      "pageStatus": 200,
+      "totalLinks": 30,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/comment-automatiser-blog-wordpress",
+      "pageStatus": 200,
+      "totalLinks": 32,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/automatiser-publication-blog",
+      "pageStatus": 200,
+      "totalLinks": 30,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/structurer-demarche-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 31,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/signaux-dachat",
+      "pageStatus": 200,
+      "totalLinks": 29,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/methode-pilotage-commercial",
+      "pageStatus": 200,
+      "totalLinks": 52,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/guide-approche-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 30,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/guide-prospection-commerciale",
+      "pageStatus": 200,
+      "totalLinks": 37,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    },
+    {
+      "pageUrl": "https://www.salesexperienz.fr/blog/le-guide-complet-du-coaching-commercial-b2b",
+      "pageStatus": 200,
+      "totalLinks": 30,
+      "brokenLinks": [
+        {
+          "href": "https://www.linkedin.com/in/laurentguyonvarch/",
+          "text": "LinkedIn@laurentguyonvarchStratégies d'automatisation et coulisses de l'agence",
+          "status": 999,
+          "isInternal": false
+        }
+      ]
+    }
+  ]
+}
