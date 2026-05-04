@@ -12,6 +12,7 @@ import WhatToAutomate from '@/components/WhatToAutomate'
 import HowItWorks from '@/components/HowItWorks'
 import Services from '@/components/Services'
 import LocalCases from '@/components/LocalCases'
+import CalcSection from '@/components/CalcSection'
 import About from '@/components/About'
 import FAQ from '@/components/FAQ'
 import FinalCTA from '@/components/FinalCTA'
@@ -278,6 +279,7 @@ export default function PageToulouse() {
       <HowItWorks />
       <Services />
       <LocalCases cases={localCases} ville="Toulouse" />
+      <CalcSection />
       <About />
       <FAQ settings={faqSettings} />
       <FinalCTA />

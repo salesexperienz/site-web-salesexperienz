@@ -31,6 +31,7 @@ import Services           from '@/components/Services'
 import LocalCases         from '@/components/LocalCases'
 import About              from '@/components/About'
 import FAQ                from '@/components/FAQ'
+import CalcSection        from '@/components/CalcSection'
 import FinalCTA           from '@/components/FinalCTA'
 import Footer             from '@/components/Footer'
 import SocialBlock        from '@/components/SocialBlock'
@@ -165,6 +166,7 @@ export default async function Home() {
       <HowItWorks />
       <Services settings={settings} />
       <LocalCases cases={localCases} />
+      <CalcSection />
       <About />
       <FAQ settings={settings} />
       <FinalCTA />

@@ -4,6 +4,7 @@ import Footer               from '@/components/Footer'
 import SocialBlock          from '@/components/SocialBlock'
 import RecentArticles       from '@/components/RecentArticles'
 import FadeUp               from '@/components/FadeUp'
+import CalcSection          from '@/components/CalcSection'
 import AboutSete            from '@/components/AboutSete'
 import FaqSete              from '@/components/FaqSete'
 import WhatToAutomate       from '@/components/WhatToAutomate'
@@ -597,6 +598,7 @@ export default function PageGBP() {
       </section>
 
       <LocalCases cases={localCasesSete} ville="Sète" />
+      <CalcSection />
 
       {/* ── 6. CTA FINAL ───────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden py-[80px] lg:py-[120px] bg-white">
