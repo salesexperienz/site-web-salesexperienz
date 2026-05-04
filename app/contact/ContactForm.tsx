@@ -66,7 +66,7 @@ function ChevLeft() {
 
 function RightPanel() {
   return (
-    <div className="hidden lg:flex w-[48%] flex-shrink-0 flex-col justify-between p-8 bg-[#E8EDF6] relative overflow-hidden">
+    <div className="flex order-first lg:order-last w-full lg:w-[48%] flex-shrink-0 flex-col p-6 lg:p-8 bg-[#E8EDF6] relative overflow-hidden min-h-screen lg:min-h-0">
 
       <div
         className="absolute inset-0 opacity-40"
@@ -76,19 +76,22 @@ function RightPanel() {
         }}
       />
 
-      <div className="relative z-10 flex justify-center">
+      {/* Logo */}
+      <div className="relative z-10 flex justify-center pt-10">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo-noir.png" alt="Sales Experienz" className="h-16 w-auto" />
+        <img src="/logo-noir.png" alt="Sales Experienz" className="h-20 w-auto" />
       </div>
 
-      <div className="relative z-10 w-full py-4">
-        <div className="rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.16),0_4px_16px_rgba(0,0,0,0.07)]">
+      {/* Image — centrée dans l'espace restant */}
+      <div className="relative z-10 flex-1 flex items-center py-6">
+        <div className="w-full rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.16),0_4px_16px_rgba(0,0,0,0.07)]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/5.png" alt="Automatisez vos process — Sales Experienz" className="w-full h-auto block" />
         </div>
       </div>
 
-      <div className="relative z-10">
+      {/* Texte avec espace en dessous */}
+      <div className="relative z-10 pb-8">
         <p className="font-body text-[11px] font-semibold uppercase tracking-[0.18em] text-[#E8621A] mb-2">
           Appel découverte · 45 min · Sans engagement
         </p>
@@ -117,10 +120,10 @@ export default function ContactForm() {
 
   return (
     <div className={`min-h-screen bg-[#E8EDF6] flex justify-center font-body p-8 lg:p-12 ${step === 0 ? 'items-center' : 'items-start'}`}>
-      <div className="w-full max-w-[940px] bg-white rounded-2xl shadow-[0_8px_60px_rgba(0,0,0,0.12)] overflow-hidden flex">
+      <div className="w-full max-w-[940px] bg-white rounded-2xl shadow-[0_8px_60px_rgba(0,0,0,0.12)] overflow-hidden flex flex-col lg:flex-row">
 
         {/* ── LEFT PANEL ─────────────────────────────────────────────────────── */}
-        <div className="flex-1 flex flex-col px-8 md:px-12 py-10">
+        <div className="flex-1 flex flex-col px-8 md:px-12 py-10 min-h-screen lg:min-h-0">
           <AnimatePresence mode="wait">
 
             {/* ── STEP 0 : Qualification ───────────────────────────────── */}
