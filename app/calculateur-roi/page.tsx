@@ -246,6 +246,39 @@ export default function CalculateurROIPage() {
       </section>
 
       <Footer />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'WebPage',
+            '@id': 'https://www.salesexperienz.fr/calculateur-roi',
+            url: 'https://www.salesexperienz.fr/calculateur-roi',
+            name: 'Calculateur ROI Automatisation — Combien coûte votre travail manuel ?',
+            description: 'Calculez en 2 minutes le coût caché de vos tâches répétitives et le gain potentiel de l\'automatisation pour votre entreprise. Outil gratuit par Sales Experienz.',
+            isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
+            inLanguage: 'fr-FR',
+            breadcrumb: {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+                { '@type': 'ListItem', position: 2, name: 'Calculateur ROI', item: 'https://www.salesexperienz.fr/calculateur-roi' },
+              ],
+            },
+          },
+          {
+            '@type': 'WebApplication',
+            name: 'Calculateur ROI Automatisation — Sales Experienz',
+            url: 'https://www.salesexperienz.fr/calculateur-roi',
+            description: 'Outil interactif gratuit pour calculer le coût caché du travail manuel et estimer le ROI de l\'automatisation n8n pour les PME et TPE françaises.',
+            applicationCategory: 'BusinessApplication',
+            operatingSystem: 'All',
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+            author: { '@id': 'https://www.salesexperienz.fr/#organization' },
+            inLanguage: 'fr-FR',
+          },
+        ],
+      }) }} />
     </main>
   )
 }

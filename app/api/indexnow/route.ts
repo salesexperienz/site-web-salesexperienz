@@ -11,6 +11,13 @@ const STATIC_URLS = [
   `${SITE_URL}/services/seo-geo-machine`,
   `${SITE_URL}/services/deepsignal`,
   `${SITE_URL}/agence-marketing-automatisation-sete`,
+  `${SITE_URL}/calculateur-roi`,
+  `${SITE_URL}/expert-automatisation-commerciale-paris`,
+  `${SITE_URL}/expert-automatisation-commerciale-lyon`,
+  `${SITE_URL}/expert-automatisation-commerciale-marseille`,
+  `${SITE_URL}/expert-automatisation-commerciale-toulouse`,
+  `${SITE_URL}/expert-automatisation-commerciale-nantes`,
+  `${SITE_URL}/expert-automatisation-commerciale-nice`,
 ]
 
 // ─── POST /api/indexnow ────────────────────────────────────────────────────────
