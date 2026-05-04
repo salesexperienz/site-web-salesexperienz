@@ -2,6 +2,7 @@ import { google } from 'googleapis';
 
 // Ajouter les URLs ici avant de lancer, vider après chaque envoi (quota : 200/jour)
 // Envoi du 26/04/2026 : 83 URLs soumises (pages principales + 72 articles blog)
+// Envoi du 04/05/2026 : corrections audit SEO (canonicals, redirects, doublons)
 const urlsToIndex = [];
 
 async function requestIndexing() {

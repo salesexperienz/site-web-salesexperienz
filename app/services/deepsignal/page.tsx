@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     'signaux intention achat',
     'Deep Signal SalesExperienz',
   ],
-  authors: [{ name: 'Laurent Guyonvarch', url: 'https://salesexperienz.fr/a-propos' }],
+  authors: [{ name: 'Laurent Guyonvarch', url: 'https://www.salesexperienz.fr/a-propos' }],
   openGraph: {
     title: 'Prospection commerciale automatisée à Sète — Deep Signal',
     description:
       'Le système qui prospecte uniquement ceux qui ont levé la main — et qui tourne sans vous.',
-    url: 'https://salesexperienz.fr/services/deepsignal',
+    url: 'https://www.salesexperienz.fr/services/deepsignal',
     siteName: 'SalesExperienz',
     images: [
       {
-        url: 'https://salesexperienz.fr/og-deep-signal.jpg',
+        url: 'https://www.salesexperienz.fr/og-deep-signal.jpg',
         width: 1200,
         height: 630,
         alt: 'Deep Signal - Prospection automatisée à Sète',
@@ -47,11 +47,11 @@ export const metadata: Metadata = {
     title: 'Prospection commerciale automatisée — Deep Signal',
     description:
       "Détection de signaux d'intention + personnalisation IA + autonomie complète. Depuis Sète.",
-    images: ['https://salesexperienz.fr/og-deep-signal.jpg'],
+    images: ['https://www.salesexperienz.fr/og-deep-signal.jpg'],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   alternates: {
-    canonical: 'https://salesexperienz.fr/services/deepsignal',
+    canonical: 'https://www.salesexperienz.fr/services/deepsignal',
   },
 }
 

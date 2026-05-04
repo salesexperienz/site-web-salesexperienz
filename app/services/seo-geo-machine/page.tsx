@@ -830,7 +830,7 @@ export default function SeoGeoMachinePage() {
               <div className="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.13)]" style={{ border: '1.5px solid rgba(74,191,176,0.25)' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/photo2.png"
+                  src="/exemple-wokflow.png"
                   alt="Création site Next.js Git Vercel — SalesExperienz"
                   className="w-full block"
                 />
