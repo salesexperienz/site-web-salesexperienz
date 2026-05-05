@@ -74,6 +74,7 @@ export default function LocalStorytelling({ ville, intro, problems, methode, hig
               height={300}
               className="rounded-2xl shadow-xl"
             />
+            <p className="font-body text-[13px] text-se-navy/60 text-center">N&rsquo;hésitez pas à me contacter directement&nbsp;!</p>
             <a
               href="tel:+33988028649"
               className="inline-flex items-center gap-2 bg-se-navy text-white rounded-full px-5 py-2.5 text-[14px] font-medium font-body hover:bg-se-navy/80 transition-all duration-200"
