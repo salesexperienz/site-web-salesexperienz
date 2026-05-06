@@ -22,6 +22,11 @@ const DELETED_PATHS = [
   '/campagnes-commerciales',
   '/solution-automatisation-pme',
   '/sitemap_index.xml',
+  '/expert-coaching-commercial',
+  '/le-guide-complet-du-coaching-commercial-b2b',
+  '/guide-approche-commerciale',
+  '/guide-prospection-commerciale',
+  '/signaux-dachat',
 ]
 
 export function middleware(request: NextRequest) {
