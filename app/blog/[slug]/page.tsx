@@ -65,14 +65,7 @@ function extractToc(body: any[]): { id: string; text: string; level: number }[] 
     .filter((b) => b._type === 'block' && ['h2', 'h3'].includes(b.style))
     .map((b) => {
       const text = b.children?.map((c: any) => c.text).join('') ?? ''
-      const id = text
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9\s-]/g, '')
-        .trim()
-        .replace(/\s+/g, '-')
-      return { id, text, level: b.style === 'h2' ? 2 : 3 }
+      return { id: b._key, text, level: b.style === 'h2' ? 2 : 3 }
     })
     .filter((item) => item.text.length > 0)
 }
@@ -87,34 +80,21 @@ function formatDate(dateStr: string) {
 }
 
 // ─── Composants PortableText ──────────────────────────────────────────────────
-// Ajoute un id sur les h2/h3 pour le sommaire
-function headingId(children: any) {
-  const text = Array.isArray(children)
-    ? children.map((c: any) => (typeof c === 'string' ? c : c?.props?.children ?? '')).join('')
-    : String(children)
-  return text
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-}
 
 const ptComponents = {
   block: {
     normal: ({ children }: any) => (
       <p className="text-[16px] text-gray-700 leading-[1.85] mb-5">{children}</p>
     ),
-    h2: ({ children }: any) => (
-      <h2 id={headingId(children)}
+    h2: ({ children, value }: any) => (
+      <h2 id={value._key}
         className="font-display font-extrabold text-[26px] mt-12 mb-4 leading-tight scroll-mt-28"
         style={{ color: '#111c3d' }}>
         {children}
       </h2>
     ),
-    h3: ({ children }: any) => (
-      <h3 id={headingId(children)}
+    h3: ({ children, value }: any) => (
+      <h3 id={value._key}
         className="font-display font-bold text-[20px] mt-8 mb-3 leading-snug scroll-mt-28"
         style={{ color: '#111c3d' }}>
         {children}
