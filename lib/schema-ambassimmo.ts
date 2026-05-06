@@ -41,18 +41,19 @@ export const ambassimmoSchema = {
       ],
       mentions: [
         { '@type': 'Organization', name: 'Ambassimmo', url: 'https://ambassimmo.com' },
-        { '@type': 'SoftwareApplication', name: 'n8n' },
-        { '@type': 'SoftwareApplication', name: 'WordPress' },
-        { '@type': 'SoftwareApplication', name: 'DataForSEO' },
+        { '@type': 'Thing', name: 'n8n' },
+        { '@type': 'Thing', name: 'WordPress' },
+        { '@type': 'Thing', name: 'DataForSEO' },
       ],
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Études de cas', item: 'https://www.salesexperienz.fr/etudes-de-cas' },
-          { '@type': 'ListItem', position: 3, name: 'Ambassimmo', item: 'https://www.salesexperienz.fr/etudes-de-cas/ambassimmo' },
-        ],
-      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Études de cas', item: 'https://www.salesexperienz.fr/etudes-de-cas' },
+        { '@type': 'ListItem', position: 3, name: 'Ambassimmo', item: 'https://www.salesexperienz.fr/etudes-de-cas/ambassimmo' },
+      ],
     },
 
     {

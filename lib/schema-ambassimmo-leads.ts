@@ -41,19 +41,20 @@ export const ambassimmoLeadsSchema = {
       ],
       mentions: [
         { '@type': 'Organization', name: 'Ambassimmo', url: 'https://ambassimmo.com' },
-        { '@type': 'SoftwareApplication', name: 'n8n' },
-        { '@type': 'SoftwareApplication', name: 'DocuSeal' },
-        { '@type': 'SoftwareApplication', name: 'Brevo' },
-        { '@type': 'SoftwareApplication', name: 'Icypeas' },
+        { '@type': 'Thing', name: 'n8n' },
+        { '@type': 'Thing', name: 'DocuSeal' },
+        { '@type': 'Thing', name: 'Brevo' },
+        { '@type': 'Thing', name: 'Icypeas' },
       ],
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Études de cas', item: 'https://www.salesexperienz.fr/etudes-de-cas' },
-          { '@type': 'ListItem', position: 3, name: 'Ambassimmo — Pipeline Leads', item: 'https://www.salesexperienz.fr/etudes-de-cas/ambassimmo-leads' },
-        ],
-      },
+    },
+
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Études de cas', item: 'https://www.salesexperienz.fr/etudes-de-cas' },
+        { '@type': 'ListItem', position: 3, name: 'Ambassimmo — Pipeline Leads', item: 'https://www.salesexperienz.fr/etudes-de-cas/ambassimmo-leads' },
+      ],
     },
 
     {

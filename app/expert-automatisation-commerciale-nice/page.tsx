@@ -63,13 +63,13 @@ const schemaLocal = {
       description: "Expert automatisation commerciale à Nice : systèmes sur mesure pour PME de la Côte d'Azur et Sophia Antipolis. Prospection B2B, visibilité, pipeline actif. Travaillez avec Laurent Guyonvarch. Audit 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-nice',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Nice', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-nice' },
-        ],
-      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Nice', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-nice' },
+      ],
     },
     {
       '@type': 'FAQPage',

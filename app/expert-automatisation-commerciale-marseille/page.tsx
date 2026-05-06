@@ -63,13 +63,13 @@ const schemaLocal = {
       description: "Expert automatisation commerciale à Marseille : systèmes sur mesure pour TPE et PME en PACA. Prospection B2B, visibilité en ligne, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Marseille', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille' },
-        ],
-      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Marseille', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-marseille' },
+      ],
     },
     {
       '@type': 'FAQPage',

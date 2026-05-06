@@ -63,13 +63,13 @@ const schemaLocal = {
       description: "Expert automatisation commerciale à Nantes : systèmes sur mesure pour PME de la French Tech Nantes et des Pays de la Loire. Prospection B2B, contenu automatisé, pipeline actif. Audit 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-nantes',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Nantes', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-nantes' },
-        ],
-      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Nantes', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-nantes' },
+      ],
     },
     {
       '@type': 'FAQPage',

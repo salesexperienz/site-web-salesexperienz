@@ -63,13 +63,13 @@ const schemaLocal = {
       description: "Expert automatisation commerciale à Lyon : systèmes sur mesure pour PME de la Métropole lyonnaise. Prospection B2B, contenu automatisé, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit stratégique 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-lyon',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Lyon', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-lyon' },
-        ],
-      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Lyon', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-lyon' },
+      ],
     },
     {
       '@type': 'FAQPage',

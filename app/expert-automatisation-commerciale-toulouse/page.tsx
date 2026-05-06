@@ -63,13 +63,13 @@ const schemaLocal = {
       description: "Expert automatisation commerciale à Toulouse : systèmes sur mesure pour startups et PME de la French Tech Toulouse. Prospection B2B, contenu automatisé, pipeline actif. Audit 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-toulouse',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Toulouse', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-toulouse' },
-        ],
-      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Toulouse', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-toulouse' },
+      ],
     },
     {
       '@type': 'FAQPage',

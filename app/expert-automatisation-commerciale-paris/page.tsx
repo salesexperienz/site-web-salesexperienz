@@ -63,13 +63,13 @@ const schemaLocal = {
       description: "Expert automatisation commerciale à Paris : systèmes sur mesure pour startups et PME en Île-de-France. Prospection B2B, contenu automatisé, pipeline actif. Travaillez directement avec Laurent Guyonvarch. Audit stratégique 45 min.",
       url: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris',
       isPartOf: { '@id': 'https://www.salesexperienz.fr/#website' },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
-          { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Paris', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris' },
-        ],
-      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.salesexperienz.fr' },
+        { '@type': 'ListItem', position: 2, name: 'Expert automatisation commerciale Paris', item: 'https://www.salesexperienz.fr/expert-automatisation-commerciale-paris' },
+      ],
     },
     {
       '@type': 'FAQPage',
