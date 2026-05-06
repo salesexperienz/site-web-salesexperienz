@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
       // Articles dupliqués supprimés → originaux
       { source: '/blog/automatiser-prospection-commerciale-2', destination: '/blog/automatiser-prospection-commerciale', permanent: true },
       { source: '/blog/comment-optimiser-seo-site-web-2', destination: '/blog/comment-optimiser-seo-site-web', permanent: true },
+      // Anciennes pages WordPress supprimées → articles proches
+      { source: '/methode-pilotage-commercial', destination: '/blog/plan-action-commerciale-exemple', permanent: true },
+      { source: '/structurer-demarche-commerciale', destination: '/blog/plan-action-commerciale-exemple', permanent: true },
     ]
   },
   webpack: (config, { isServer }) => {

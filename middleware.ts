@@ -11,8 +11,9 @@ const GAMBLING_KEYWORDS = [
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // WordPress post IDs (?p=XXXX)
-  if (request.nextUrl.searchParams.has('p')) {
+  // WordPress post IDs (?p=XXXX) et paramètres parasites
+  const params = request.nextUrl.searchParams
+  if (params.has('p') || params.has('wordfence_lh') || params.has('trk')) {
     return new NextResponse('Gone', { status: 410 })
   }
 
