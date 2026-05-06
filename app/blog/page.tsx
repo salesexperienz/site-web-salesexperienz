@@ -7,34 +7,50 @@ import Footer from '@/components/Footer'
 import SocialBlock from '@/components/SocialBlock'
 import BlogFilters from '@/components/BlogFilters'
 
-export const metadata: Metadata = {
-  title: 'Blog — Automatisation, SEO & IA pour PME | SalesExperienz',
-  description:
-    'Stratégies concrètes en automatisation, SEO/GEO, IA et prospection B2B — publiées par SalesExperienz à Sète (34). Articles rédigés avec la méthode Capsule.',
-  alternates: { canonical: 'https://www.salesexperienz.fr/blog' },
-  openGraph: {
-    title: 'Blog SalesExperienz — Automatisation, SEO & IA',
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string }>
+}): Promise<Metadata> {
+  const { category } = await searchParams
+
+  // Pages filtrées (?category=X) : noindex pour éviter le contenu dupliqué
+  if (category) {
+    return {
+      robots: 'noindex, follow',
+      alternates: { canonical: 'https://www.salesexperienz.fr/blog' },
+    }
+  }
+
+  return {
+    title: 'Blog — Automatisation, SEO & IA pour PME | SalesExperienz',
     description:
-      'Automatisation, SEO/GEO, IA et prospection B2B — les stratégies concrètes appliquées chez nos clients, partagées sans filtre.',
-    url: 'https://www.salesexperienz.fr/blog',
-    siteName: 'SalesExperienz',
-    type: 'website',
-    locale: 'fr_FR',
-    images: [
-      {
-        url: 'https://www.salesexperienz.fr/og-seo-geo-machine.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Blog SalesExperienz — Automatisation, SEO & IA',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Blog SalesExperienz — Automatisation, SEO & IA',
-    description:
-      'Stratégies concrètes en automatisation, SEO/GEO, IA et prospection B2B.',
-  },
+      'Stratégies concrètes en automatisation, SEO/GEO, IA et prospection B2B — publiées par SalesExperienz à Sète (34). Articles rédigés avec la méthode Capsule.',
+    alternates: { canonical: 'https://www.salesexperienz.fr/blog' },
+    openGraph: {
+      title: 'Blog SalesExperienz — Automatisation, SEO & IA',
+      description:
+        'Automatisation, SEO/GEO, IA et prospection B2B — les stratégies concrètes appliquées chez nos clients, partagées sans filtre.',
+      url: 'https://www.salesexperienz.fr/blog',
+      siteName: 'SalesExperienz',
+      type: 'website',
+      locale: 'fr_FR',
+      images: [
+        {
+          url: 'https://www.salesexperienz.fr/og-seo-geo-machine.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Blog SalesExperienz — Automatisation, SEO & IA',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Blog SalesExperienz — Automatisation, SEO & IA',
+      description:
+        'Stratégies concrètes en automatisation, SEO/GEO, IA et prospection B2B.',
+    },
+  }
 }
 
 // ─── Types ────────────────────────────────────────────────────────────────────
