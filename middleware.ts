@@ -8,6 +8,22 @@ const GAMBLING_KEYWORDS = [
   'no-deposit', 'tirage-loto', 'tirage-keno',
 ]
 
+// Anciennes pages WordPress supprimées (issues des exports GSC)
+const DELETED_PATHS = [
+  '/croissance',
+  '/diagnostic-commercial',
+  '/coaching-commercial',
+  '/coaching-commercial-performance',
+  '/coaching-commercial-croissance',
+  '/pilotage-commercial',
+  '/strategie-commercialisation',
+  '/cas-clients-sales-experienz',
+  '/ressources-gratuites',
+  '/campagnes-commerciales',
+  '/solution-automatisation-pme',
+  '/sitemap_index.xml',
+]
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
@@ -19,6 +35,11 @@ export function middleware(request: NextRequest) {
 
   // WordPress legacy paths
   if (pathname.startsWith('/wp-content') || pathname.startsWith('/author/')) {
+    return new NextResponse('Gone', { status: 410 })
+  }
+
+  // Anciennes pages WP supprimées
+  if (DELETED_PATHS.some(p => pathname === p || pathname === p + '/')) {
     return new NextResponse('Gone', { status: 410 })
   }
 
